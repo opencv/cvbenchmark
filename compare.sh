@@ -7,3 +7,4 @@ modules=("calib3d" "core" "dnn" "features2d" "imgcodecs" "imgproc" "objdetect" "
 for module in "${modules[@]}"; do
     python opencv/modules/ts/misc/summary.py perf/i7-12700k/${module}.xml perf/${module}.xml -o html > perf/${module}.html
 done
+
