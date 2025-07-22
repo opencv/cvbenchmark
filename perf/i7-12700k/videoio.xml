@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="18" failures="0" disabled="0" errors="0" timestamp="2025-07-21T19:34:43" time="0.187" cv_module_name="videoio" cv_implementation="plain" cv_num_threads="-1" test_tags="" test_tags_skip="mem_6gb,verylong" test_tags_force="" cv_version="4.13.0-dev" cv_version_build="4.13.0-dev" cv_vcs_version="4.12.0-31-gab8a1fa280" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/usr/bin/c++  (ver 12.3.0)" implementation_hint="ALGO_HINT_ACCURATE" hal="NO" cv_parallel_framework="pthreads" cv_parallel_threads="20" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?" cv_ocl_platform_0_device_0="(Platform=Intel(R) OpenCL Graphics)(Type=iGPU)(Name=Intel(R) UHD Graphics 770)(Version=OpenCL 3.0 NEO )" cv_ocl_current_deviceType="iGPU" cv_ocl_current_deviceName="Intel(R) UHD Graphics 770" cv_ocl_current_deviceVersion="OpenCL 3.0 NEO " cv_ocl_current_driverVersion="23.35.27191.42" cv_ocl_current_addressBits="64" cv_ocl_current_maxComputeUnits="32" cv_ocl_current_maxWorkGroupSize="512" cv_ocl_current_localMemSize="65536" cv_ocl_current_maxMemAllocSize="4294959104" cv_ocl_current_haveDoubleSupport="0" cv_ocl_current_haveHalfSupport="1" cv_ocl_current_hostUnifiedMemory="1" cv_ocl_current_extensions="cl_khr_byte_addressable_store cl_khr_device_uuid cl_khr_fp16 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_icd cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_intel_command_queue_families cl_intel_subgroups cl_intel_required_subgroup_size cl_intel_subgroups_short cl_khr_spir cl_intel_accelerator cl_intel_driver_diagnostics cl_khr_priority_hints cl_khr_throttle_hints cl_khr_create_command_queue cl_intel_subgroups_char cl_intel_subgroups_long cl_khr_il_program cl_intel_mem_force_host_memory cl_khr_subgroup_extended_types cl_khr_subgroup_non_uniform_vote cl_khr_subgroup_ballot cl_khr_subgroup_non_uniform_arithmetic cl_khr_subgroup_shuffle cl_khr_subgroup_shuffle_relative cl_khr_subgroup_clustered_reduce cl_intel_device_attribute_query cl_khr_suggested_local_work_size cl_intel_split_work_group_barrier cl_intel_spirv_media_block_io cl_intel_spirv_subgroups cl_khr_spirv_linkonce_odr cl_khr_spirv_no_integer_wrap_decoration cl_intel_unified_shared_memory cl_khr_mipmap_image cl_khr_mipmap_image_writes cl_ext_float_atomics cl_khr_external_memory cl_intel_planar_yuv cl_intel_packed_yuv cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_3d_image_writes cl_intel_media_block_io cl_intel_subgroup_local_block_io cl_khr_integer_dot_product cl_khr_gl_sharing cl_khr_gl_depth_images cl_khr_gl_event cl_khr_gl_msaa_sharing cl_intel_va_api_media_sharing cl_intel_sharing_format_query cl_khr_pci_bus_info " cv_ocl_current_AmdBlas="0" cv_ocl_current_AmdFft="0" cv_ocl_current_preferredVectorWidthChar="16" cv_ocl_current_preferredVectorWidthShort="8" cv_ocl_current_preferredVectorWidthInt="4" cv_ocl_current_preferredVectorWidthLong="1" cv_ocl_current_preferredVectorWidthFloat="1" cv_ocl_current_preferredVectorWidthDouble="0" cv_ocl_current_preferredVectorWidthHalf="8" name="AllTests">
+  <testsuite name="VideoCapture_Camera" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="waitAny_V4L" status="run" time="0" classname="VideoCapture_Camera">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="VideoCapture_Reading_ReadFile" tests="5" failures="0" disabled="0" errors="0" time="0.141">
+    <testcase name="ReadFile/0" value_param="&quot;highgui/video/big_buck_bunny.avi&quot;" status="run" time="0.029" classname="VideoCapture_Reading_ReadFile">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="462252"/>
+<property name="median" value="483817"/>
+<property name="gmean" value="512661"/>
+<property name="gstddev" value="0.136061"/>
+<property name="mean" value="517789"/>
+<property name="stddev" value="81291"/>
+</properties>
+    </testcase>
+    <testcase name="ReadFile/1" value_param="&quot;highgui/video/big_buck_bunny.mov&quot;" status="run" time="0.026" classname="VideoCapture_Reading_ReadFile">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="464171"/>
+<property name="median" value="504155"/>
+<property name="gmean" value="508324"/>
+<property name="gstddev" value="0.038958"/>
+<property name="mean" value="508707"/>
+<property name="stddev" value="20238"/>
+</properties>
+    </testcase>
+    <testcase name="ReadFile/2" value_param="&quot;highgui/video/big_buck_bunny.mp4&quot;" status="run" time="0.027" classname="VideoCapture_Reading_ReadFile">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="344394"/>
+<property name="median" value="499061"/>
+<property name="gmean" value="499905"/>
+<property name="gstddev" value="0.064852"/>
+<property name="mean" value="500854"/>
+<property name="stddev" value="28929"/>
+</properties>
+    </testcase>
+    <testcase name="ReadFile/3" value_param="&quot;highgui/video/big_buck_bunny.mpg&quot;" status="run" time="0.046" classname="VideoCapture_Reading_ReadFile">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="851550"/>
+<property name="median" value="889170"/>
+<property name="gmean" value="900953"/>
+<property name="gstddev" value="0.041446"/>
+<property name="mean" value="901717"/>
+<property name="stddev" value="37830"/>
+</properties>
+    </testcase>
+    <testcase name="ReadFile/4" value_param="&quot;highgui/video/big_buck_bunny.wmv&quot;" status="run" time="0.013" classname="VideoCapture_Reading_ReadFile">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="243965"/>
+<property name="median" value="252034"/>
+<property name="gmean" value="252994"/>
+<property name="gstddev" value="0.022864"/>
+<property name="mean" value="253059"/>
+<property name="stddev" value="5852"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="VideoWriter_Writing_WriteFrame" tests="12" failures="0" disabled="0" errors="0" time="0.046">
+    <testcase name="WriteFrame/0" value_param="(&quot;python/images/QCIF_00.bmp&quot;, false)" status="run" time="0.005" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="58345"/>
+<property name="median" value="60574"/>
+<property name="gmean" value="62803"/>
+<property name="gstddev" value="0.127671"/>
+<property name="mean" value="63378"/>
+<property name="stddev" value="9892"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/1" value_param="(&quot;python/images/QCIF_00.bmp&quot;, true)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="62830"/>
+<property name="median" value="64362"/>
+<property name="gmean" value="66838"/>
+<property name="gstddev" value="0.123705"/>
+<property name="mean" value="67410"/>
+<property name="stddev" value="10134"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/2" value_param="(&quot;python/images/QCIF_01.bmp&quot;, false)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57500"/>
+<property name="median" value="61246"/>
+<property name="gmean" value="62808"/>
+<property name="gstddev" value="0.122200"/>
+<property name="mean" value="63331"/>
+<property name="stddev" value="9348"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/3" value_param="(&quot;python/images/QCIF_01.bmp&quot;, true)" status="run" time="0.003" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="62716"/>
+<property name="median" value="63792"/>
+<property name="gmean" value="66041"/>
+<property name="gstddev" value="0.103501"/>
+<property name="mean" value="66427"/>
+<property name="stddev" value="8053"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/4" value_param="(&quot;python/images/QCIF_02.bmp&quot;, false)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="58110"/>
+<property name="median" value="60493"/>
+<property name="gmean" value="62764"/>
+<property name="gstddev" value="0.120325"/>
+<property name="mean" value="63270"/>
+<property name="stddev" value="9198"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/5" value_param="(&quot;python/images/QCIF_02.bmp&quot;, true)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="62557"/>
+<property name="median" value="64276"/>
+<property name="gmean" value="66417"/>
+<property name="gstddev" value="0.110164"/>
+<property name="mean" value="66861"/>
+<property name="stddev" value="8762"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/6" value_param="(&quot;python/images/QCIF_03.bmp&quot;, false)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57962"/>
+<property name="median" value="60244"/>
+<property name="gmean" value="62577"/>
+<property name="gstddev" value="0.121104"/>
+<property name="mean" value="63085"/>
+<property name="stddev" value="9140"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/7" value_param="(&quot;python/images/QCIF_03.bmp&quot;, true)" status="run" time="0.003" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="62958"/>
+<property name="median" value="64225"/>
+<property name="gmean" value="66249"/>
+<property name="gstddev" value="0.105119"/>
+<property name="mean" value="66650"/>
+<property name="stddev" value="8266"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/8" value_param="(&quot;python/images/QCIF_04.bmp&quot;, false)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="56624"/>
+<property name="median" value="58559"/>
+<property name="gmean" value="60626"/>
+<property name="gstddev" value="0.110114"/>
+<property name="mean" value="61030"/>
+<property name="stddev" value="7970"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/9" value_param="(&quot;python/images/QCIF_04.bmp&quot;, true)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="61026"/>
+<property name="median" value="62158"/>
+<property name="gmean" value="64310"/>
+<property name="gstddev" value="0.114981"/>
+<property name="mean" value="64782"/>
+<property name="stddev" value="8955"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/10" value_param="(&quot;python/images/QCIF_05.bmp&quot;, false)" status="run" time="0.003" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57050"/>
+<property name="median" value="59353"/>
+<property name="gmean" value="61329"/>
+<property name="gstddev" value="0.113686"/>
+<property name="mean" value="61771"/>
+<property name="stddev" value="8511"/>
+</properties>
+    </testcase>
+    <testcase name="WriteFrame/11" value_param="(&quot;python/images/QCIF_05.bmp&quot;, true)" status="run" time="0.004" classname="VideoWriter_Writing_WriteFrame">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="61424"/>
+<property name="median" value="62431"/>
+<property name="gmean" value="64936"/>
+<property name="gstddev" value="0.118053"/>
+<property name="mean" value="65431"/>
+<property name="stddev" value="9099"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>

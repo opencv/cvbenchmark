@@ -1,0 +1,4034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="247" failures="0" disabled="16" errors="0" timestamp="2025-07-21T19:32:02" time="161.127" cv_module_name="video" cv_implementation="plain" cv_num_threads="-1" test_tags="" test_tags_skip="mem_6gb,verylong" test_tags_force="" cv_version="4.13.0-dev" cv_version_build="4.13.0-dev" cv_vcs_version="4.12.0-31-gab8a1fa280" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/usr/bin/c++  (ver 12.3.0)" implementation_hint="ALGO_HINT_ACCURATE" hal="NO" cv_parallel_framework="pthreads" cv_parallel_threads="20" cv_cpu_features="SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?" cv_ocl_platform_0_device_0="(Platform=Intel(R) OpenCL Graphics)(Type=iGPU)(Name=Intel(R) UHD Graphics 770)(Version=OpenCL 3.0 NEO )" cv_ocl_current_deviceType="iGPU" cv_ocl_current_deviceName="Intel(R) UHD Graphics 770" cv_ocl_current_deviceVersion="OpenCL 3.0 NEO " cv_ocl_current_driverVersion="23.35.27191.42" cv_ocl_current_addressBits="64" cv_ocl_current_maxComputeUnits="32" cv_ocl_current_maxWorkGroupSize="512" cv_ocl_current_localMemSize="65536" cv_ocl_current_maxMemAllocSize="4294959104" cv_ocl_current_haveDoubleSupport="0" cv_ocl_current_haveHalfSupport="1" cv_ocl_current_hostUnifiedMemory="1" cv_ocl_current_extensions="cl_khr_byte_addressable_store cl_khr_device_uuid cl_khr_fp16 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_icd cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_intel_command_queue_families cl_intel_subgroups cl_intel_required_subgroup_size cl_intel_subgroups_short cl_khr_spir cl_intel_accelerator cl_intel_driver_diagnostics cl_khr_priority_hints cl_khr_throttle_hints cl_khr_create_command_queue cl_intel_subgroups_char cl_intel_subgroups_long cl_khr_il_program cl_intel_mem_force_host_memory cl_khr_subgroup_extended_types cl_khr_subgroup_non_uniform_vote cl_khr_subgroup_ballot cl_khr_subgroup_non_uniform_arithmetic cl_khr_subgroup_shuffle cl_khr_subgroup_shuffle_relative cl_khr_subgroup_clustered_reduce cl_intel_device_attribute_query cl_khr_suggested_local_work_size cl_intel_split_work_group_barrier cl_intel_spirv_media_block_io cl_intel_spirv_subgroups cl_khr_spirv_linkonce_odr cl_khr_spirv_no_integer_wrap_decoration cl_intel_unified_shared_memory cl_khr_mipmap_image cl_khr_mipmap_image_writes cl_ext_float_atomics cl_khr_external_memory cl_intel_planar_yuv cl_intel_packed_yuv cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_3d_image_writes cl_intel_media_block_io cl_intel_subgroup_local_block_io cl_khr_integer_dot_product cl_khr_gl_sharing cl_khr_gl_depth_images cl_khr_gl_event cl_khr_gl_msaa_sharing cl_intel_va_api_media_sharing cl_intel_sharing_format_query cl_khr_pci_bus_info " cv_ocl_current_AmdBlas="0" cv_ocl_current_AmdFft="0" cv_ocl_current_preferredVectorWidthChar="16" cv_ocl_current_preferredVectorWidthShort="8" cv_ocl_current_preferredVectorWidthInt="4" cv_ocl_current_preferredVectorWidthLong="1" cv_ocl_current_preferredVectorWidthFloat="1" cv_ocl_current_preferredVectorWidthDouble="0" cv_ocl_current_preferredVectorWidthHalf="8" name="AllTests">
+  <testsuite name="OCL_KNN_Apply_KNN" tests="4" failures="0" disabled="0" errors="0" time="12.598">
+    <testcase name="KNN/0" value_param="(&quot;cv/video/768x576.avi&quot;, 1)" status="run" time="0.966" classname="OCL_KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="49987584"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13758898"/>
+<property name="median" value="14899154"/>
+<property name="gmean" value="14741331"/>
+<property name="gstddev" value="0.025236"/>
+<property name="mean" value="14745876"/>
+<property name="stddev" value="366448"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/1" value_param="(&quot;cv/video/768x576.avi&quot;, 3)" status="run" time="1.396" classname="OCL_KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="442368"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25566104"/>
+<property name="median" value="26420190"/>
+<property name="gmean" value="26937643"/>
+<property name="gstddev" value="0.052388"/>
+<property name="mean" value="26974861"/>
+<property name="stddev" value="1474483"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/2" value_param="(&quot;cv/video/1920x1080.avi&quot;, 1)" status="run" time="3.873" classname="OCL_KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="234316800"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="75600007"/>
+<property name="median" value="76642681"/>
+<property name="gmean" value="76506357"/>
+<property name="gstddev" value="0.005360"/>
+<property name="mean" value="76507430"/>
+<property name="stddev" value="408956"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/3" value_param="(&quot;cv/video/1920x1080.avi&quot;, 3)" status="run" time="6.363" classname="OCL_KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="2073600"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="121353390"/>
+<property name="median" value="125559026"/>
+<property name="gmean" value="125892695"/>
+<property name="gstddev" value="0.016289"/>
+<property name="mean" value="125909035"/>
+<property name="stddev" value="2051327"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_KNN_GetBackgroundImage_KNN" tests="2" failures="0" disabled="0" errors="0" time="12.299">
+    <testcase name="KNN/0" value_param="(&quot;cv/video/768x576.avi&quot;, 5)" status="run" time="2.094" classname="OCL_KNN_GetBackgroundImage_KNN">
+<properties>
+<property name="ocl_memory_usage" value="1769472"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="39626741"/>
+<property name="median" value="40953306"/>
+<property name="gmean" value="40969880"/>
+<property name="gstddev" value="0.017052"/>
+<property name="mean" value="40975726"/>
+<property name="stddev" value="702296"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/1" value_param="(&quot;cv/video/1920x1080.avi&quot;, 5)" status="run" time="10.205" classname="OCL_KNN_GetBackgroundImage_KNN">
+<properties>
+<property name="ocl_memory_usage" value="8294400"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="197860953"/>
+<property name="median" value="202265000"/>
+<property name="gmean" value="202347870"/>
+<property name="gstddev" value="0.010408"/>
+<property name="mean" value="202358602"/>
+<property name="stddev" value="2109364"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_MOG2_Apply_Mog2" tests="4" failures="0" disabled="0" errors="0" time="5.231">
+    <testcase name="Mog2/0" value_param="(&quot;cv/video/768x576.avi&quot;, 1)" status="run" time="0.27" classname="OCL_MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="27869184"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2085269"/>
+<property name="median" value="2120181"/>
+<property name="gmean" value="2137496"/>
+<property name="gstddev" value="0.019381"/>
+<property name="mean" value="2137890"/>
+<property name="stddev" value="41670"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/1" value_param="(&quot;cv/video/768x576.avi&quot;, 3)" status="run" time="0.537" classname="OCL_MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="55296000"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7587984"/>
+<property name="median" value="7807068"/>
+<property name="gmean" value="7802304"/>
+<property name="gstddev" value="0.014026"/>
+<property name="mean" value="7803054"/>
+<property name="stddev" value="109367"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/2" value_param="(&quot;cv/video/1920x1080.avi&quot;, 1)" status="run" time="1.475" classname="OCL_MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="130636800"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="27920870"/>
+<property name="median" value="28991394"/>
+<property name="gmean" value="28835095"/>
+<property name="gstddev" value="0.014512"/>
+<property name="mean" value="28838058"/>
+<property name="stddev" value="416863"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/3" value_param="(&quot;cv/video/1920x1080.avi&quot;, 3)" status="run" time="2.949" classname="OCL_MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="259200000"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="57618680"/>
+<property name="median" value="58323132"/>
+<property name="gmean" value="58309567"/>
+<property name="gstddev" value="0.004830"/>
+<property name="mean" value="58310233"/>
+<property name="stddev" value="281487"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_MOG2_GetBackgroundImage_Mog2" tests="2" failures="0" disabled="0" errors="0" time="5.045">
+    <testcase name="Mog2/0" value_param="(&quot;cv/video/768x576.avi&quot;, 5)" status="run" time="0.546" classname="OCL_MOG2_GetBackgroundImage_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="55296000"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10330794"/>
+<property name="median" value="10560329"/>
+<property name="gmean" value="10543663"/>
+<property name="gstddev" value="0.009220"/>
+<property name="mean" value="10544101"/>
+<property name="stddev" value="97034"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/1" value_param="(&quot;cv/video/1920x1080.avi&quot;, 5)" status="run" time="4.499" classname="OCL_MOG2_GetBackgroundImage_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="214520832"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="88285032"/>
+<property name="median" value="88835740"/>
+<property name="gmean" value="88889328"/>
+<property name="gstddev" value="0.003973"/>
+<property name="mean" value="88890015"/>
+<property name="stddev" value="353458"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_DenseOpticalFlow_DIS_perf" tests="9" failures="0" disabled="0" errors="0" time="7.312">
+    <testcase name="perf/0" value_param="(&quot;PRESET_ULTRAFAST&quot;, 640x480)" status="run" time="0.848" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1398208"/>
+<property name="median" value="1412906"/>
+<property name="gmean" value="1414359"/>
+<property name="gstddev" value="0.006042"/>
+<property name="mean" value="1414384"/>
+<property name="stddev" value="8549"/>
+</properties>
+    </testcase>
+    <testcase name="perf/1" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1280x720)" status="run" time="0.15" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="16735520"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2873462"/>
+<property name="median" value="2911119"/>
+<property name="gmean" value="2911454"/>
+<property name="gstddev" value="0.006351"/>
+<property name="mean" value="2911511"/>
+<property name="stddev" value="18491"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/2" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1920x1080)" status="run" time="0.32" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="35628492"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6216036"/>
+<property name="median" value="6275652"/>
+<property name="gmean" value="6285840"/>
+<property name="gstddev" value="0.006111"/>
+<property name="mean" value="6285955"/>
+<property name="stddev" value="38475"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="perf/3" value_param="(&quot;PRESET_FAST&quot;, 640x480)" status="run" time="0.179" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3171306"/>
+<property name="median" value="3518954"/>
+<property name="gmean" value="3510665"/>
+<property name="gstddev" value="0.044021"/>
+<property name="mean" value="3513978"/>
+<property name="stddev" value="153694"/>
+</properties>
+    </testcase>
+    <testcase name="perf/4" value_param="(&quot;PRESET_FAST&quot;, 1280x720)" status="run" time="0.38" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="16313120"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6698578"/>
+<property name="median" value="7367068"/>
+<property name="gmean" value="7431174"/>
+<property name="gstddev" value="0.050694"/>
+<property name="mean" value="7440630"/>
+<property name="stddev" value="384130"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/5" value_param="(&quot;PRESET_FAST&quot;, 1920x1080)" status="run" time="0.715" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="34844172"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13166507"/>
+<property name="median" value="14062836"/>
+<property name="gmean" value="14076395"/>
+<property name="gstddev" value="0.016186"/>
+<property name="mean" value="14078198"/>
+<property name="stddev" value="227791"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="perf/6" value_param="(&quot;PRESET_MEDIUM&quot;, 640x480)" status="run" time="0.808" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9108178"/>
+<property name="median" value="9447956"/>
+<property name="gmean" value="9480582"/>
+<property name="gstddev" value="0.018104"/>
+<property name="mean" value="9482121"/>
+<property name="stddev" value="174883"/>
+</properties>
+    </testcase>
+    <testcase name="perf/7" value_param="(&quot;PRESET_MEDIUM&quot;, 1280x720)" status="run" time="1.233" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="23505824"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24107791"/>
+<property name="median" value="24459446"/>
+<property name="gmean" value="24496655"/>
+<property name="gstddev" value="0.011306"/>
+<property name="mean" value="24498199"/>
+<property name="stddev" value="280161"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/8" value_param="(&quot;PRESET_MEDIUM&quot;, 1920x1080)" status="run" time="2.679" classname="OCL_DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="51012076"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="52892132"/>
+<property name="median" value="53380470"/>
+<property name="gmean" value="53342560"/>
+<property name="gstddev" value="0.003560"/>
+<property name="mean" value="53342890"/>
+<property name="stddev" value="189729"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow" tests="8" failures="0" disabled="0" errors="0" time="10.799">
+    <testcase name="FarnebackOpticalFlow/0" value_param="((5, 1.1), 0, false)" status="run" time="1.627" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="16267120"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24090793"/>
+<property name="median" value="24117990"/>
+<property name="gmean" value="24119451"/>
+<property name="gstddev" value="0.000693"/>
+<property name="mean" value="24119457"/>
+<property name="stddev" value="16725"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/1" value_param="((5, 1.1), 0, true)" status="run" time="1.245" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="4531840"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24177580"/>
+<property name="median" value="24210828"/>
+<property name="gmean" value="24209698"/>
+<property name="gstddev" value="0.000618"/>
+<property name="mean" value="24209703"/>
+<property name="stddev" value="14964"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/2" value_param="((5, 1.1), OPTFLOW_FARNEBACK_GAUSSIAN, false)" status="run" time="1.28" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="4531860"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25342854"/>
+<property name="median" value="25447524"/>
+<property name="gmean" value="25429640"/>
+<property name="gstddev" value="0.001605"/>
+<property name="mean" value="25429672"/>
+<property name="stddev" value="40802"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/3" value_param="((5, 1.1), OPTFLOW_FARNEBACK_GAUSSIAN, true)" status="run" time="1.311" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="12915808"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25430285"/>
+<property name="median" value="25530372"/>
+<property name="gmean" value="25516944"/>
+<property name="gstddev" value="0.001684"/>
+<property name="mean" value="25516979"/>
+<property name="stddev" value="42961"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/4" value_param="((7, 1.5), 0, false)" status="run" time="1.446" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="12915812"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24411262"/>
+<property name="median" value="24455090"/>
+<property name="gmean" value="24455450"/>
+<property name="gstddev" value="0.000804"/>
+<property name="mean" value="24455457"/>
+<property name="stddev" value="19657"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/5" value_param="((7, 1.5), 0, true)" status="run" time="1.262" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="4531840"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24508230"/>
+<property name="median" value="24552438"/>
+<property name="gmean" value="24554909"/>
+<property name="gstddev" value="0.001228"/>
+<property name="mean" value="24554928"/>
+<property name="stddev" value="30167"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/6" value_param="((7, 1.5), OPTFLOW_FARNEBACK_GAUSSIAN, false)" status="run" time="1.299" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="4531860"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25759272"/>
+<property name="median" value="25802272"/>
+<property name="gmean" value="25799276"/>
+<property name="gstddev" value="0.000711"/>
+<property name="mean" value="25799282"/>
+<property name="stddev" value="18346"/>
+</properties>
+    </testcase>
+    <testcase name="FarnebackOpticalFlow/7" value_param="((7, 1.5), OPTFLOW_FARNEBACK_GAUSSIAN, true)" status="run" time="1.329" classname="OCL_FarnebackOpticalFlowFixture_FarnebackOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="12915832"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="1812736"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25821366"/>
+<property name="median" value="25886734"/>
+<property name="gmean" value="25879564"/>
+<property name="gstddev" value="0.000914"/>
+<property name="mean" value="25879575"/>
+<property name="stddev" value="23639"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="OCL_PyrLKOpticalFlowFixture_PyrLKOpticalFlow" tests="3" failures="0" disabled="0" errors="0" time="0.551">
+    <testcase name="PyrLKOpticalFlow/0" value_param="(1000)" status="run" time="0.101" classname="OCL_PyrLKOpticalFlowFixture_PyrLKOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1788719"/>
+<property name="median" value="1799981"/>
+<property name="gmean" value="1799667"/>
+<property name="gstddev" value="0.003113"/>
+<property name="mean" value="1799676"/>
+<property name="stddev" value="5600"/>
+</properties>
+    </testcase>
+    <testcase name="PyrLKOpticalFlow/1" value_param="(2000)" status="run" time="0.167" classname="OCL_PyrLKOpticalFlowFixture_PyrLKOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="2905744"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3111632"/>
+<property name="median" value="3127452"/>
+<property name="gmean" value="3126030"/>
+<property name="gstddev" value="0.002031"/>
+<property name="mean" value="3126036"/>
+<property name="stddev" value="6346"/>
+</properties>
+    </testcase>
+    <testcase name="PyrLKOpticalFlow/2" value_param="(4000)" status="run" time="0.283" classname="OCL_PyrLKOpticalFlowFixture_PyrLKOpticalFlow">
+<properties>
+<property name="ocl_memory_usage" value="2947744"/>
+<property name="bytesIn" value="453184"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5432973"/>
+<property name="median" value="5449726"/>
+<property name="gmean" value="5447951"/>
+<property name="gstddev" value="0.001224"/>
+<property name="mean" value="5447955"/>
+<property name="stddev" value="6665"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="KNN_Apply_KNN" tests="4" failures="0" disabled="0" errors="0" time="11.679">
+    <testcase name="KNN/0" value_param="(&quot;cv/video/768x576.avi&quot;, 1)" status="run" time="0.549" classname="KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10057056"/>
+<property name="median" value="10317650"/>
+<property name="gmean" value="10386758"/>
+<property name="gstddev" value="0.028220"/>
+<property name="mean" value="10390916"/>
+<property name="stddev" value="305471"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/1" value_param="(&quot;cv/video/768x576.avi&quot;, 3)" status="run" time="1.354" classname="KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25563037"/>
+<property name="median" value="26520317"/>
+<property name="gmean" value="26530531"/>
+<property name="gstddev" value="0.019202"/>
+<property name="mean" value="26535322"/>
+<property name="stddev" value="510506"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/2" value_param="(&quot;cv/video/1920x1080.avi&quot;, 1)" status="run" time="3.46" classname="KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="66665117"/>
+<property name="median" value="67567033"/>
+<property name="gmean" value="67857651"/>
+<property name="gstddev" value="0.015236"/>
+<property name="mean" value="67865399"/>
+<property name="stddev" value="1042795"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/3" value_param="(&quot;cv/video/1920x1080.avi&quot;, 3)" status="run" time="6.316" classname="KNN_Apply_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="121254316"/>
+<property name="median" value="123980503"/>
+<property name="gmean" value="124691989"/>
+<property name="gstddev" value="0.016436"/>
+<property name="mean" value="124708507"/>
+<property name="stddev" value="2057444"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="KNN_GetBackgroundImage_KNN" tests="2" failures="0" disabled="0" errors="0" time="12.243">
+    <testcase name="KNN/0" value_param="(&quot;cv/video/768x576.avi&quot;, 5)" status="run" time="2.078" classname="KNN_GetBackgroundImage_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="39401257"/>
+<property name="median" value="40848022"/>
+<property name="gmean" value="40918958"/>
+<property name="gstddev" value="0.012958"/>
+<property name="mean" value="40922311"/>
+<property name="stddev" value="528527"/>
+</properties>
+    </testcase>
+    <testcase name="KNN/1" value_param="(&quot;cv/video/1920x1080.avi&quot;, 5)" status="run" time="10.165" classname="KNN_GetBackgroundImage_KNN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="197358703"/>
+<property name="median" value="201051528"/>
+<property name="gmean" value="201294045"/>
+<property name="gstddev" value="0.009861"/>
+<property name="mean" value="201303643"/>
+<property name="stddev" value="1992389"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="MOG2_Apply_Mog2" tests="4" failures="0" disabled="0" errors="0" time="6.827">
+    <testcase name="Mog2/0" value_param="(&quot;cv/video/768x576.avi&quot;, 1)" status="run" time="0.154" classname="MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2410962"/>
+<property name="median" value="2533770"/>
+<property name="gmean" value="2529886"/>
+<property name="gstddev" value="0.070960"/>
+<property name="mean" value="2536706"/>
+<property name="stddev" value="206202"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/1" value_param="(&quot;cv/video/768x576.avi&quot;, 3)" status="run" time="0.679" classname="MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="11826908"/>
+<property name="median" value="13305904"/>
+<property name="gmean" value="13184104"/>
+<property name="gstddev" value="0.042535"/>
+<property name="mean" value="13195666"/>
+<property name="stddev" value="553427"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/2" value_param="(&quot;cv/video/1920x1080.avi&quot;, 1)" status="run" time="2.227" classname="MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="42183179"/>
+<property name="median" value="43753188"/>
+<property name="gmean" value="43703675"/>
+<property name="gstddev" value="0.019377"/>
+<property name="mean" value="43711700"/>
+<property name="stddev" value="846798"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/3" value_param="(&quot;cv/video/1920x1080.avi&quot;, 3)" status="run" time="3.767" classname="MOG2_Apply_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="71854148"/>
+<property name="median" value="74844050"/>
+<property name="gmean" value="74507221"/>
+<property name="gstddev" value="0.017382"/>
+<property name="mean" value="74518194"/>
+<property name="stddev" value="1288338"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="MOG2_GetBackgroundImage_Mog2" tests="2" failures="0" disabled="0" errors="0" time="9.766">
+    <testcase name="Mog2/0" value_param="(&quot;cv/video/768x576.avi&quot;, 5)" status="run" time="1.369" classname="MOG2_GetBackgroundImage_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24289331"/>
+<property name="median" value="27223897"/>
+<property name="gmean" value="26792743"/>
+<property name="gstddev" value="0.044367"/>
+<property name="mean" value="26818313"/>
+<property name="stddev" value="1173544"/>
+</properties>
+    </testcase>
+    <testcase name="Mog2/1" value_param="(&quot;cv/video/1920x1080.avi&quot;, 5)" status="run" time="8.397" classname="MOG2_GetBackgroundImage_Mog2">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="157511757"/>
+<property name="median" value="164532350"/>
+<property name="gmean" value="166053064"/>
+<property name="gstddev" value="0.031571"/>
+<property name="mean" value="166134236"/>
+<property name="stddev" value="5264186"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="DenseOpticalFlow_DIS_perf" tests="9" failures="0" disabled="0" errors="0" time="1.209">
+    <testcase name="perf/0" value_param="(&quot;PRESET_ULTRAFAST&quot;, 640x480)" status="run" time="0.012" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="855363"/>
+<property name="median" value="1142197"/>
+<property name="gmean" value="1118244"/>
+<property name="gstddev" value="0.095195"/>
+<property name="mean" value="1122476"/>
+<property name="stddev" value="95240"/>
+</properties>
+    </testcase>
+    <testcase name="perf/1" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1280x720)" status="run" time="0.036" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2596685"/>
+<property name="median" value="3316034"/>
+<property name="gmean" value="3480617"/>
+<property name="gstddev" value="0.158269"/>
+<property name="mean" value="3519873"/>
+<property name="stddev" value="554876"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/2" value_param="(&quot;PRESET_ULTRAFAST&quot;, 1920x1080)" status="run" time="0.076" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5045470"/>
+<property name="median" value="6989897"/>
+<property name="gmean" value="7118463"/>
+<property name="gstddev" value="0.200602"/>
+<property name="mean" value="7258770"/>
+<property name="stddev" value="1651411"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="perf/3" value_param="(&quot;PRESET_FAST&quot;, 640x480)" status="run" time="0.027" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2513424"/>
+<property name="median" value="2592190"/>
+<property name="gmean" value="2582635"/>
+<property name="gstddev" value="0.017214"/>
+<property name="mean" value="2582979"/>
+<property name="stddev" value="44403"/>
+</properties>
+    </testcase>
+    <testcase name="perf/4" value_param="(&quot;PRESET_FAST&quot;, 1280x720)" status="run" time="0.067" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5906361"/>
+<property name="median" value="6642838"/>
+<property name="gmean" value="6564954"/>
+<property name="gstddev" value="0.037787"/>
+<property name="mean" value="6569049"/>
+<property name="stddev" value="237355"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/5" value_param="(&quot;PRESET_FAST&quot;, 1920x1080)" status="run" time="0.144" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="12397908"/>
+<property name="median" value="14260389"/>
+<property name="gmean" value="14067086"/>
+<property name="gstddev" value="0.046477"/>
+<property name="mean" value="14080323"/>
+<property name="stddev" value="622922"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="perf/6" value_param="(&quot;PRESET_MEDIUM&quot;, 640x480)" status="run" time="0.076" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7103542"/>
+<property name="median" value="7506834"/>
+<property name="gmean" value="7452148"/>
+<property name="gstddev" value="0.030335"/>
+<property name="mean" value="7455223"/>
+<property name="stddev" value="224874"/>
+</properties>
+    </testcase>
+    <testcase name="perf/7" value_param="(&quot;PRESET_MEDIUM&quot;, 1280x720)" status="run" time="0.216" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="20292666"/>
+<property name="median" value="21802381"/>
+<property name="gmean" value="21500908"/>
+<property name="gstddev" value="0.045401"/>
+<property name="mean" value="21520786"/>
+<property name="stddev" value="971549"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="perf/8" value_param="(&quot;PRESET_MEDIUM&quot;, 1920x1080)" status="run" time="0.555" classname="DenseOpticalFlow_DIS_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="52925341"/>
+<property name="median" value="55003124"/>
+<property name="gmean" value="55144883"/>
+<property name="gstddev" value="0.025145"/>
+<property name="mean" value="55160649"/>
+<property name="stddev" value="1397026"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="TransformationType_findTransformECC" tests="4" failures="0" disabled="0" errors="0" time="0.746">
+    <testcase name="findTransformECC/0" value_param="(MOTION_TRANSLATION)" status="run" time="0.131" classname="TransformationType_findTransformECC">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2563777"/>
+<property name="median" value="2592535"/>
+<property name="gmean" value="2608936"/>
+<property name="gstddev" value="0.013476"/>
+<property name="mean" value="2609168"/>
+<property name="stddev" value="35304"/>
+</properties>
+    </testcase>
+    <testcase name="findTransformECC/1" value_param="(MOTION_EUCLIDEAN)" status="run" time="0.15" classname="TransformationType_findTransformECC">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2911464"/>
+<property name="median" value="2970920"/>
+<property name="gmean" value="2972993"/>
+<property name="gstddev" value="0.010544"/>
+<property name="mean" value="2973155"/>
+<property name="stddev" value="31365"/>
+</properties>
+    </testcase>
+    <testcase name="findTransformECC/2" value_param="(MOTION_AFFINE)" status="run" time="0.168" classname="TransformationType_findTransformECC">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3307895"/>
+<property name="median" value="3332292"/>
+<property name="gmean" value="3341735"/>
+<property name="gstddev" value="0.009187"/>
+<property name="mean" value="3341874"/>
+<property name="stddev" value="30821"/>
+</properties>
+    </testcase>
+    <testcase name="findTransformECC/3" value_param="(MOTION_HOMOGRAPHY)" status="run" time="0.297" classname="TransformationType_findTransformECC">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5848588"/>
+<property name="median" value="5917320"/>
+<property name="gmean" value="5916018"/>
+<property name="gstddev" value="0.005529"/>
+<property name="mean" value="5916106"/>
+<property name="stddev" value="32702"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full" tests="48" failures="0" disabled="0" errors="0" time="1.63">
+    <testcase name="OpticalFlowPyrLK_full/0" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 7)" status="run" time="0.01" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="615048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="155795"/>
+<property name="median" value="158676"/>
+<property name="gmean" value="158756"/>
+<property name="gstddev" value="0.009483"/>
+<property name="mean" value="158763"/>
+<property name="stddev" value="1509"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/1" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 11)" status="run" time="0.011" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="615048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="168611"/>
+<property name="median" value="169910"/>
+<property name="gmean" value="170286"/>
+<property name="gstddev" value="0.006678"/>
+<property name="mean" value="170289"/>
+<property name="stddev" value="1141"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/2" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 7)" status="run" time="0.01" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="616200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="182454"/>
+<property name="median" value="184860"/>
+<property name="gmean" value="185275"/>
+<property name="gstddev" value="0.009257"/>
+<property name="mean" value="185283"/>
+<property name="stddev" value="1721"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/3" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 11)" status="run" time="0.011" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="616200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="202740"/>
+<property name="median" value="205003"/>
+<property name="gmean" value="204947"/>
+<property name="gstddev" value="0.005076"/>
+<property name="mean" value="204949"/>
+<property name="stddev" value="1040"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/4" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 7)" status="run" time="0.015" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="329053"/>
+<property name="median" value="331730"/>
+<property name="gmean" value="332156"/>
+<property name="gstddev" value="0.004527"/>
+<property name="mean" value="332160"/>
+<property name="stddev" value="1506"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/5" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 11)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="375743"/>
+<property name="median" value="379116"/>
+<property name="gmean" value="379464"/>
+<property name="gstddev" value="0.006226"/>
+<property name="mean" value="379471"/>
+<property name="stddev" value="2367"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/6" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 7)" status="run" time="0.016" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="378592"/>
+<property name="median" value="381962"/>
+<property name="gmean" value="382135"/>
+<property name="gstddev" value="0.004854"/>
+<property name="mean" value="382139"/>
+<property name="stddev" value="1856"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/7" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 11)" status="run" time="0.018" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="446355"/>
+<property name="median" value="449159"/>
+<property name="gmean" value="449338"/>
+<property name="gstddev" value="0.003922"/>
+<property name="mean" value="449341"/>
+<property name="stddev" value="1764"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/8" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 7)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2458248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="386518"/>
+<property name="median" value="390626"/>
+<property name="gmean" value="391095"/>
+<property name="gstddev" value="0.006038"/>
+<property name="mean" value="391102"/>
+<property name="stddev" value="2362"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/9" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 11)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2458248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="431643"/>
+<property name="median" value="435476"/>
+<property name="gmean" value="436006"/>
+<property name="gstddev" value="0.006700"/>
+<property name="mean" value="436016"/>
+<property name="stddev" value="2926"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/10" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 7)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2459400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="444900"/>
+<property name="median" value="448230"/>
+<property name="gmean" value="447985"/>
+<property name="gstddev" value="0.003986"/>
+<property name="mean" value="447989"/>
+<property name="stddev" value="1785"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/11" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 11)" status="run" time="0.022" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2459400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="531995"/>
+<property name="median" value="535777"/>
+<property name="gmean" value="535877"/>
+<property name="gstddev" value="0.004489"/>
+<property name="mean" value="535882"/>
+<property name="stddev" value="2409"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/12" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 7)" status="run" time="0.01" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="615048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="157560"/>
+<property name="median" value="164250"/>
+<property name="gmean" value="164050"/>
+<property name="gstddev" value="0.025134"/>
+<property name="mean" value="164100"/>
+<property name="stddev" value="4131"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/13" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11)" status="run" time="0.013" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="615048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="176651"/>
+<property name="median" value="232364"/>
+<property name="gmean" value="228672"/>
+<property name="gstddev" value="0.065690"/>
+<property name="mean" value="229128"/>
+<property name="stddev" value="14103"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/14" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 7)" status="run" time="0.013" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="616200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="195199"/>
+<property name="median" value="214738"/>
+<property name="gmean" value="215432"/>
+<property name="gstddev" value="0.039844"/>
+<property name="mean" value="215597"/>
+<property name="stddev" value="8555"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/15" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 11)" status="run" time="0.012" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="616200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="202821"/>
+<property name="median" value="205078"/>
+<property name="gmean" value="205355"/>
+<property name="gstddev" value="0.008321"/>
+<property name="mean" value="205362"/>
+<property name="stddev" value="1710"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/16" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 7)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="408350"/>
+<property name="median" value="470002"/>
+<property name="gmean" value="471823"/>
+<property name="gstddev" value="0.086034"/>
+<property name="mean" value="473513"/>
+<property name="stddev" value="40902"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/17" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 11)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="376722"/>
+<property name="median" value="380717"/>
+<property name="gmean" value="380682"/>
+<property name="gstddev" value="0.005855"/>
+<property name="mean" value="380688"/>
+<property name="stddev" value="2230"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/18" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 7)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="377747"/>
+<property name="median" value="379652"/>
+<property name="gmean" value="380243"/>
+<property name="gstddev" value="0.005504"/>
+<property name="mean" value="380248"/>
+<property name="stddev" value="2100"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/19" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 11)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="446500"/>
+<property name="median" value="450275"/>
+<property name="gmean" value="450542"/>
+<property name="gstddev" value="0.006750"/>
+<property name="mean" value="450552"/>
+<property name="stddev" value="3062"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/20" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 7)" status="run" time="0.018" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2458248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="391290"/>
+<property name="median" value="395358"/>
+<property name="gmean" value="395216"/>
+<property name="gstddev" value="0.005610"/>
+<property name="mean" value="395222"/>
+<property name="stddev" value="2221"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/21" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 11)" status="run" time="0.018" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2458248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="436718"/>
+<property name="median" value="440672"/>
+<property name="gmean" value="441109"/>
+<property name="gstddev" value="0.006734"/>
+<property name="mean" value="441118"/>
+<property name="stddev" value="2978"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/22" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 7)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2459400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="442339"/>
+<property name="median" value="445396"/>
+<property name="gmean" value="446043"/>
+<property name="gstddev" value="0.006998"/>
+<property name="mean" value="446053"/>
+<property name="stddev" value="3145"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/23" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 11)" status="run" time="0.022" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2459400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="530153"/>
+<property name="median" value="533280"/>
+<property name="gmean" value="533585"/>
+<property name="gstddev" value="0.004261"/>
+<property name="mean" value="533590"/>
+<property name="stddev" value="2276"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/24" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 7)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="300105"/>
+<property name="median" value="302818"/>
+<property name="gmean" value="303024"/>
+<property name="gstddev" value="0.006936"/>
+<property name="mean" value="303032"/>
+<property name="stddev" value="2107"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/25" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 11)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="319222"/>
+<property name="median" value="323127"/>
+<property name="gmean" value="323321"/>
+<property name="gstddev" value="0.007868"/>
+<property name="mean" value="323330"/>
+<property name="stddev" value="2548"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/26" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 7)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="332550"/>
+<property name="median" value="335620"/>
+<property name="gmean" value="335321"/>
+<property name="gstddev" value="0.005571"/>
+<property name="mean" value="335326"/>
+<property name="stddev" value="1870"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/27" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 11)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="346923"/>
+<property name="median" value="357450"/>
+<property name="gmean" value="357302"/>
+<property name="gstddev" value="0.008505"/>
+<property name="mean" value="357315"/>
+<property name="stddev" value="3026"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/28" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 7)" status="run" time="0.049" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5530248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="784991"/>
+<property name="median" value="792435"/>
+<property name="gmean" value="793266"/>
+<property name="gstddev" value="0.008325"/>
+<property name="mean" value="793293"/>
+<property name="stddev" value="6684"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/29" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 11)" status="run" time="0.052" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5530248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="861849"/>
+<property name="median" value="875652"/>
+<property name="gmean" value="878650"/>
+<property name="gstddev" value="0.015149"/>
+<property name="mean" value="878748"/>
+<property name="stddev" value="13464"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/30" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 7)" status="run" time="0.053" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5531400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="843364"/>
+<property name="median" value="851788"/>
+<property name="gmean" value="876319"/>
+<property name="gstddev" value="0.084205"/>
+<property name="mean" value="879586"/>
+<property name="stddev" value="84148"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/31" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 11)" status="run" time="0.056" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5531400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="956625"/>
+<property name="median" value="965318"/>
+<property name="gmean" value="973652"/>
+<property name="gstddev" value="0.019639"/>
+<property name="mean" value="973835"/>
+<property name="stddev" value="19463"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/32" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 7)" status="run" time="0.066" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7373448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1207844"/>
+<property name="median" value="1228740"/>
+<property name="gmean" value="1260685"/>
+<property name="gstddev" value="0.068706"/>
+<property name="mean" value="1263743"/>
+<property name="stddev" value="95405"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/33" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 11)" status="run" time="0.069" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7373448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1308103"/>
+<property name="median" value="1325880"/>
+<property name="gmean" value="1346937"/>
+<property name="gstddev" value="0.050316"/>
+<property name="mean" value="1348678"/>
+<property name="stddev" value="73901"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/34" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 7)" status="run" time="0.067" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7374600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1257103"/>
+<property name="median" value="1280606"/>
+<property name="gmean" value="1311445"/>
+<property name="gstddev" value="0.048348"/>
+<property name="mean" value="1312960"/>
+<property name="stddev" value="65818"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/35" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 11)" status="run" time="0.071" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7374600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1372076"/>
+<property name="median" value="1410158"/>
+<property name="gmean" value="1435274"/>
+<property name="gstddev" value="0.048955"/>
+<property name="mean" value="1437003"/>
+<property name="stddev" value="74837"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/36" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 7)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="296057"/>
+<property name="median" value="299956"/>
+<property name="gmean" value="300594"/>
+<property name="gstddev" value="0.011570"/>
+<property name="mean" value="300614"/>
+<property name="stddev" value="3505"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/37" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 11)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1843848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="309765"/>
+<property name="median" value="318110"/>
+<property name="gmean" value="318075"/>
+<property name="gstddev" value="0.006664"/>
+<property name="mean" value="318082"/>
+<property name="stddev" value="2105"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/38" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 7)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="327062"/>
+<property name="median" value="332450"/>
+<property name="gmean" value="332534"/>
+<property name="gstddev" value="0.008692"/>
+<property name="mean" value="332546"/>
+<property name="stddev" value="2897"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/39" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 11)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="1845000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="346253"/>
+<property name="median" value="353993"/>
+<property name="gmean" value="353666"/>
+<property name="gstddev" value="0.006749"/>
+<property name="mean" value="353673"/>
+<property name="stddev" value="2380"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/40" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 7)" status="run" time="0.049" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5530248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="786408"/>
+<property name="median" value="794174"/>
+<property name="gmean" value="794110"/>
+<property name="gstddev" value="0.006889"/>
+<property name="mean" value="794128"/>
+<property name="stddev" value="5512"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/41" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11)" status="run" time="0.053" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5530248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="858525"/>
+<property name="median" value="869238"/>
+<property name="gmean" value="875426"/>
+<property name="gstddev" value="0.026512"/>
+<property name="mean" value="875729"/>
+<property name="stddev" value="23987"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/42" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 7)" status="run" time="0.051" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5531400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="834667"/>
+<property name="median" value="840916"/>
+<property name="gmean" value="843364"/>
+<property name="gstddev" value="0.006963"/>
+<property name="mean" value="843384"/>
+<property name="stddev" value="5883"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/43" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 11)" status="run" time="0.055" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="5531400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="945017"/>
+<property name="median" value="957276"/>
+<property name="gmean" value="963295"/>
+<property name="gstddev" value="0.021073"/>
+<property name="mean" value="963506"/>
+<property name="stddev" value="20906"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/44" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 7)" status="run" time="0.066" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7373448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1181886"/>
+<property name="median" value="1213130"/>
+<property name="gmean" value="1242006"/>
+<property name="gstddev" value="0.065871"/>
+<property name="mean" value="1244743"/>
+<property name="stddev" value="88546"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/45" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 11)" status="run" time="0.068" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7373448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1292038"/>
+<property name="median" value="1303644"/>
+<property name="gmean" value="1330343"/>
+<property name="gstddev" value="0.049486"/>
+<property name="mean" value="1331998"/>
+<property name="stddev" value="71283"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/46" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 7)" status="run" time="0.066" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7374600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1236680"/>
+<property name="median" value="1250520"/>
+<property name="gmean" value="1261246"/>
+<property name="gstddev" value="0.035488"/>
+<property name="mean" value="1262045"/>
+<property name="stddev" value="47703"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_full/47" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 11)" status="run" time="0.07" classname="Path_Idx_Cn_NPoints_WSize_OpticalFlowPyrLK_full">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7374600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="30"/>
+<property name="outliers" value="2"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1376546"/>
+<property name="median" value="1388946"/>
+<property name="gmean" value="1409115"/>
+<property name="gstddev" value="0.041585"/>
+<property name="mean" value="1410341"/>
+<property name="stddev" value="62497"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" tests="16" failures="0" disabled="16" errors="0" time="0">
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/0" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, (9, 9), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/1" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, (9, 9), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/2" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, (15, 15), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/3" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, (15, 15), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/4" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, (9, 9), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/5" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, (9, 9), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/6" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, (15, 15), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/7" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, (15, 15), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/8" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, (9, 9), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/9" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, (9, 9), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/10" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, (15, 15), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/11" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, (15, 15), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/12" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (9, 9), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/13" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (9, 9), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/14" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (15, 15), 7)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+    <testcase name="DISABLED_OpticalFlowPyrLK_ovx/15" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, (15, 15), 11)" status="notrun" time="0" classname="Path_Idx_NPoints_WSize_DISABLED_OpticalFlowPyrLK_ovx" />
+  </testsuite>
+  <testsuite name="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self" tests="96" failures="0" disabled="0" errors="0" time="3.429">
+    <testcase name="OpticalFlowPyrLK_self/0" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 7, false)" status="run" time="0.015" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="807048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="61476"/>
+<property name="median" value="62765"/>
+<property name="gmean" value="62757"/>
+<property name="gstddev" value="0.010324"/>
+<property name="mean" value="62761"/>
+<property name="stddev" value="649"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/1" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 7, true)" status="run" time="0.009" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4032648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24029"/>
+<property name="median" value="24737"/>
+<property name="gmean" value="24732"/>
+<property name="gstddev" value="0.012256"/>
+<property name="mean" value="24734"/>
+<property name="stddev" value="303"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/2" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 11, false)" status="run" time="0.016" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="807048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="67458"/>
+<property name="median" value="68744"/>
+<property name="gmean" value="68722"/>
+<property name="gstddev" value="0.008402"/>
+<property name="mean" value="68724"/>
+<property name="stddev" value="577"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/3" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (9, 9), 11, true)" status="run" time="0.01" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4032648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="27454"/>
+<property name="median" value="27875"/>
+<property name="gmean" value="27891"/>
+<property name="gstddev" value="0.006704"/>
+<property name="mean" value="27891"/>
+<property name="stddev" value="187"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/4" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 7, false)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="808200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="87671"/>
+<property name="median" value="89576"/>
+<property name="gmean" value="89643"/>
+<property name="gstddev" value="0.006583"/>
+<property name="mean" value="89645"/>
+<property name="stddev" value="589"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/5" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 7, true)" status="run" time="0.014" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4033800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="49331"/>
+<property name="median" value="49952"/>
+<property name="gmean" value="49917"/>
+<property name="gstddev" value="0.006079"/>
+<property name="mean" value="49918"/>
+<property name="stddev" value="304"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/6" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 11, false)" status="run" time="0.021" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="808200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="100686"/>
+<property name="median" value="101829"/>
+<property name="gmean" value="101945"/>
+<property name="gstddev" value="0.005448"/>
+<property name="mean" value="101947"/>
+<property name="stddev" value="556"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/7" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 1, (15, 15), 11, true)" status="run" time="0.015" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4033800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="58503"/>
+<property name="median" value="59008"/>
+<property name="gmean" value="59030"/>
+<property name="gstddev" value="0.004592"/>
+<property name="mean" value="59031"/>
+<property name="stddev" value="271"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/8" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 7, false)" status="run" time="0.022" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="111174"/>
+<property name="median" value="112865"/>
+<property name="gmean" value="112848"/>
+<property name="gstddev" value="0.006555"/>
+<property name="mean" value="112851"/>
+<property name="stddev" value="740"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/9" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 7, true)" status="run" time="0.012" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="33351"/>
+<property name="median" value="33846"/>
+<property name="gmean" value="33930"/>
+<property name="gstddev" value="0.010373"/>
+<property name="mean" value="33931"/>
+<property name="stddev" value="354"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/10" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 11, false)" status="run" time="0.026" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="136518"/>
+<property name="median" value="137671"/>
+<property name="gmean" value="137833"/>
+<property name="gstddev" value="0.006417"/>
+<property name="mean" value="137836"/>
+<property name="stddev" value="887"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/11" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (9, 9), 11, true)" status="run" time="0.014" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44442"/>
+<property name="median" value="44931"/>
+<property name="gmean" value="45024"/>
+<property name="gstddev" value="0.008057"/>
+<property name="mean" value="45025"/>
+<property name="stddev" value="364"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/12" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 7, false)" status="run" time="0.029" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="157267"/>
+<property name="median" value="158735"/>
+<property name="gmean" value="158848"/>
+<property name="gstddev" value="0.004577"/>
+<property name="mean" value="158850"/>
+<property name="stddev" value="727"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/13" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 7, true)" status="run" time="0.018" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="77307"/>
+<property name="median" value="77952"/>
+<property name="gmean" value="77975"/>
+<property name="gstddev" value="0.004400"/>
+<property name="mean" value="77975"/>
+<property name="stddev" value="343"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/14" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 11, false)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="201834"/>
+<property name="median" value="203203"/>
+<property name="gmean" value="203190"/>
+<property name="gstddev" value="0.003146"/>
+<property name="mean" value="203191"/>
+<property name="stddev" value="639"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/15" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 3, (15, 15), 11, true)" status="run" time="0.023" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="108302"/>
+<property name="median" value="109132"/>
+<property name="gmean" value="109125"/>
+<property name="gstddev" value="0.003201"/>
+<property name="mean" value="109125"/>
+<property name="stddev" value="349"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/16" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 7, false)" status="run" time="0.025" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3226248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="128055"/>
+<property name="median" value="129357"/>
+<property name="gmean" value="129375"/>
+<property name="gstddev" value="0.003989"/>
+<property name="mean" value="129376"/>
+<property name="stddev" value="516"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/17" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 7, true)" status="run" time="0.013" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16128648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="36220"/>
+<property name="median" value="36908"/>
+<property name="gmean" value="36920"/>
+<property name="gstddev" value="0.006993"/>
+<property name="mean" value="36921"/>
+<property name="stddev" value="258"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/18" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 11, false)" status="run" time="0.031" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3226248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="162999"/>
+<property name="median" value="165086"/>
+<property name="gmean" value="165106"/>
+<property name="gstddev" value="0.005556"/>
+<property name="mean" value="165109"/>
+<property name="stddev" value="918"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/19" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (9, 9), 11, true)" status="run" time="0.016" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16128648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="59061"/>
+<property name="median" value="59535"/>
+<property name="gmean" value="59558"/>
+<property name="gstddev" value="0.005499"/>
+<property name="mean" value="59559"/>
+<property name="stddev" value="328"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/20" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 7, false)" status="run" time="0.032" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3227400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="176737"/>
+<property name="median" value="178253"/>
+<property name="gmean" value="178098"/>
+<property name="gstddev" value="0.003939"/>
+<property name="mean" value="178099"/>
+<property name="stddev" value="701"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/21" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 7, true)" status="run" time="0.02" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16129800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="84220"/>
+<property name="median" value="84818"/>
+<property name="gmean" value="84950"/>
+<property name="gstddev" value="0.004936"/>
+<property name="mean" value="84951"/>
+<property name="stddev" value="420"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/22" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 11, false)" status="run" time="0.044" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3227400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="251796"/>
+<property name="median" value="253728"/>
+<property name="gmean" value="253915"/>
+<property name="gstddev" value="0.003663"/>
+<property name="mean" value="253917"/>
+<property name="stddev" value="931"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/23" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 1, 4, (15, 15), 11, true)" status="run" time="0.029" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16129800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="148336"/>
+<property name="median" value="149210"/>
+<property name="gmean" value="149261"/>
+<property name="gstddev" value="0.003336"/>
+<property name="mean" value="149262"/>
+<property name="stddev" value="498"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/24" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 7, false)" status="run" time="0.015" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="807048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="60313"/>
+<property name="median" value="61572"/>
+<property name="gmean" value="61534"/>
+<property name="gstddev" value="0.010041"/>
+<property name="mean" value="61537"/>
+<property name="stddev" value="617"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/25" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 7, true)" status="run" time="0.01" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4032648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="23642"/>
+<property name="median" value="24225"/>
+<property name="gmean" value="24194"/>
+<property name="gstddev" value="0.009558"/>
+<property name="mean" value="24195"/>
+<property name="stddev" value="231"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/26" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11, false)" status="run" time="0.016" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="807048"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="68047"/>
+<property name="median" value="69343"/>
+<property name="gmean" value="69354"/>
+<property name="gstddev" value="0.009757"/>
+<property name="mean" value="69357"/>
+<property name="stddev" value="678"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/27" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (9, 9), 11, true)" status="run" time="0.011" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4032648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="27773"/>
+<property name="median" value="28601"/>
+<property name="gmean" value="28824"/>
+<property name="gstddev" value="0.025227"/>
+<property name="mean" value="28833"/>
+<property name="stddev" value="732"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/28" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 7, false)" status="run" time="0.025" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="808200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="103933"/>
+<property name="median" value="125062"/>
+<property name="gmean" value="125911"/>
+<property name="gstddev" value="0.121584"/>
+<property name="mean" value="126826"/>
+<property name="stddev" value="15472"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/29" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 7, true)" status="run" time="0.014" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4033800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="48634"/>
+<property name="median" value="48963"/>
+<property name="gmean" value="49028"/>
+<property name="gstddev" value="0.005724"/>
+<property name="mean" value="49029"/>
+<property name="stddev" value="281"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/30" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 11, false)" status="run" time="0.02" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="808200"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="99137"/>
+<property name="median" value="100318"/>
+<property name="gmean" value="100380"/>
+<property name="gstddev" value="0.006526"/>
+<property name="mean" value="100382"/>
+<property name="stddev" value="655"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/31" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 1, (15, 15), 11, true)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="4033800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="60431"/>
+<property name="median" value="67092"/>
+<property name="gmean" value="67018"/>
+<property name="gstddev" value="0.064489"/>
+<property name="mean" value="67155"/>
+<property name="stddev" value="4354"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/32" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 7, false)" status="run" time="0.022" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="111260"/>
+<property name="median" value="113168"/>
+<property name="gmean" value="113093"/>
+<property name="gstddev" value="0.006655"/>
+<property name="mean" value="113096"/>
+<property name="stddev" value="752"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/33" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 7, true)" status="run" time="0.012" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="33594"/>
+<property name="median" value="34053"/>
+<property name="gmean" value="34045"/>
+<property name="gstddev" value="0.006806"/>
+<property name="mean" value="34045"/>
+<property name="stddev" value="232"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/34" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 11, false)" status="run" time="0.027" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="135119"/>
+<property name="median" value="137549"/>
+<property name="gmean" value="142169"/>
+<property name="gstddev" value="0.057243"/>
+<property name="mean" value="142401"/>
+<property name="stddev" value="8393"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/35" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (9, 9), 11, true)" status="run" time="0.014" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44020"/>
+<property name="median" value="46805"/>
+<property name="gmean" value="47231"/>
+<property name="gstddev" value="0.043390"/>
+<property name="mean" value="47274"/>
+<property name="stddev" value="2052"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/36" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 7, false)" status="run" time="0.03" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="154402"/>
+<property name="median" value="155636"/>
+<property name="gmean" value="155628"/>
+<property name="gstddev" value="0.005094"/>
+<property name="mean" value="155630"/>
+<property name="stddev" value="794"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/37" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 7, true)" status="run" time="0.017" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="74886"/>
+<property name="median" value="75489"/>
+<property name="gmean" value="75541"/>
+<property name="gstddev" value="0.004973"/>
+<property name="mean" value="75541"/>
+<property name="stddev" value="376"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/38" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 11, false)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="199728"/>
+<property name="median" value="201214"/>
+<property name="gmean" value="201195"/>
+<property name="gstddev" value="0.003291"/>
+<property name="mean" value="201196"/>
+<property name="stddev" value="662"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/39" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 3, (15, 15), 11, true)" status="run" time="0.023" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="107169"/>
+<property name="median" value="107657"/>
+<property name="gmean" value="107718"/>
+<property name="gstddev" value="0.003476"/>
+<property name="mean" value="107719"/>
+<property name="stddev" value="375"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/40" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 7, false)" status="run" time="0.025" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3226248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="127446"/>
+<property name="median" value="129442"/>
+<property name="gmean" value="129451"/>
+<property name="gstddev" value="0.006758"/>
+<property name="mean" value="129453"/>
+<property name="stddev" value="874"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/41" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 7, true)" status="run" time="0.013" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16128648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="35939"/>
+<property name="median" value="36608"/>
+<property name="gmean" value="36655"/>
+<property name="gstddev" value="0.009810"/>
+<property name="mean" value="36656"/>
+<property name="stddev" value="361"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/42" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 11, false)" status="run" time="0.03" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3226248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="162829"/>
+<property name="median" value="164244"/>
+<property name="gmean" value="164188"/>
+<property name="gstddev" value="0.003477"/>
+<property name="mean" value="164189"/>
+<property name="stddev" value="571"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/43" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (9, 9), 11, true)" status="run" time="0.016" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16128648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="58411"/>
+<property name="median" value="58812"/>
+<property name="gmean" value="58886"/>
+<property name="gstddev" value="0.006303"/>
+<property name="mean" value="58887"/>
+<property name="stddev" value="372"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/44" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 7, false)" status="run" time="0.033" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3227400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="175031"/>
+<property name="median" value="176204"/>
+<property name="gmean" value="176176"/>
+<property name="gstddev" value="0.003407"/>
+<property name="mean" value="176177"/>
+<property name="stddev" value="600"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/45" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 7, true)" status="run" time="0.019" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16129800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="81936"/>
+<property name="median" value="82458"/>
+<property name="gmean" value="82510"/>
+<property name="gstddev" value="0.004032"/>
+<property name="mean" value="82511"/>
+<property name="stddev" value="333"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/46" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 11, false)" status="run" time="0.044" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="3227400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="250828"/>
+<property name="median" value="252549"/>
+<property name="gmean" value="252540"/>
+<property name="gstddev" value="0.002850"/>
+<property name="mean" value="252541"/>
+<property name="stddev" value="720"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/47" value_param="(&quot;cv/optflow/frames/VGA_%02d.png&quot;, 2, 4, (15, 15), 11, true)" status="run" time="0.029" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="16129800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="146137"/>
+<property name="median" value="146989"/>
+<property name="gmean" value="146988"/>
+<property name="gstddev" value="0.002855"/>
+<property name="mean" value="146989"/>
+<property name="stddev" value="420"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/48" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 7, false)" status="run" time="0.041" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="98635"/>
+<property name="median" value="99595"/>
+<property name="gmean" value="99683"/>
+<property name="gstddev" value="0.006874"/>
+<property name="mean" value="99686"/>
+<property name="stddev" value="686"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/49" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 7, true)" status="run" time="0.031" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25892"/>
+<property name="median" value="26334"/>
+<property name="gmean" value="26346"/>
+<property name="gstddev" value="0.008787"/>
+<property name="mean" value="26347"/>
+<property name="stddev" value="232"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/50" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 11, false)" status="run" time="0.042" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="103921"/>
+<property name="median" value="105076"/>
+<property name="gmean" value="105277"/>
+<property name="gstddev" value="0.007574"/>
+<property name="mean" value="105280"/>
+<property name="stddev" value="798"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/51" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (9, 9), 11, true)" status="run" time="0.03" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28038"/>
+<property name="median" value="28462"/>
+<property name="gmean" value="28455"/>
+<property name="gstddev" value="0.008357"/>
+<property name="mean" value="28456"/>
+<property name="stddev" value="238"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/52" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 7, false)" status="run" time="0.045" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="129226"/>
+<property name="median" value="130797"/>
+<property name="gmean" value="130700"/>
+<property name="gstddev" value="0.005542"/>
+<property name="mean" value="130702"/>
+<property name="stddev" value="724"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/53" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 7, true)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="54866"/>
+<property name="median" value="55357"/>
+<property name="gmean" value="55410"/>
+<property name="gstddev" value="0.005156"/>
+<property name="mean" value="55411"/>
+<property name="stddev" value="286"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/54" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 11, false)" status="run" time="0.047" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="138528"/>
+<property name="median" value="139938"/>
+<property name="gmean" value="139955"/>
+<property name="gstddev" value="0.005247"/>
+<property name="mean" value="139957"/>
+<property name="stddev" value="734"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/55" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 1, (15, 15), 11, true)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="61998"/>
+<property name="median" value="62414"/>
+<property name="gmean" value="62501"/>
+<property name="gstddev" value="0.005188"/>
+<property name="mean" value="62501"/>
+<property name="stddev" value="325"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/56" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 7, false)" status="run" time="0.056" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7258248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="199763"/>
+<property name="median" value="201332"/>
+<property name="gmean" value="201388"/>
+<property name="gstddev" value="0.003398"/>
+<property name="mean" value="201389"/>
+<property name="stddev" value="684"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/57" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 7, true)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36288648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="31570"/>
+<property name="median" value="31972"/>
+<property name="gmean" value="31988"/>
+<property name="gstddev" value="0.008296"/>
+<property name="mean" value="31989"/>
+<property name="stddev" value="266"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/58" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 11, false)" status="run" time="0.061" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7258248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="227852"/>
+<property name="median" value="229276"/>
+<property name="gmean" value="229327"/>
+<property name="gstddev" value="0.003374"/>
+<property name="mean" value="229328"/>
+<property name="stddev" value="774"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/59" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (9, 9), 11, true)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36288648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="41444"/>
+<property name="median" value="42214"/>
+<property name="gmean" value="42201"/>
+<property name="gstddev" value="0.007020"/>
+<property name="mean" value="42202"/>
+<property name="stddev" value="297"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/60" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 7, false)" status="run" time="0.064" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7259400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="241886"/>
+<property name="median" value="243570"/>
+<property name="gmean" value="243687"/>
+<property name="gstddev" value="0.003369"/>
+<property name="mean" value="243688"/>
+<property name="stddev" value="821"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/61" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 7, true)" status="run" time="0.047" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36289800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="93478"/>
+<property name="median" value="110664"/>
+<property name="gmean" value="111505"/>
+<property name="gstddev" value="0.102468"/>
+<property name="mean" value="112079"/>
+<property name="stddev" value="11472"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/62" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 11, false)" status="run" time="0.071" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7259400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="287880"/>
+<property name="median" value="289215"/>
+<property name="gmean" value="289262"/>
+<property name="gstddev" value="0.002320"/>
+<property name="mean" value="289263"/>
+<property name="stddev" value="671"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/63" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 3, (15, 15), 11, true)" status="run" time="0.045" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36289800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="99575"/>
+<property name="median" value="99866"/>
+<property name="gmean" value="100015"/>
+<property name="gstddev" value="0.003392"/>
+<property name="mean" value="100016"/>
+<property name="stddev" value="340"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/64" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 7, false)" status="run" time="0.068" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9677448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="259969"/>
+<property name="median" value="261803"/>
+<property name="gmean" value="261843"/>
+<property name="gstddev" value="0.002989"/>
+<property name="mean" value="261844"/>
+<property name="stddev" value="782"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/65" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 7, true)" status="run" time="0.039" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48384648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="34237"/>
+<property name="median" value="34771"/>
+<property name="gmean" value="34809"/>
+<property name="gstddev" value="0.009821"/>
+<property name="mean" value="34811"/>
+<property name="stddev" value="344"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/66" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 11, false)" status="run" time="0.074" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9677448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="299045"/>
+<property name="median" value="302031"/>
+<property name="gmean" value="301984"/>
+<property name="gstddev" value="0.002928"/>
+<property name="mean" value="301985"/>
+<property name="stddev" value="883"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/67" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (9, 9), 11, true)" status="run" time="0.04" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48384648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="55111"/>
+<property name="median" value="55505"/>
+<property name="gmean" value="55587"/>
+<property name="gstddev" value="0.005675"/>
+<property name="mean" value="55588"/>
+<property name="stddev" value="316"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/68" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 7, false)" status="run" time="0.075" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9678600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="306993"/>
+<property name="median" value="309185"/>
+<property name="gmean" value="309073"/>
+<property name="gstddev" value="0.002784"/>
+<property name="mean" value="309074"/>
+<property name="stddev" value="860"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/69" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 7, true)" status="run" time="0.044" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48385800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="78412"/>
+<property name="median" value="79089"/>
+<property name="gmean" value="79178"/>
+<property name="gstddev" value="0.004621"/>
+<property name="mean" value="79179"/>
+<property name="stddev" value="366"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/70" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 11, false)" status="run" time="0.086" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9678600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="383021"/>
+<property name="median" value="385401"/>
+<property name="gmean" value="385361"/>
+<property name="gstddev" value="0.002469"/>
+<property name="mean" value="385362"/>
+<property name="stddev" value="951"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/71" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 1, 4, (15, 15), 11, true)" status="run" time="0.052" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48385800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="134452"/>
+<property name="median" value="135129"/>
+<property name="gmean" value="135231"/>
+<property name="gstddev" value="0.003449"/>
+<property name="mean" value="135232"/>
+<property name="stddev" value="467"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/72" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 7, false)" status="run" time="0.041" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="96479"/>
+<property name="median" value="99300"/>
+<property name="gmean" value="99270"/>
+<property name="gstddev" value="0.009686"/>
+<property name="mean" value="99274"/>
+<property name="stddev" value="959"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/73" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 7, true)" status="run" time="0.031" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25875"/>
+<property name="median" value="26338"/>
+<property name="gmean" value="26374"/>
+<property name="gstddev" value="0.010794"/>
+<property name="mean" value="26376"/>
+<property name="stddev" value="286"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/74" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 11, false)" status="run" time="0.041" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2419848"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="103220"/>
+<property name="median" value="105126"/>
+<property name="gmean" value="105116"/>
+<property name="gstddev" value="0.007029"/>
+<property name="mean" value="105118"/>
+<property name="stddev" value="738"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/75" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (9, 9), 11, true)" status="run" time="0.031" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12096648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28237"/>
+<property name="median" value="28729"/>
+<property name="gmean" value="28746"/>
+<property name="gstddev" value="0.008528"/>
+<property name="mean" value="28747"/>
+<property name="stddev" value="246"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/76" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 7, false)" status="run" time="0.046" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="129225"/>
+<property name="median" value="130667"/>
+<property name="gmean" value="130658"/>
+<property name="gstddev" value="0.005520"/>
+<property name="mean" value="130660"/>
+<property name="stddev" value="721"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/77" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 7, true)" status="run" time="0.034" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="54870"/>
+<property name="median" value="55443"/>
+<property name="gmean" value="55467"/>
+<property name="gstddev" value="0.006249"/>
+<property name="mean" value="55469"/>
+<property name="stddev" value="347"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/78" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 11, false)" status="run" time="0.048" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2421000"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="138651"/>
+<property name="median" value="139719"/>
+<property name="gmean" value="139738"/>
+<property name="gstddev" value="0.003970"/>
+<property name="mean" value="139740"/>
+<property name="stddev" value="555"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/79" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 1, (15, 15), 11, true)" status="run" time="0.036" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="12097800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="60918"/>
+<property name="median" value="61456"/>
+<property name="gmean" value="61485"/>
+<property name="gstddev" value="0.005701"/>
+<property name="mean" value="61486"/>
+<property name="stddev" value="351"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/80" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 7, false)" status="run" time="0.056" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7258248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="199774"/>
+<property name="median" value="201397"/>
+<property name="gmean" value="201494"/>
+<property name="gstddev" value="0.005034"/>
+<property name="mean" value="201496"/>
+<property name="stddev" value="1015"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/81" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 7, true)" status="run" time="0.035" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36288648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="31884"/>
+<property name="median" value="32328"/>
+<property name="gmean" value="32383"/>
+<property name="gstddev" value="0.008184"/>
+<property name="mean" value="32384"/>
+<property name="stddev" value="266"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/82" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11, false)" status="run" time="0.061" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7258248"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="226658"/>
+<property name="median" value="229383"/>
+<property name="gmean" value="229261"/>
+<property name="gstddev" value="0.004813"/>
+<property name="mean" value="229264"/>
+<property name="stddev" value="1103"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/83" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (9, 9), 11, true)" status="run" time="0.037" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36288648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="42323"/>
+<property name="median" value="42729"/>
+<property name="gmean" value="42778"/>
+<property name="gstddev" value="0.007467"/>
+<property name="mean" value="42779"/>
+<property name="stddev" value="320"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/84" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 7, false)" status="run" time="0.064" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7259400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="242368"/>
+<property name="median" value="244216"/>
+<property name="gmean" value="244139"/>
+<property name="gstddev" value="0.002981"/>
+<property name="mean" value="244140"/>
+<property name="stddev" value="727"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/85" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 7, true)" status="run" time="0.042" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36289800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="72519"/>
+<property name="median" value="73011"/>
+<property name="gmean" value="73050"/>
+<property name="gstddev" value="0.004826"/>
+<property name="mean" value="73050"/>
+<property name="stddev" value="353"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/86" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 11, false)" status="run" time="0.071" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="7259400"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="288961"/>
+<property name="median" value="290188"/>
+<property name="gmean" value="290288"/>
+<property name="gstddev" value="0.002460"/>
+<property name="mean" value="290289"/>
+<property name="stddev" value="714"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/87" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 3, (15, 15), 11, true)" status="run" time="0.045" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="36289800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="99534"/>
+<property name="median" value="100288"/>
+<property name="gmean" value="100381"/>
+<property name="gstddev" value="0.004500"/>
+<property name="mean" value="100382"/>
+<property name="stddev" value="452"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/88" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 7, false)" status="run" time="0.068" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9677448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="260413"/>
+<property name="median" value="262930"/>
+<property name="gmean" value="262830"/>
+<property name="gstddev" value="0.003700"/>
+<property name="mean" value="262831"/>
+<property name="stddev" value="972"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/89" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 7, true)" status="run" time="0.041" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48384648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="34544"/>
+<property name="median" value="60469"/>
+<property name="gmean" value="57830"/>
+<property name="gstddev" value="0.183168"/>
+<property name="mean" value="58664"/>
+<property name="stddev" value="8765"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/90" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 11, false)" status="run" time="0.074" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9677448"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="298803"/>
+<property name="median" value="301207"/>
+<property name="gmean" value="301308"/>
+<property name="gstddev" value="0.003984"/>
+<property name="mean" value="301311"/>
+<property name="stddev" value="1200"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/91" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (9, 9), 11, true)" status="run" time="0.041" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48384648"/>
+<property name="bytesOut" value="648"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="55387"/>
+<property name="median" value="56256"/>
+<property name="gmean" value="56208"/>
+<property name="gstddev" value="0.006132"/>
+<property name="mean" value="56209"/>
+<property name="stddev" value="344"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/92" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 7, false)" status="run" time="0.074" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9678600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="306816"/>
+<property name="median" value="308914"/>
+<property name="gmean" value="308917"/>
+<property name="gstddev" value="0.002549"/>
+<property name="mean" value="308918"/>
+<property name="stddev" value="787"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/93" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 7, true)" status="run" time="0.044" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48385800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="79057"/>
+<property name="median" value="79658"/>
+<property name="gmean" value="79690"/>
+<property name="gstddev" value="0.004166"/>
+<property name="mean" value="79690"/>
+<property name="stddev" value="332"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/94" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 11, false)" status="run" time="0.086" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="9678600"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="384841"/>
+<property name="median" value="386537"/>
+<property name="gmean" value="386541"/>
+<property name="gstddev" value="0.002128"/>
+<property name="mean" value="386541"/>
+<property name="stddev" value="823"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_self/95" value_param="(&quot;cv/optflow/frames/720p_%02d.png&quot;, 2, 4, (15, 15), 11, true)" status="run" time="0.053" classname="Path_Idx_Cn_NPoints_WSize_Deriv_OpticalFlowPyrLK_self">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="48385800"/>
+<property name="bytesOut" value="1800"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="134823"/>
+<property name="median" value="135768"/>
+<property name="gmean" value="135779"/>
+<property name="gstddev" value="0.003358"/>
+<property name="mean" value="135780"/>
+<property name="stddev" value="456"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr" tests="16" failures="0" disabled="0" errors="0" time="0.526">
+    <testcase name="OpticalFlowPyrLK_pyr/0" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, false, BORDER_DEFAULT, false)" status="run" time="0.029" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="296649"/>
+<property name="median" value="301249"/>
+<property name="gmean" value="301046"/>
+<property name="gstddev" value="0.005145"/>
+<property name="mean" value="301050"/>
+<property name="stddev" value="1547"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/1" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, false, BORDER_DEFAULT, true)" status="run" time="0.029" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="284274"/>
+<property name="median" value="300491"/>
+<property name="gmean" value="300204"/>
+<property name="gstddev" value="0.009706"/>
+<property name="mean" value="300218"/>
+<property name="stddev" value="2861"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/2" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, false, BORDER_TRANSPARENT, false)" status="run" time="0.027" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="262121"/>
+<property name="median" value="266804"/>
+<property name="gmean" value="268679"/>
+<property name="gstddev" value="0.020937"/>
+<property name="mean" value="268737"/>
+<property name="stddev" value="5700"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/3" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, false, BORDER_TRANSPARENT, true)" status="run" time="0.026" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="246902"/>
+<property name="median" value="266958"/>
+<property name="gmean" value="266405"/>
+<property name="gstddev" value="0.012759"/>
+<property name="mean" value="266426"/>
+<property name="stddev" value="3301"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/4" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, true, BORDER_DEFAULT, false)" status="run" time="0.04" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="497144"/>
+<property name="median" value="505148"/>
+<property name="gmean" value="505300"/>
+<property name="gstddev" value="0.008310"/>
+<property name="mean" value="505317"/>
+<property name="stddev" value="4201"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/5" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, true, BORDER_DEFAULT, true)" status="run" time="0.04" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="498883"/>
+<property name="median" value="505898"/>
+<property name="gmean" value="506503"/>
+<property name="gstddev" value="0.007837"/>
+<property name="mean" value="506518"/>
+<property name="stddev" value="3976"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/6" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, true, BORDER_TRANSPARENT, false)" status="run" time="0.035" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="394207"/>
+<property name="median" value="402070"/>
+<property name="gmean" value="401774"/>
+<property name="gstddev" value="0.008029"/>
+<property name="mean" value="401787"/>
+<property name="stddev" value="3221"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/7" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 7, true, BORDER_TRANSPARENT, true)" status="run" time="0.034" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="396354"/>
+<property name="median" value="402036"/>
+<property name="gmean" value="402077"/>
+<property name="gstddev" value="0.007414"/>
+<property name="mean" value="402088"/>
+<property name="stddev" value="2982"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/8" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_DEFAULT, false)" status="run" time="0.03" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="303838"/>
+<property name="median" value="321315"/>
+<property name="gmean" value="320614"/>
+<property name="gstddev" value="0.009855"/>
+<property name="mean" value="320629"/>
+<property name="stddev" value="3101"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/9" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_DEFAULT, true)" status="run" time="0.029" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="304426"/>
+<property name="median" value="321036"/>
+<property name="gmean" value="320457"/>
+<property name="gstddev" value="0.009367"/>
+<property name="mean" value="320471"/>
+<property name="stddev" value="2952"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/10" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_TRANSPARENT, false)" status="run" time="0.026" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="256867"/>
+<property name="median" value="265034"/>
+<property name="gmean" value="264659"/>
+<property name="gstddev" value="0.007912"/>
+<property name="mean" value="264667"/>
+<property name="stddev" value="2083"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/11" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, false, BORDER_TRANSPARENT, true)" status="run" time="0.027" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="3686280"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="244813"/>
+<property name="median" value="264335"/>
+<property name="gmean" value="263665"/>
+<property name="gstddev" value="0.013260"/>
+<property name="mean" value="263687"/>
+<property name="stddev" value="3410"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/12" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, true, BORDER_DEFAULT, false)" status="run" time="0.042" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="545043"/>
+<property name="median" value="553497"/>
+<property name="gmean" value="553476"/>
+<property name="gstddev" value="0.006753"/>
+<property name="mean" value="553488"/>
+<property name="stddev" value="3738"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/13" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, true, BORDER_DEFAULT, true)" status="run" time="0.043" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="544946"/>
+<property name="median" value="553694"/>
+<property name="gmean" value="553629"/>
+<property name="gstddev" value="0.006812"/>
+<property name="mean" value="553641"/>
+<property name="stddev" value="3766"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/14" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, true, BORDER_TRANSPARENT, false)" status="run" time="0.034" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="399246"/>
+<property name="median" value="405698"/>
+<property name="gmean" value="405235"/>
+<property name="gstddev" value="0.006691"/>
+<property name="mean" value="405243"/>
+<property name="stddev" value="2706"/>
+</properties>
+    </testcase>
+    <testcase name="OpticalFlowPyrLK_pyr/15" value_param="(&quot;cv/optflow/frames/720p_01.png&quot;, 11, true, BORDER_TRANSPARENT, true)" status="run" time="0.035" classname="Path_Win_Deriv_Border_Reuse_OpticalFlowPyrLK_pyr">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="2764800"/>
+<property name="bytesOut" value="18431400"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="400574"/>
+<property name="median" value="406944"/>
+<property name="gmean" value="407208"/>
+<property name="gstddev" value="0.007686"/>
+<property name="mean" value="407219"/>
+<property name="stddev" value="3127"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Tracking_MIL" tests="3" failures="0" disabled="0" errors="0" time="28.683">
+    <testcase name="MIL/0" value_param="(&quot;david/data/david.webm&quot;, 300, [47 x 56 from (163, 62)])" status="run" time="9.653" classname="Tracking_MIL">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="185909199"/>
+<property name="median" value="191687294"/>
+<property name="gmean" value="191651004"/>
+<property name="gstddev" value="0.012422"/>
+<property name="mean" value="191665469"/>
+<property name="stddev" value="2380670"/>
+</properties>
+    </testcase>
+    <testcase name="MIL/1" value_param="(&quot;dudek/data/dudek.webm&quot;, 1, [132 x 176 from (123, 87)])" status="run" time="9.633" classname="Tracking_MIL">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="185908582"/>
+<property name="median" value="191860072"/>
+<property name="gmean" value="191918783"/>
+<property name="gstddev" value="0.013215"/>
+<property name="mean" value="191935157"/>
+<property name="stddev" value="2531412"/>
+</properties>
+    </testcase>
+    <testcase name="MIL/2" value_param="(&quot;faceocc2/data/faceocc2.webm&quot;, 1, [82 x 98 from (118, 57)])" status="run" time="9.397" classname="Tracking_MIL">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="181688883"/>
+<property name="median" value="187824455"/>
+<property name="gmean" value="187573750"/>
+<property name="gstddev" value="0.011254"/>
+<property name="mean" value="187585329"/>
+<property name="stddev" value="2099967"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Tracking_GOTURN" tests="3" failures="0" disabled="0" errors="0" time="29.905">
+    <testcase name="GOTURN/0" value_param="(&quot;david/data/david.webm&quot;, 300, [47 x 56 from (163, 62)])" status="run" time="9.857" classname="Tracking_GOTURN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="182583536"/>
+<property name="median" value="183814860"/>
+<property name="gmean" value="183753886"/>
+<property name="gstddev" value="0.002927"/>
+<property name="mean" value="183754656"/>
+<property name="stddev" value="537758"/>
+</properties>
+    </testcase>
+    <testcase name="GOTURN/1" value_param="(&quot;dudek/data/dudek.webm&quot;, 1, [132 x 176 from (123, 87)])" status="run" time="10.266" classname="Tracking_GOTURN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="193617938"/>
+<property name="median" value="194459782"/>
+<property name="gmean" value="194546538"/>
+<property name="gstddev" value="0.002469"/>
+<property name="mean" value="194547118"/>
+<property name="stddev" value="480557"/>
+</properties>
+    </testcase>
+    <testcase name="GOTURN/2" value_param="(&quot;faceocc2/data/faceocc2.webm&quot;, 1, [82 x 98 from (118, 57)])" status="run" time="9.782" classname="Tracking_GOTURN">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="183764717"/>
+<property name="median" value="185043404"/>
+<property name="gmean" value="185053513"/>
+<property name="gstddev" value="0.003137"/>
+<property name="mean" value="185054404"/>
+<property name="stddev" value="580566"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="DenseOpticalFlow_VariationalRefinement_perf" tests="8" failures="0" disabled="0" errors="0" time="0.649">
+    <testcase name="perf/0" value_param="(320x240, 5, 5)" status="run" time="0.023" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2185933"/>
+<property name="median" value="2252802"/>
+<property name="gmean" value="2291882"/>
+<property name="gstddev" value="0.046268"/>
+<property name="mean" value="2294131"/>
+<property name="stddev" value="109093"/>
+</properties>
+    </testcase>
+    <testcase name="perf/1" value_param="(320x240, 5, 10)" status="run" time="0.037" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3630636"/>
+<property name="median" value="3672814"/>
+<property name="gmean" value="3698275"/>
+<property name="gstddev" value="0.024447"/>
+<property name="mean" value="3699288"/>
+<property name="stddev" value="92928"/>
+</properties>
+    </testcase>
+    <testcase name="perf/2" value_param="(320x240, 10, 5)" status="run" time="0.029" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2697509"/>
+<property name="median" value="2848345"/>
+<property name="gmean" value="2862531"/>
+<property name="gstddev" value="0.039912"/>
+<property name="mean" value="2864617"/>
+<property name="stddev" value="117224"/>
+</properties>
+    </testcase>
+    <testcase name="perf/3" value_param="(320x240, 10, 10)" status="run" time="0.048" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4774392"/>
+<property name="median" value="4858708"/>
+<property name="gmean" value="4854027"/>
+<property name="gstddev" value="0.011054"/>
+<property name="mean" value="4854294"/>
+<property name="stddev" value="53628"/>
+</properties>
+    </testcase>
+    <testcase name="perf/4" value_param="(640x480, 5, 5)" status="run" time="0.092" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8734061"/>
+<property name="median" value="8877276"/>
+<property name="gmean" value="9010002"/>
+<property name="gstddev" value="0.045647"/>
+<property name="mean" value="9018755"/>
+<property name="stddev" value="433838"/>
+</properties>
+    </testcase>
+    <testcase name="perf/5" value_param="(640x480, 5, 10)" status="run" time="0.136" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13482846"/>
+<property name="median" value="13576004"/>
+<property name="gmean" value="13596736"/>
+<property name="gstddev" value="0.005487"/>
+<property name="mean" value="13596921"/>
+<property name="stddev" value="74724"/>
+</properties>
+    </testcase>
+    <testcase name="perf/6" value_param="(640x480, 10, 5)" status="run" time="0.108" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10565519"/>
+<property name="median" value="10707913"/>
+<property name="gmean" value="10704605"/>
+<property name="gstddev" value="0.005508"/>
+<property name="mean" value="10704751"/>
+<property name="stddev" value="58767"/>
+</properties>
+    </testcase>
+    <testcase name="perf/7" value_param="(640x480, 10, 10)" status="run" time="0.175" classname="DenseOpticalFlow_VariationalRefinement_perf">
+<properties>
+<property name="ocl_memory_usage" value="0"/>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="17194391"/>
+<property name="median" value="17342242"/>
+<property name="gmean" value="17322045"/>
+<property name="gstddev" value="0.004653"/>
+<property name="mean" value="17322214"/>
+<property name="stddev" value="80545"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>
