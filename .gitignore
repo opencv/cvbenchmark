@@ -1,9 +1,3 @@
-opencv
-opencv/**
-
-opencv_extra
-opencv_extra/**
-
 build
 build/**
 

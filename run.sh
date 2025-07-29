@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Get opencv_extra
-git clone https://github.com/opencv/opencv_extra
-cd opencv_extra
-git checkout 4.x
-cd ..
+if [ ! -d "opencv_extra" ]; then
+    echo "Cannot find opencv_extra. Updating submodules."
+    git submodule update --init
+fi
 
 # 4.x
 modules=("calib3d" "core" "dnn" "features2d" "imgcodecs" "imgproc" "objdetect" "photo" "stitching" "video" "videoio") # exclude "gapi"

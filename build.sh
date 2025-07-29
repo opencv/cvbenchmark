@@ -23,14 +23,9 @@ else
 fi
 
 # Get latest opencv
-if [ -d "opencv" ]; then
-    echo "opencv exists. Pulling updates"
-    cd opencv
-    git pull
-    cd ..
-else
-    echo "opencv does not exist. Cloning latest opencv"
-    git clone https://github.com/opencv/opencv
+if [ ! -d "opencv" ]; then
+    echo "Cannot find opencv. Updating submodules."
+    git submodule update --init
 fi
 
 # Configure and build opencv according to target platform
