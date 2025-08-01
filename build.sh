@@ -31,9 +31,30 @@ fi
 # Configure and build opencv according to target platform
 if [ ${arch} = "risc-v" ]; then
     echo "Building for risc-v"
-    # [TODO] build for risc-v
+    TOOLCHAIN_FILE_GCC=$(pwd)/opencv/platforms/linux/riscv64-gcc.toolchain.cmake
+    TOOLCHAIN_FILE_CLANG=$(pwd)/opencv/platforms/linux/riscv64-clang.toolchain.cmake
+    # GCC
+    cmake -G Ninja -B cross-build-gcc \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+        -DCMAKE_INSTALL_PREFIX=cross-build-gcc/install \
+        -DCMAKE_C_COMPILER=${TOOLCHAIN_DIR}/bin/riscv64-unknown-linux-gnu-gcc \
+        -DCMAKE_CXX_COMPILER=${TOOLCHAIN_DIR}/bin/riscv64-unknown-linux-gnu-g++ \
+        -DCMAKE_TOOLCHAIN_FILE=${TOOLCHAIN_FILE_GCC} \
+        -DCPU_BASELINE=RVV -DCPU_BASELINE_REQUIRE=RVV -DRISCV_RVV_SCALABLE=ON opencv
+    # Clang
+    cmake -G Ninja -B cross-build-clang \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+        -DCMAKE_INSTALL_PREFIX=cross-build-clang/install \
+        -DRISCV_CLANG_BUILD_ROOT=${TOOLCHAIN_DIR} \
+        -DRISCV_GCC_INSTALL_ROOT=${TOOLCHAIN_DIR} \
+        -DCMAKE_TOOLCHAIN_FILE=${TOOLCHAIN_FILE_CLANG} \
+        -DCPU_BASELINE=RVV -DCPU_BASELINE_REQUIRE=RVV -DRISCV_RVV_SCALABLE=ON opencv
+    cmake --build cross-build-gcc --target install -j10
+    cmake --build cross-build-clang --target install -j10
 else
     echo "Building for ${iarch}"
     cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=build/install opencv
+    cmake --build build --target install -j6
 fi
-cmake --build build --target install -j6

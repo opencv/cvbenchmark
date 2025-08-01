@@ -26,4 +26,3 @@ export OPENCV_TEST_DATA_PATH=$(pwd)/opencv_extra/testdata
 for module in "${modules[@]}"; do
     ./build/bin/opencv_perf_${module} --gtest_output=xml:perf/${module}.xml --perf_force_samples=50 --perf_min_samples=50
 done
-
