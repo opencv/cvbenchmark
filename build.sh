@@ -29,7 +29,7 @@ if [ ! -d "opencv" ]; then
 fi
 
 # Configure and build opencv according to target platform
-if [ ${arch} = "risc-v" ]; then
+if [ ${iarch} = "risc-v" ]; then
     echo "Building for risc-v"
     TOOLCHAIN_FILE_GCC=$(pwd)/opencv/platforms/linux/riscv64-gcc.toolchain.cmake
     TOOLCHAIN_FILE_CLANG=$(pwd)/opencv/platforms/linux/riscv64-clang.toolchain.cmake

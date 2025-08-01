@@ -23,6 +23,17 @@ if [ -d ${RESULT_DIR} ]; then
 fi
 
 export OPENCV_TEST_DATA_PATH=$(pwd)/opencv_extra/testdata
-for module in "${modules[@]}"; do
-    ./build/bin/opencv_perf_${module} --gtest_output=xml:perf/${module}.xml --perf_force_samples=50 --perf_min_samples=50
-done
+if [ $1 = "risc-v" ]; then
+    export LD_LIBRARY_PATH=cross-build-gcc/lib
+    for module in "${modules[@]}"; do
+        ./cross-build-gcc/bin/opencv_perf_${module} --gtest_output=xml:perf/gcc-${module}.xml --perf_force_samples=50 --perf_min_samples=50
+    done
+    export LD_LIBRARY_PATH=cross-build-clang/lib
+    for module in "${modules[@]}"; do
+        ./cross-build-clang/bin/opencv_perf_${module} --gtest_output=xml:perf/clang-${module}.xml --perf_force_samples=50 --perf_min_samples=50
+    done
+else
+    for module in "${modules[@]}"; do
+        ./build/bin/opencv_perf_${module} --gtest_output=xml:perf/${module}.xml --perf_force_samples=50 --perf_min_samples=50
+    done
+fi
