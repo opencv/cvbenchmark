@@ -51,6 +51,7 @@ python rate.py
 | photo      |    72.45 |    68    |      66.36 |
 | stitching  |    73.06 |    63.64 |      60.62 |
 | video      |    84.75 |   110.6  |      99.11 |
+| Mean       |    76.92 |   105.51 |     101.06 |
 
 The baseline CPU is **Broadcom BCM2711**, *rk3568* represents **Rockchip RK3568B2**, and *k1* represents **SpacemiT Key Stone® K1**.
 SBCs are Raspberry Pi 4 Model B, ATK-DLRK3568 and SpacemiT MUSE Pi accordingly.
