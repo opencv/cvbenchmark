@@ -1,22 +1,23 @@
 # Rating
 
-The repository is to rate SBC (Single Board Computer) CPUs performance with OpenCV's Performance Tests. CPU scores are calculated against a baseline CPU:
+The repository is to rate various CPUs' performance with OpenCV's Performance Tests. The scores are calculated against a baseline CPU:
 
-$$ Score = \frac{\text{CPU Score}}{\text{Baseline CPU Score}} \times 100 $$
+$$ Score = \frac{\text{Baseline CPU Time}}{\text{CPU Time}} \times 100 $$
 
-OpenCV's Performance Tests measure the speed (not the accuracy) of various OpenCV key functions across modules run under controlled conditions. The **CPU Score** represents the mean execution time in milliseconds of key OpenCV functions within the performance test suite.
+OpenCV's Performance Tests measure the speed of various OpenCV key functions across modules run under controlled conditions. The **CPU Time** represents the mean execution time in milliseconds of key OpenCV functions within the performance test suite.
 
 ## How To Get Scores With Rating
 
-- On the SBCs, clone the repository:
+- On the hardware to be tested, clone the repository:
 ```shell
 git clone https://github.com/OpenCVChina/rating.git && cd rating
 ```
 
-- Run the scripts to build OpenCV and run the performance tests across modules. Results will be saved in `modulename-sbc.xml` respectively.
+- Run the scripts to build OpenCV and run the performance tests across modules. Results will be saved in `modulename-cpumodel.xml` respectively.
 ```bash
-bash build.sh
-bash run.sh
+# for example RK3568 is used
+bash build.sh arm
+bash run.sh arm RK3568
 ```
 
 > **Note:**
@@ -30,31 +31,37 @@ bash run.sh
 > ```
 > Then upload the directories *your_path_to_rating_repo/cross-build-gcc/bin* and *your_path_to_rating_repo/cross-build-gcc/lib* on the build host to the correspondent paths on the target host. Run the script to run the performance tests.
 > ```bash
-> bash run.sh risc-v
+> bash run.sh risc-v K1
 > ```
 
-- Collect all the `modulename-sbc.xml` files from different devices into the directory *your_path_to_rating_repo/perf* on a single device, and then run the scripts to obtain the scores:
+- Collect all the `modulename-cpumodel.xml` files from different devices into the directory *your_path_to_rating_repo/perf* on a single device, and then run the scripts to obtain the scores:
 ```bash
 bash compare.sh
+python rate.py
+```
+The default baseline CPU is the one used by Raspberry Pi 4 Model B, which is Broadcom BCM2711. If a different CPU is used as the baseline CPU, run:
+```bash
+bash compare.sh you-baseline-cpu-model
 python rate.py
 ```
 
 ## Benchmarks
 
-| module     |   rk3568 |   k1(gcc) |   k1(clang) |
-|:-----------|---------:|---------:|-----------:|
-| calib3d    |    88.82 |    83.74 |      72.64 |
-| core       |    77.53 |   138.36 |     145.97 |
-| features2d |    77.23 |    84.13 |      74    |
-| imgproc    |    80.99 |   233.41 |     227.48 |
-| objdetect  |    60.56 |    62.21 |      62.33 |
-| photo      |    72.45 |    68    |      66.36 |
-| stitching  |    73.06 |    63.64 |      60.62 |
-| video      |    84.75 |   110.6  |      99.11 |
-| Mean       |    76.92 |   105.51 |     101.06 |
+| module     |     K1 |      M1 |   RK3568 |   i7-12700K |
+|:-----------|-------:|--------:|---------:|------------:|
+| calib3d    |  83.74 |  870.45 |    88.82 |     1034.97 |
+| core       | 138.36 | 1129.28 |    77.53 |     1247.62 |
+| features2d |  84.13 |  700.93 |    77.23 |     1309.41 |
+| imgproc    | 233.41 |  974.55 |    80.99 |     1784.5  |
+| objdetect  |  62.21 |  673.83 |    60.56 |     1377.56 |
+| Mean       | 120.37 |  869.81 |    77.02 |     1350.81 |
 
-The baseline CPU is **Broadcom BCM2711**, *rk3568* represents **Rockchip RK3568B2**, and *k1* represents **SpacemiT Key Stone® K1**.
-SBCs are Raspberry Pi 4 Model B, ATK-DLRK3568 and SpacemiT MUSE Pi accordingly.
+The baseline CPU is **Broadcom BCM2711**, quad-core ARM Cortex-A72 (ARMv8-A, 1.5 GHz), 4 threads.
+- **K1**: SpacemiT Key Stone® K1, an octa-core 64-bit RISC-V AI CPU, 8 threads.
+- **M1**: Apple M1, 4 performance cores (up to 3.2 GHz) and 4 efficiency cores, 8 threads.
+- **RK3568**: Rockchip RK3568B2, quad-core ARM Cortex-A55 (up to 2.0 GHz), 4 threads.
+- **i7-12700K**: Intel Core i7-12700K, 8 Performance cores (3.60 GHz, turbo up to 4.90 GHz), 4 Efficient cores (2.70 GHz, turbo up to 3.80 GHz), 20 threads.
+
 
 ## License
 
