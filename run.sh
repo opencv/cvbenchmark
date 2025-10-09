@@ -8,7 +8,7 @@ fi
 # Get the opencv_extra
 if [ ! -d "opencv_extra" ]; then
     echo "Cannot find opencv_extra. Updating submodules."
-    git submodule update --init opencv_extra
+    git submodule update --init --remote opencv_extra
 fi
 
 # 4.x

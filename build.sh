@@ -25,7 +25,7 @@ fi
 # Get the latest opencv
 if [ ! -d "opencv" ]; then
     echo "Cannot find opencv. Updating submodules."
-    git submodule update --init opencv
+    git submodule update --init --remote opencv
 fi
 
 # Configure and build opencv according to target platform
