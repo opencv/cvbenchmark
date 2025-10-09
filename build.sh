@@ -26,6 +26,9 @@ fi
 if [ ! -d "opencv" ]; then
     echo "Cannot find opencv. Updating submodules."
     git submodule update --init --remote opencv
+elif [ -z "$(ls -A "opencv")" ]; then
+    echo "opencv is empty. Updating submodules."
+    git submodule update --init --remote opencv
 fi
 
 # Configure and build opencv according to target platform

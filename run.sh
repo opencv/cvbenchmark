@@ -1,13 +1,16 @@
 #!/bin/bash
 
 if [ $# -lt 2 ]; then
-  echo "Usage: $0 <arch> <cpu model> . Example: run.sh arm RK3568 or run.sh arm RKk3568 imgproc"
+  echo "Usage: $0 <arch> <cpu model> . Example: run.sh arm RK3568 or run.sh arm RK3568 imgproc"
   exit 1
 fi
 
 # Get the opencv_extra
 if [ ! -d "opencv_extra" ]; then
     echo "Cannot find opencv_extra. Updating submodules."
+    git submodule update --init --remote opencv_extra
+elif [ -z "$(ls -A "opencv_extra")" ]; then
+    echo "opencv_extra is empty. Updating submodules."
     git submodule update --init --remote opencv_extra
 fi
 
