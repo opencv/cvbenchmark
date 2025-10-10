@@ -4,7 +4,7 @@ The repository is to rate various CPUs' performance with OpenCV's Performance Te
 
 $$ Score = \frac{\text{Baseline CPU Time}}{\text{CPU Time}} \times 100 $$
 
-OpenCV's Performance Tests measure the speed of various OpenCV key functions across modules run under controlled conditions. The **CPU Time** represents the mean execution time in milliseconds of key OpenCV functions within the performance test suite.
+OpenCV's Performance Tests measure the speed of various OpenCV key functions across modules run under controlled conditions. The **CPU Time** represents the mean execution time in milliseconds of key OpenCV functions within the performance test suite. The final average scores are geometric means of the ratios. 
 
 ## How To Get Scores With Rating
 
@@ -55,6 +55,7 @@ python rate.py
 | imgproc    | 119.81 | 849.14 |    79.7  |     1318.76 |
 | objdetect  |  65.25 | 622.16 |    65.16 |     1188.76 |
 | Mean       |  94.55 | 797.92 |    76.2  |     1252.2  |
+*Note: Baseline CPU score is 100. The higher the score is, better the performance of that CPU is.*
 
 The baseline CPU is **Broadcom BCM2711**, quad-core ARM Cortex-A72 (ARMv8-A, 1.5 GHz), 4 threads.
 - **K1**: SpacemiT Key Stone® K1, an octa-core 64-bit RISC-V AI CPU, 8 threads.
