@@ -41,7 +41,6 @@ for module in modules:
     result["module"].append(module)
     for col_idx in cols_to_calculate:
         col_name = df.columns[col_idx]
-        print(f"col_name: {col_name}")
         df[col_name] = pd.to_numeric(df[col_name], errors='coerce')
         valid_df = df.dropna(subset=[col_name])
 
@@ -52,7 +51,7 @@ for module in modules:
 df = pd.DataFrame(result)
 
 mean_scores = df.drop(columns="module").apply(lambda x: gmean(x[x > 0]) if any(x > 0) else float('nan'))
-df.loc['Mean'] = ['Mean'] + mean_scores.tolist()
+df.loc['Score'] = ['Score'] + mean_scores.tolist()
 numeric_cols = df.select_dtypes(include="number").columns
 df[numeric_cols] = df[numeric_cols].round(2)
 

@@ -5,7 +5,7 @@ modules=("calib3d" "core" "features2d" "imgproc" "objdetect")
 # 5.x
 #modules=("3d" "calib" "core" "features" "imgproc" "objdetect" "stereo")
 
-BASELINE=BCM2711
+BASELINE="Broadcom BCM2711"
 if [ $# -eq 1 ]; then
     BASELINE=$1
 fi

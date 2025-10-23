@@ -1,7 +1,8 @@
 #!/bin/bash
 
 if [ $# -lt 2 ]; then
-  echo "Usage: $0 <arch> <cpu model> . Example: run.sh arm RK3568 or run.sh arm RK3568 imgproc"
+  echo "Usage: $0 <arch> <cpu model> [module]" 
+  echo "Example: run.sh arm 'Rockchip RK3568' OR run.sh arm 'Rockchip RK3568' imgproc"
   exit 1
 fi
 
