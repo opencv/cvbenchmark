@@ -36,7 +36,7 @@ if [ ${iarch} = "risc-v" ]; then
     echo "Building OpenCV for risc-v"
     TOOLCHAIN_FILE_GCC=$(pwd)/opencv/platforms/linux/riscv64-gcc.toolchain.cmake
     # GCC
-    cmake -G Ninja -B build \
+    cmake -B build \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
         -DCMAKE_INSTALL_PREFIX=build/install \
@@ -48,7 +48,7 @@ if [ ${iarch} = "risc-v" ]; then
     cmake --build build --target install -j10
 else
     echo "Building OpenCV for ${iarch}"
-    cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=build/install \
+    cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=build/install \
     -DWITH_OPENCL=OFF -DWITH_LAPACK=OFF -DWITH_EIGEN=OFF -DBUILD_TESTS=OFF opencv
     cmake --build build --target install -j4
 fi
