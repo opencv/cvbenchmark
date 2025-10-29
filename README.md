@@ -35,7 +35,7 @@ CPU specs:
 - **Amlogic A311D**: quad-core ARM Cortex-A73 (2.2 GHz) and dual-core ARM Cortex-A53 (1.8 GHz). Corresponding SBC used is Khadas VIM3.
 - **Amlogic A311D2**: quad-core ARM Cortex-A73 (2.2 GHz) and quad-core ARM Cortex-A53 (2.0 GHz). Corresponding SBC used is Khadas VIM4.
 - **Apple M1**: 4 performance cores (up to 3.2 GHz) and 4 efficiency cores.
-- **Huawei KunPeng**: quad-core 64-bit Kunpeng CPU.
+- **Huawei KunPeng**: quad-core 64-bit Kunpeng CPU. Corresponding SBC used is OrangePi Kunpeng Pro V1.
 - **Intel Core i7-12700K**: 8 Performance cores (3.60 GHz, turbo up to 4.90 GHz), 4 Efficient cores (2.70 GHz, turbo up to 3.80 GHz).
 - **Rockchip RK3568**: quad-core ARM Cortex-A55 (up to 2.0 GHz). Corresponding SBC used is Firefly ROC-RK3568-PC.
 - **Rockchip RK3568B2**: quad-core ARM Cortex-A55 (up to 2.0 GHz). Corresponding SBC used is ATK-DLRK3568.
