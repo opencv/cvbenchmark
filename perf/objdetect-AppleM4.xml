@@ -1,0 +1,2076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="127" failures="0" disabled="0" errors="0" timestamp="2025-10-22T16:24:54" time="164.933" cv_module_name="objdetect" cv_implementation="plain" cv_num_threads="-1" test_tags="" test_tags_skip="mem_6gb,verylong" test_tags_force="" cv_version="4.12.0" cv_version_build="4.12.0" cv_vcs_version="4.12.0" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/usr/bin/c++  (ver 17.0.0.17000013)" implementation_hint="ALGO_HINT_ACCURATE" hal="YES (carotene (ver 0.0.1))" cv_parallel_framework="gcd" cv_parallel_threads="10" cv_cpu_features="NEON FP16 NEON_DOTPROD NEON_FP16 *NEON_BF16" name="AllTests">
+  <testsuite name="EstimateAruco_ArucoFirst" tests="2" failures="0" disabled="0" errors="0" time="0.544">
+    <testcase name="ArucoFirst/0" value_param="(false, -1)" status="run" time="0.292" classname="EstimateAruco_ArucoFirst">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5496125"/>
+<property name="median" value="5618084"/>
+<property name="gmean" value="5672335"/>
+<property name="gstddev" value="0.025724"/>
+<property name="mean" value="5674185"/>
+<property name="stddev" value="147621"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFirst/1" value_param="(true, -1)" status="run" time="0.252" classname="EstimateAruco_ArucoFirst">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4658416"/>
+<property name="median" value="4960396"/>
+<property name="gmean" value="4930177"/>
+<property name="gstddev" value="0.029166"/>
+<property name="mean" value="4932226"/>
+<property name="stddev" value="143579"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="EstimateAruco_ArucoSecond" tests="2" failures="0" disabled="0" errors="0" time="1.99">
+    <testcase name="ArucoSecond/0" value_param="(false, -1)" status="run" time="1.039" classname="EstimateAruco_ArucoSecond">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="19873292"/>
+<property name="median" value="20487104"/>
+<property name="gmean" value="20437460"/>
+<property name="gstddev" value="0.009655"/>
+<property name="mean" value="20438388"/>
+<property name="stddev" value="195898"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoSecond/1" value_param="(true, -1)" status="run" time="0.951" classname="EstimateAruco_ArucoSecond">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="17587041"/>
+<property name="median" value="18630374"/>
+<property name="gmean" value="18644522"/>
+<property name="gstddev" value="0.018851"/>
+<property name="mean" value="18647747"/>
+<property name="stddev" value="349025"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="EstimateLargeAruco_ArucoFHD" tests="15" failures="0" disabled="0" errors="0" time="4.759">
+    <testcase name="ArucoFHD/0" value_param="(0 0 0, (1440, 1))" status="run" time="0.255" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4968666"/>
+<property name="median" value="5071542"/>
+<property name="gmean" value="5060408"/>
+<property name="gstddev" value="0.007098"/>
+<property name="mean" value="5060533"/>
+<property name="stddev" value="35820"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/1" value_param="(0 0 0, (480, 3))" status="run" time="0.331" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6317708"/>
+<property name="median" value="6558896"/>
+<property name="gmean" value="6554454"/>
+<property name="gstddev" value="0.010644"/>
+<property name="mean" value="6554816"/>
+<property name="stddev" value="69473"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/2" value_param="(0 0 0, (144, 10))" status="run" time="0.576" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10903541"/>
+<property name="median" value="11224230"/>
+<property name="gmean" value="11307996"/>
+<property name="gstddev" value="0.024747"/>
+<property name="mean" value="11311390"/>
+<property name="stddev" value="280686"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/3" value_param="(1 0 32, (1440, 1))" status="run" time="0.286" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5328334"/>
+<property name="median" value="5556271"/>
+<property name="gmean" value="5642933"/>
+<property name="gstddev" value="0.042084"/>
+<property name="mean" value="5647889"/>
+<property name="stddev" value="242485"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/4" value_param="(1 0 32, (480, 3))" status="run" time="0.353" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6500708"/>
+<property name="median" value="6811896"/>
+<property name="gmean" value="6918904"/>
+<property name="gstddev" value="0.045329"/>
+<property name="mean" value="6925928"/>
+<property name="stddev" value="318480"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/5" value_param="(1 0 32, (144, 10))" status="run" time="0.49" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8847084"/>
+<property name="median" value="9619583"/>
+<property name="gmean" value="9557215"/>
+<property name="gstddev" value="0.031006"/>
+<property name="mean" value="9561681"/>
+<property name="stddev" value="293707"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/6" value_param="(1 0.015 32, (1440, 1))" status="run" time="0.138" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2509875"/>
+<property name="median" value="2704562"/>
+<property name="gmean" value="2707793"/>
+<property name="gstddev" value="0.047550"/>
+<property name="mean" value="2710793"/>
+<property name="stddev" value="129180"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/7" value_param="(1 0.015 32, (480, 3))" status="run" time="0.163" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2930542"/>
+<property name="median" value="3129770"/>
+<property name="gmean" value="3162518"/>
+<property name="gstddev" value="0.052400"/>
+<property name="mean" value="3166807"/>
+<property name="stddev" value="168234"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/8" value_param="(1 0.015 32, (144, 10))" status="run" time="0.319" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5902500"/>
+<property name="median" value="6213021"/>
+<property name="gmean" value="6192272"/>
+<property name="gstddev" value="0.021830"/>
+<property name="mean" value="6193713"/>
+<property name="stddev" value="134848"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/9" value_param="(1 0 16, (1440, 1))" status="run" time="0.287" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5201625"/>
+<property name="median" value="5551125"/>
+<property name="gmean" value="5643933"/>
+<property name="gstddev" value="0.054586"/>
+<property name="mean" value="5652240"/>
+<property name="stddev" value="312820"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/10" value_param="(1 0 16, (480, 3))" status="run" time="0.362" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6729875"/>
+<property name="median" value="6998875"/>
+<property name="gmean" value="7108520"/>
+<property name="gstddev" value="0.037215"/>
+<property name="mean" value="7113364"/>
+<property name="stddev" value="266955"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/11" value_param="(1 0 16, (144, 10))" status="run" time="0.515" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9449667"/>
+<property name="median" value="10188750"/>
+<property name="gmean" value="10077395"/>
+<property name="gstddev" value="0.034760"/>
+<property name="mean" value="10083344"/>
+<property name="stddev" value="349785"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/12" value_param="(1 0.0069 16, (1440, 1))" status="run" time="0.151" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2597250"/>
+<property name="median" value="2955646"/>
+<property name="gmean" value="2946344"/>
+<property name="gstddev" value="0.053018"/>
+<property name="mean" value="2950368"/>
+<property name="stddev" value="154759"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/13" value_param="(1 0.0069 16, (480, 3))" status="run" time="0.187" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3334042"/>
+<property name="median" value="3655812"/>
+<property name="gmean" value="3651829"/>
+<property name="gstddev" value="0.040342"/>
+<property name="mean" value="3654734"/>
+<property name="stddev" value="147199"/>
+</properties>
+    </testcase>
+    <testcase name="ArucoFHD/14" value_param="(1 0.0069 16, (144, 10))" status="run" time="0.346" classname="EstimateLargeAruco_ArucoFHD">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6441167"/>
+<property name="median" value="6752604"/>
+<property name="gmean" value="6731758"/>
+<property name="gstddev" value="0.024461"/>
+<property name="mean" value="6733726"/>
+<property name="stddev" value="164522"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Barcode_multi" tests="6" failures="0" disabled="0" errors="0" time="3.505">
+    <testcase name="detect/0" value_param="(&quot;4_barcodes.jpg&quot;, 2041x2722)" status="run" time="0.714" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13091958"/>
+<property name="median" value="13835771"/>
+<property name="gmean" value="13862889"/>
+<property name="gstddev" value="0.026316"/>
+<property name="mean" value="13867589"/>
+<property name="stddev" value="365413"/>
+</properties>
+    </testcase>
+    <testcase name="detect/1" value_param="(&quot;4_barcodes.jpg&quot;, 1361x1815)" status="run" time="0.46" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8105334"/>
+<property name="median" value="8959166"/>
+<property name="gmean" value="8875999"/>
+<property name="gstddev" value="0.035967"/>
+<property name="mean" value="8881551"/>
+<property name="stddev" value="313877"/>
+</properties>
+    </testcase>
+    <testcase name="detect/2" value_param="(&quot;4_barcodes.jpg&quot;, 680x907)" status="run" time="0.413" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6311125"/>
+<property name="median" value="7218667"/>
+<property name="gmean" value="7278745"/>
+<property name="gstddev" value="0.080968"/>
+<property name="mean" value="7302160"/>
+<property name="stddev" value="592879"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/0" value_param="(&quot;4_barcodes.jpg&quot;, 2041x2722)" status="run" time="0.89" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16322417"/>
+<property name="median" value="17353771"/>
+<property name="gmean" value="17291529"/>
+<property name="gstddev" value="0.028854"/>
+<property name="mean" value="17298579"/>
+<property name="stddev" value="499908"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/1" value_param="(&quot;4_barcodes.jpg&quot;, 1361x1815)" status="run" time="0.584" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10426875"/>
+<property name="median" value="11348750"/>
+<property name="gmean" value="11328359"/>
+<property name="gstddev" value="0.037948"/>
+<property name="mean" value="11336321"/>
+<property name="stddev" value="428618"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/2" value_param="(&quot;4_barcodes.jpg&quot;, 680x907)" status="run" time="0.444" classname="Perf_Barcode_multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8118500"/>
+<property name="median" value="8609979"/>
+<property name="gmean" value="8586628"/>
+<property name="gstddev" value="0.019548"/>
+<property name="mean" value="8588226"/>
+<property name="stddev" value="166786"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Barcode_single" tests="18" failures="0" disabled="0" errors="0" time="5.415">
+    <testcase name="detect/0" value_param="(&quot;book.jpg&quot;, 480x360)" status="run" time="0.142" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2319792"/>
+<property name="median" value="2590750"/>
+<property name="gmean" value="2695229"/>
+<property name="gstddev" value="0.120349"/>
+<property name="mean" value="2715062"/>
+<property name="stddev" value="344365"/>
+</properties>
+    </testcase>
+    <testcase name="detect/1" value_param="(&quot;book.jpg&quot;, 640x480)" status="run" time="0.29" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4568750"/>
+<property name="median" value="5696272"/>
+<property name="gmean" value="5671173"/>
+<property name="gstddev" value="0.080096"/>
+<property name="mean" value="5688679"/>
+<property name="stddev" value="444083"/>
+</properties>
+    </testcase>
+    <testcase name="detect/2" value_param="(&quot;book.jpg&quot;, 800x600)" status="run" time="0.34" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5369583"/>
+<property name="median" value="6684250"/>
+<property name="gmean" value="6619713"/>
+<property name="gstddev" value="0.096947"/>
+<property name="mean" value="6649894"/>
+<property name="stddev" value="635049"/>
+</properties>
+    </testcase>
+    <testcase name="detect/3" value_param="(&quot;bottle_1.jpg&quot;, 480x360)" status="run" time="0.169" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2804208"/>
+<property name="median" value="3227750"/>
+<property name="gmean" value="3230360"/>
+<property name="gstddev" value="0.056402"/>
+<property name="mean" value="3235365"/>
+<property name="stddev" value="181195"/>
+</properties>
+    </testcase>
+    <testcase name="detect/4" value_param="(&quot;bottle_1.jpg&quot;, 640x480)" status="run" time="0.3" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4883334"/>
+<property name="median" value="5845980"/>
+<property name="gmean" value="5852767"/>
+<property name="gstddev" value="0.074828"/>
+<property name="mean" value="5868683"/>
+<property name="stddev" value="434001"/>
+</properties>
+    </testcase>
+    <testcase name="detect/5" value_param="(&quot;bottle_1.jpg&quot;, 800x600)" status="run" time="0.391" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6822167"/>
+<property name="median" value="7622396"/>
+<property name="gmean" value="7663280"/>
+<property name="gstddev" value="0.050824"/>
+<property name="mean" value="7672982"/>
+<property name="stddev" value="391019"/>
+</properties>
+    </testcase>
+    <testcase name="detect/6" value_param="(&quot;bottle_2.jpg&quot;, 480x360)" status="run" time="0.19" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3104250"/>
+<property name="median" value="3736354"/>
+<property name="gmean" value="3687524"/>
+<property name="gstddev" value="0.069769"/>
+<property name="mean" value="3696233"/>
+<property name="stddev" value="254407"/>
+</properties>
+    </testcase>
+    <testcase name="detect/7" value_param="(&quot;bottle_2.jpg&quot;, 640x480)" status="run" time="0.324" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5257625"/>
+<property name="median" value="6419271"/>
+<property name="gmean" value="6317566"/>
+<property name="gstddev" value="0.068816"/>
+<property name="mean" value="6331937"/>
+<property name="stddev" value="423789"/>
+</properties>
+    </testcase>
+    <testcase name="detect/8" value_param="(&quot;bottle_2.jpg&quot;, 800x600)" status="run" time="0.375" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6213416"/>
+<property name="median" value="7453188"/>
+<property name="gmean" value="7311881"/>
+<property name="gstddev" value="0.094154"/>
+<property name="mean" value="7343418"/>
+<property name="stddev" value="684142"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/0" value_param="(&quot;book.jpg&quot;, 480x360)" status="run" time="0.212" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3586500"/>
+<property name="median" value="4178938"/>
+<property name="gmean" value="4156972"/>
+<property name="gstddev" value="0.054662"/>
+<property name="mean" value="4163005"/>
+<property name="stddev" value="225045"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/1" value_param="(&quot;book.jpg&quot;, 640x480)" status="run" time="0.32" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5594666"/>
+<property name="median" value="6338250"/>
+<property name="gmean" value="6319564"/>
+<property name="gstddev" value="0.042159"/>
+<property name="mean" value="6325018"/>
+<property name="stddev" value="263699"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/2" value_param="(&quot;book.jpg&quot;, 800x600)" status="run" time="0.402" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7005375"/>
+<property name="median" value="7907375"/>
+<property name="gmean" value="7900653"/>
+<property name="gstddev" value="0.050029"/>
+<property name="mean" value="7910303"/>
+<property name="stddev" value="394121"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/3" value_param="(&quot;bottle_1.jpg&quot;, 480x360)" status="run" time="0.191" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3317625"/>
+<property name="median" value="3673083"/>
+<property name="gmean" value="3688475"/>
+<property name="gstddev" value="0.055808"/>
+<property name="mean" value="3694125"/>
+<property name="stddev" value="207773"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/4" value_param="(&quot;bottle_1.jpg&quot;, 640x480)" status="run" time="0.32" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5100875"/>
+<property name="median" value="6349104"/>
+<property name="gmean" value="6251537"/>
+<property name="gstddev" value="0.068297"/>
+<property name="mean" value="6265455"/>
+<property name="stddev" value="412157"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/5" value_param="(&quot;bottle_1.jpg&quot;, 800x600)" status="run" time="0.374" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5832083"/>
+<property name="median" value="7511250"/>
+<property name="gmean" value="7267590"/>
+<property name="gstddev" value="0.097174"/>
+<property name="mean" value="7300598"/>
+<property name="stddev" value="689965"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/6" value_param="(&quot;bottle_2.jpg&quot;, 480x360)" status="run" time="0.221" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3845750"/>
+<property name="median" value="4333938"/>
+<property name="gmean" value="4325930"/>
+<property name="gstddev" value="0.046703"/>
+<property name="mean" value="4330524"/>
+<property name="stddev" value="200737"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/7" value_param="(&quot;bottle_2.jpg&quot;, 640x480)" status="run" time="0.387" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6693416"/>
+<property name="median" value="7656542"/>
+<property name="gmean" value="7637790"/>
+<property name="gstddev" value="0.041797"/>
+<property name="mean" value="7644252"/>
+<property name="stddev" value="314680"/>
+</properties>
+    </testcase>
+    <testcase name="detect_decode/8" value_param="(&quot;bottle_2.jpg&quot;, 800x600)" status="run" time="0.467" classname="Perf_Barcode_single">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8473666"/>
+<property name="median" value="9204459"/>
+<property name="gmean" value="9201464"/>
+<property name="gstddev" value="0.045960"/>
+<property name="mean" value="9210981"/>
+<property name="stddev" value="423789"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Objdetect_QRCode" tests="28" failures="0" disabled="0" errors="0" time="10.734">
+    <testcase name="detect/0" value_param="&quot;version_1_down.jpg&quot;" status="run" time="0.513" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9695208"/>
+<property name="median" value="10142312"/>
+<property name="gmean" value="10148992"/>
+<property name="gstddev" value="0.015999"/>
+<property name="mean" value="10150261"/>
+<property name="stddev" value="162121"/>
+</properties>
+    </testcase>
+    <testcase name="detect/1" value_param="&quot;version_1_left.jpg&quot;" status="run" time="0.459" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8547917"/>
+<property name="median" value="9059000"/>
+<property name="gmean" value="9070512"/>
+<property name="gstddev" value="0.031672"/>
+<property name="mean" value="9074967"/>
+<property name="stddev" value="287825"/>
+</properties>
+    </testcase>
+    <testcase name="detect/2" value_param="&quot;version_1_right.jpg&quot;" status="run" time="0.458" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8242958"/>
+<property name="median" value="8541854"/>
+<property name="gmean" value="8618765"/>
+<property name="gstddev" value="0.036794"/>
+<property name="mean" value="8624646"/>
+<property name="stddev" value="331941"/>
+</properties>
+    </testcase>
+    <testcase name="detect/3" value_param="&quot;version_1_up.jpg&quot;" status="run" time="0.418" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7985375"/>
+<property name="median" value="8308124"/>
+<property name="gmean" value="8285515"/>
+<property name="gstddev" value="0.021908"/>
+<property name="mean" value="8287461"/>
+<property name="stddev" value="181617"/>
+</properties>
+    </testcase>
+    <testcase name="detect/4" value_param="&quot;version_1_top.jpg&quot;" status="run" time="0.478" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9046417"/>
+<property name="median" value="9465583"/>
+<property name="gmean" value="9446637"/>
+<property name="gstddev" value="0.018910"/>
+<property name="mean" value="9448287"/>
+<property name="stddev" value="178245"/>
+</properties>
+    </testcase>
+    <testcase name="detect/5" value_param="&quot;version_5_down.jpg&quot;" status="run" time="0.438" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7931833"/>
+<property name="median" value="8755458"/>
+<property name="gmean" value="8666980"/>
+<property name="gstddev" value="0.032578"/>
+<property name="mean" value="8671446"/>
+<property name="stddev" value="279279"/>
+</properties>
+    </testcase>
+    <testcase name="detect/6" value_param="&quot;version_5_left.jpg&quot;" status="run" time="0.424" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7869750"/>
+<property name="median" value="8421042"/>
+<property name="gmean" value="8412178"/>
+<property name="gstddev" value="0.025732"/>
+<property name="mean" value="8414896"/>
+<property name="stddev" value="215729"/>
+</properties>
+    </testcase>
+    <testcase name="detect/7" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0.426" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8156250"/>
+<property name="median" value="8460500"/>
+<property name="gmean" value="8450602"/>
+<property name="gstddev" value="0.014914"/>
+<property name="mean" value="8451520"/>
+<property name="stddev" value="125666"/>
+</properties>
+    </testcase>
+    <testcase name="detect/8" value_param="&quot;version_5_top.jpg&quot;" status="run" time="0.418" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7832375"/>
+<property name="median" value="8284896"/>
+<property name="gmean" value="8291511"/>
+<property name="gstddev" value="0.021054"/>
+<property name="mean" value="8293305"/>
+<property name="stddev" value="174042"/>
+</properties>
+    </testcase>
+    <testcase name="detect/9" value_param="&quot;russian.jpg&quot;" status="run" time="0.465" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8929208"/>
+<property name="median" value="9201312"/>
+<property name="gmean" value="9208625"/>
+<property name="gstddev" value="0.014526"/>
+<property name="mean" value="9209575"/>
+<property name="stddev" value="133672"/>
+</properties>
+    </testcase>
+    <testcase name="detect/10" value_param="&quot;kanji.jpg&quot;" status="run" time="0.446" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8485209"/>
+<property name="median" value="8865771"/>
+<property name="gmean" value="8861450"/>
+<property name="gstddev" value="0.020803"/>
+<property name="mean" value="8863324"/>
+<property name="stddev" value="184169"/>
+</properties>
+    </testcase>
+    <testcase name="detect/11" value_param="&quot;link_github_ocv.jpg&quot;" status="run" time="0.446" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8294583"/>
+<property name="median" value="8824480"/>
+<property name="gmean" value="8836267"/>
+<property name="gstddev" value="0.021858"/>
+<property name="mean" value="8838332"/>
+<property name="stddev" value="193113"/>
+</properties>
+    </testcase>
+    <testcase name="detect/12" value_param="&quot;link_ocv.jpg&quot;" status="run" time="0.436" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8391166"/>
+<property name="median" value="8650396"/>
+<property name="gmean" value="8645411"/>
+<property name="gstddev" value="0.016559"/>
+<property name="mean" value="8646570"/>
+<property name="stddev" value="143056"/>
+</properties>
+    </testcase>
+    <testcase name="detect/13" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0.453" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8398291"/>
+<property name="median" value="9029792"/>
+<property name="gmean" value="8982489"/>
+<property name="gstddev" value="0.029408"/>
+<property name="mean" value="8986264"/>
+<property name="stddev" value="261718"/>
+</properties>
+    </testcase>
+    <testcase name="decode/0" value_param="&quot;version_1_down.jpg&quot;" status="run" time="0.306" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5588958"/>
+<property name="median" value="5894980"/>
+<property name="gmean" value="5860359"/>
+<property name="gstddev" value="0.025968"/>
+<property name="mean" value="5862289"/>
+<property name="stddev" value="151881"/>
+</properties>
+    </testcase>
+    <testcase name="decode/1" value_param="&quot;version_1_left.jpg&quot;" status="run" time="0.308" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5717083"/>
+<property name="median" value="5913604"/>
+<property name="gmean" value="5902230"/>
+<property name="gstddev" value="0.017335"/>
+<property name="mean" value="5903096"/>
+<property name="stddev" value="102109"/>
+</properties>
+    </testcase>
+    <testcase name="decode/2" value_param="&quot;version_1_right.jpg&quot;" status="run" time="0.303" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5638417"/>
+<property name="median" value="5867896"/>
+<property name="gmean" value="5851989"/>
+<property name="gstddev" value="0.019386"/>
+<property name="mean" value="5853063"/>
+<property name="stddev" value="113295"/>
+</properties>
+    </testcase>
+    <testcase name="decode/3" value_param="&quot;version_1_up.jpg&quot;" status="run" time="0.296" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5420750"/>
+<property name="median" value="5744729"/>
+<property name="gmean" value="5708545"/>
+<property name="gstddev" value="0.020022"/>
+<property name="mean" value="5709657"/>
+<property name="stddev" value="113146"/>
+</properties>
+    </testcase>
+    <testcase name="decode/4" value_param="&quot;version_1_top.jpg&quot;" status="run" time="0.299" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5616375"/>
+<property name="median" value="5742979"/>
+<property name="gmean" value="5750049"/>
+<property name="gstddev" value="0.012591"/>
+<property name="mean" value="5750496"/>
+<property name="stddev" value="72438"/>
+</properties>
+    </testcase>
+    <testcase name="decode/5" value_param="&quot;version_5_down.jpg&quot;" status="run" time="0.328" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6179791"/>
+<property name="median" value="6318708"/>
+<property name="gmean" value="6337290"/>
+<property name="gstddev" value="0.016723"/>
+<property name="mean" value="6338159"/>
+<property name="stddev" value="106458"/>
+</properties>
+    </testcase>
+    <testcase name="decode/6" value_param="&quot;version_5_left.jpg&quot;" status="run" time="0.331" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6098667"/>
+<property name="median" value="6396854"/>
+<property name="gmean" value="6383384"/>
+<property name="gstddev" value="0.017071"/>
+<property name="mean" value="6384291"/>
+<property name="stddev" value="108501"/>
+</properties>
+    </testcase>
+    <testcase name="decode/7" value_param="&quot;version_5_up.jpg&quot;" status="run" time="0.331" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6174792"/>
+<property name="median" value="6417020"/>
+<property name="gmean" value="6410435"/>
+<property name="gstddev" value="0.011693"/>
+<property name="mean" value="6410862"/>
+<property name="stddev" value="74700"/>
+</properties>
+    </testcase>
+    <testcase name="decode/8" value_param="&quot;version_5_top.jpg&quot;" status="run" time="0.329" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6142167"/>
+<property name="median" value="6365396"/>
+<property name="gmean" value="6377826"/>
+<property name="gstddev" value="0.018413"/>
+<property name="mean" value="6378884"/>
+<property name="stddev" value="117507"/>
+</properties>
+    </testcase>
+    <testcase name="decode/9" value_param="&quot;russian.jpg&quot;" status="run" time="0.341" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6255292"/>
+<property name="median" value="6647584"/>
+<property name="gmean" value="6581429"/>
+<property name="gstddev" value="0.020918"/>
+<property name="mean" value="6582829"/>
+<property name="stddev" value="136467"/>
+</properties>
+    </testcase>
+    <testcase name="decode/10" value_param="&quot;kanji.jpg&quot;" status="run" time="0.316" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5873375"/>
+<property name="median" value="6067188"/>
+<property name="gmean" value="6079398"/>
+<property name="gstddev" value="0.016458"/>
+<property name="mean" value="6080203"/>
+<property name="stddev" value="99913"/>
+</properties>
+    </testcase>
+    <testcase name="decode/11" value_param="&quot;link_github_ocv.jpg&quot;" status="run" time="0.318" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5892000"/>
+<property name="median" value="6160562"/>
+<property name="gmean" value="6133984"/>
+<property name="gstddev" value="0.023702"/>
+<property name="mean" value="6135668"/>
+<property name="stddev" value="145076"/>
+</properties>
+    </testcase>
+    <testcase name="decode/12" value_param="&quot;link_ocv.jpg&quot;" status="run" time="0.333" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5991583"/>
+<property name="median" value="6302124"/>
+<property name="gmean" value="6290414"/>
+<property name="gstddev" value="0.019220"/>
+<property name="mean" value="6291550"/>
+<property name="stddev" value="120801"/>
+</properties>
+    </testcase>
+    <testcase name="decode/13" value_param="&quot;link_wiki_cv.jpg&quot;" status="run" time="0.316" classname="Perf_Objdetect_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5883875"/>
+<property name="median" value="6072271"/>
+<property name="gmean" value="6054631"/>
+<property name="gstddev" value="0.015472"/>
+<property name="mean" value="6055340"/>
+<property name="stddev" value="93582"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Objdetect_QRCode_Multi" tests="32" failures="0" disabled="0" errors="0" time="36.497">
+    <testcase name="detectMulti/0" value_param="(&quot;2_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="1.389" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="26694375"/>
+<property name="median" value="27526271"/>
+<property name="gmean" value="27604341"/>
+<property name="gstddev" value="0.015669"/>
+<property name="mean" value="27607657"/>
+<property name="stddev" value="432730"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/1" value_param="(&quot;2_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.986" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="18607083"/>
+<property name="median" value="19567584"/>
+<property name="gmean" value="19568083"/>
+<property name="gstddev" value="0.016529"/>
+<property name="mean" value="19570688"/>
+<property name="stddev" value="321771"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/2" value_param="(&quot;3_close_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.759" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14412291"/>
+<property name="median" value="15033812"/>
+<property name="gmean" value="15037320"/>
+<property name="gstddev" value="0.023742"/>
+<property name="mean" value="15041474"/>
+<property name="stddev" value="358012"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/3" value_param="(&quot;3_close_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.267" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5056000"/>
+<property name="median" value="5276084"/>
+<property name="gmean" value="5271139"/>
+<property name="gstddev" value="0.025082"/>
+<property name="mean" value="5272764"/>
+<property name="stddev" value="132617"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/4" value_param="(&quot;3_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="1.278" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24762417"/>
+<property name="median" value="25373479"/>
+<property name="gmean" value="25414539"/>
+<property name="gstddev" value="0.013942"/>
+<property name="mean" value="25416960"/>
+<property name="stddev" value="355467"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/5" value_param="(&quot;3_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.44" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8365125"/>
+<property name="median" value="8717750"/>
+<property name="gmean" value="8701247"/>
+<property name="gstddev" value="0.016966"/>
+<property name="mean" value="8702469"/>
+<property name="stddev" value="147074"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/6" value_param="(&quot;4_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.855" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16599125"/>
+<property name="median" value="17000521"/>
+<property name="gmean" value="16994990"/>
+<property name="gstddev" value="0.012580"/>
+<property name="mean" value="16996305"/>
+<property name="stddev" value="213721"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/7" value_param="(&quot;4_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.259" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="4976375"/>
+<property name="median" value="5121916"/>
+<property name="gmean" value="5129402"/>
+<property name="gstddev" value="0.016590"/>
+<property name="mean" value="5130094"/>
+<property name="stddev" value="85312"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/8" value_param="(&quot;5_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="1.291" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24400625"/>
+<property name="median" value="25586208"/>
+<property name="gmean" value="25580566"/>
+<property name="gstddev" value="0.021361"/>
+<property name="mean" value="25586265"/>
+<property name="stddev" value="545052"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/9" value_param="(&quot;5_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.511" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9735833"/>
+<property name="median" value="10131688"/>
+<property name="gmean" value="10136522"/>
+<property name="gstddev" value="0.016727"/>
+<property name="mean" value="10137909"/>
+<property name="stddev" value="169535"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/10" value_param="(&quot;6_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="1.804" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="34570458"/>
+<property name="median" value="35887104"/>
+<property name="gmean" value="35897845"/>
+<property name="gstddev" value="0.014378"/>
+<property name="mean" value="35901472"/>
+<property name="stddev" value="515654"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/11" value_param="(&quot;6_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.768" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14569167"/>
+<property name="median" value="15288542"/>
+<property name="gmean" value="15255511"/>
+<property name="gstddev" value="0.016901"/>
+<property name="mean" value="15257633"/>
+<property name="stddev" value="256240"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/12" value_param="(&quot;7_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="2.396" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="45757000"/>
+<property name="median" value="47650500"/>
+<property name="gmean" value="47590175"/>
+<property name="gstddev" value="0.019844"/>
+<property name="mean" value="47599319"/>
+<property name="stddev" value="941000"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/13" value_param="(&quot;7_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.778" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14893000"/>
+<property name="median" value="15386084"/>
+<property name="gmean" value="15390232"/>
+<property name="gstddev" value="0.012712"/>
+<property name="mean" value="15391447"/>
+<property name="stddev" value="195332"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/14" value_param="(&quot;8_close_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="6.546" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="124529833"/>
+<property name="median" value="130720354"/>
+<property name="gmean" value="130413438"/>
+<property name="gstddev" value="0.014441"/>
+<property name="mean" value="130426684"/>
+<property name="stddev" value="1871320"/>
+</properties>
+    </testcase>
+    <testcase name="detectMulti/15" value_param="(&quot;8_close_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="3.537" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="67777125"/>
+<property name="median" value="70587354"/>
+<property name="gmean" value="70429757"/>
+<property name="gstddev" value="0.010151"/>
+<property name="mean" value="70433289"/>
+<property name="stddev" value="709448"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/0" value_param="(&quot;2_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.714" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="12701958"/>
+<property name="median" value="13565208"/>
+<property name="gmean" value="13581691"/>
+<property name="gstddev" value="0.024716"/>
+<property name="mean" value="13585737"/>
+<property name="stddev" value="334307"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/1" value_param="(&quot;2_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.709" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13147334"/>
+<property name="median" value="13662062"/>
+<property name="gmean" value="13667893"/>
+<property name="gstddev" value="0.014808"/>
+<property name="mean" value="13669357"/>
+<property name="stddev" value="202034"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/2" value_param="(&quot;3_close_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.323" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6022417"/>
+<property name="median" value="6090834"/>
+<property name="gmean" value="6089879"/>
+<property name="gstddev" value="0.006155"/>
+<property name="mean" value="6089992"/>
+<property name="stddev" value="37491"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/3" value_param="(&quot;3_close_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.321" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6105541"/>
+<property name="median" value="6237187"/>
+<property name="gmean" value="6243462"/>
+<property name="gstddev" value="0.009950"/>
+<property name="mean" value="6243764"/>
+<property name="stddev" value="62258"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/4" value_param="(&quot;3_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.616" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="11187833"/>
+<property name="median" value="11771208"/>
+<property name="gmean" value="11699483"/>
+<property name="gstddev" value="0.022156"/>
+<property name="mean" value="11702286"/>
+<property name="stddev" value="258418"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/5" value_param="(&quot;3_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.599" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="11367084"/>
+<property name="median" value="11702354"/>
+<property name="gmean" value="11699471"/>
+<property name="gstddev" value="0.014294"/>
+<property name="mean" value="11700640"/>
+<property name="stddev" value="167316"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/6" value_param="(&quot;4_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.356" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6417709"/>
+<property name="median" value="6687562"/>
+<property name="gmean" value="6716263"/>
+<property name="gstddev" value="0.025390"/>
+<property name="mean" value="6718383"/>
+<property name="stddev" value="170783"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/7" value_param="(&quot;4_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.344" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6502625"/>
+<property name="median" value="6746354"/>
+<property name="gmean" value="6726692"/>
+<property name="gstddev" value="0.015853"/>
+<property name="mean" value="6727517"/>
+<property name="stddev" value="106231"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/8" value_param="(&quot;5_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.386" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6704125"/>
+<property name="median" value="7213980"/>
+<property name="gmean" value="7135737"/>
+<property name="gstddev" value="0.026223"/>
+<property name="mean" value="7138126"/>
+<property name="stddev" value="185849"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/9" value_param="(&quot;5_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.002" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="custom_status" value="skipped"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/10" value_param="(&quot;6_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.802" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14547709"/>
+<property name="median" value="15235354"/>
+<property name="gmean" value="15218398"/>
+<property name="gstddev" value="0.017438"/>
+<property name="mean" value="15220654"/>
+<property name="stddev" value="264019"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/11" value_param="(&quot;6_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="0.789" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14794625"/>
+<property name="median" value="15373854"/>
+<property name="gmean" value="15361884"/>
+<property name="gstddev" value="0.014598"/>
+<property name="mean" value="15363480"/>
+<property name="stddev" value="223312"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/12" value_param="(&quot;7_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="0.775" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13439833"/>
+<property name="median" value="14316479"/>
+<property name="gmean" value="14330609"/>
+<property name="gstddev" value="0.025593"/>
+<property name="mean" value="14335196"/>
+<property name="stddev" value="366299"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/13" value_param="(&quot;7_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="1.171" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22037334"/>
+<property name="median" value="22871208"/>
+<property name="gmean" value="22920170"/>
+<property name="gstddev" value="0.016131"/>
+<property name="mean" value="22923086"/>
+<property name="stddev" value="369447"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/14" value_param="(&quot;8_close_qrcodes.png&quot;, &quot;contours_based&quot;)" status="run" time="2.338" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="40557916"/>
+<property name="median" value="43537916"/>
+<property name="gmean" value="43592104"/>
+<property name="gstddev" value="0.054431"/>
+<property name="mean" value="43655444"/>
+<property name="stddev" value="2382909"/>
+</properties>
+    </testcase>
+    <testcase name="decodeMulti/15" value_param="(&quot;8_close_qrcodes.png&quot;, &quot;aruco_based&quot;)" status="run" time="2.388" classname="Perf_Objdetect_QRCode_Multi">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="41556042"/>
+<property name="median" value="45953812"/>
+<property name="gmean" value="45604208"/>
+<property name="gstddev" value="0.041356"/>
+<property name="mean" value="45642151"/>
+<property name="stddev" value="1871287"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="Perf_Objdetect_Not_QRCode" tests="24" failures="0" disabled="0" errors="0" time="101.489">
+    <testcase name="detect/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.324" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6090167"/>
+<property name="median" value="6448396"/>
+<property name="gmean" value="6453369"/>
+<property name="gstddev" value="0.024560"/>
+<property name="mean" value="6455269"/>
+<property name="stddev" value="158026"/>
+</properties>
+    </testcase>
+    <testcase name="detect/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="1.331" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25360583"/>
+<property name="median" value="26613896"/>
+<property name="gmean" value="26533526"/>
+<property name="gstddev" value="0.017044"/>
+<property name="mean" value="26537280"/>
+<property name="stddev" value="449462"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="detect/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="2.441" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="46655209"/>
+<property name="median" value="48580750"/>
+<property name="gmean" value="48680341"/>
+<property name="gstddev" value="0.015585"/>
+<property name="mean" value="48686126"/>
+<property name="stddev" value="759053"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="detect/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="8.58" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="165289209"/>
+<property name="median" value="170680479"/>
+<property name="gmean" value="171062815"/>
+<property name="gstddev" value="0.015177"/>
+<property name="mean" value="171082106"/>
+<property name="stddev" value="2599814"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="detect/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.323" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6113709"/>
+<property name="median" value="6388854"/>
+<property name="gmean" value="6414057"/>
+<property name="gstddev" value="0.019405"/>
+<property name="mean" value="6415238"/>
+<property name="stddev" value="124485"/>
+</properties>
+    </testcase>
+    <testcase name="detect/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="1.333" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25798750"/>
+<property name="median" value="26638146"/>
+<property name="gmean" value="26587645"/>
+<property name="gstddev" value="0.013327"/>
+<property name="mean" value="26589948"/>
+<property name="stddev" value="352929"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="detect/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="2.449" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="47337792"/>
+<property name="median" value="48787812"/>
+<property name="gmean" value="48827042"/>
+<property name="gstddev" value="0.013650"/>
+<property name="mean" value="48831489"/>
+<property name="stddev" value="665803"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="detect/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="8.603" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="166160750"/>
+<property name="median" value="171240396"/>
+<property name="gmean" value="171341328"/>
+<property name="gstddev" value="0.015357"/>
+<property name="mean" value="171361094"/>
+<property name="stddev" value="2631665"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="detect/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="21.968" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="429113959"/>
+<property name="median" value="440522688"/>
+<property name="gmean" value="438775205"/>
+<property name="gstddev" value="0.008118"/>
+<property name="mean" value="438789313"/>
+<property name="stddev" value="3548258"/>
+</properties>
+    </testcase>
+    <testcase name="detect/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="1.526" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="29635375"/>
+<property name="median" value="30343416"/>
+<property name="gmean" value="30404643"/>
+<property name="gstddev" value="0.014419"/>
+<property name="mean" value="30407742"/>
+<property name="stddev" value="439938"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="detect/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="2.833" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="54201500"/>
+<property name="median" value="56371876"/>
+<property name="gmean" value="56423199"/>
+<property name="gstddev" value="0.016164"/>
+<property name="mean" value="56430406"/>
+<property name="stddev" value="911352"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="detect/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="10.242" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="198422292"/>
+<property name="median" value="204513834"/>
+<property name="gmean" value="204200725"/>
+<property name="gstddev" value="0.012217"/>
+<property name="mean" value="204215600"/>
+<property name="stddev" value="2486644"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/0" value_param="(&quot;zero&quot;, 640x480)" status="run" time="0.472" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9127459"/>
+<property name="median" value="9367938"/>
+<property name="gmean" value="9375681"/>
+<property name="gstddev" value="0.013799"/>
+<property name="mean" value="9376555"/>
+<property name="stddev" value="129533"/>
+</properties>
+    </testcase>
+    <testcase name="decode/1" value_param="(&quot;zero&quot;, 1280x720)" status="run" time="1.135" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="21044375"/>
+<property name="median" value="22775770"/>
+<property name="gmean" value="22602772"/>
+<property name="gstddev" value="0.026311"/>
+<property name="mean" value="22610335"/>
+<property name="stddev" value="584367"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="decode/2" value_param="(&quot;zero&quot;, 1920x1080)" status="run" time="2.365" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44635709"/>
+<property name="median" value="47066750"/>
+<property name="gmean" value="47061989"/>
+<property name="gstddev" value="0.020636"/>
+<property name="mean" value="47071771"/>
+<property name="stddev" value="968181"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/3" value_param="(&quot;zero&quot;, 3840x2160)" status="run" time="9.174" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="172265584"/>
+<property name="median" value="183037584"/>
+<property name="gmean" value="182977738"/>
+<property name="gstddev" value="0.017356"/>
+<property name="mean" value="183004540"/>
+<property name="stddev" value="3148252"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/4" value_param="(&quot;random&quot;, 640x480)" status="run" time="0.491" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9322833"/>
+<property name="median" value="9780042"/>
+<property name="gmean" value="9745410"/>
+<property name="gstddev" value="0.014749"/>
+<property name="mean" value="9746439"/>
+<property name="stddev" value="142152"/>
+</properties>
+    </testcase>
+    <testcase name="decode/5" value_param="(&quot;random&quot;, 1280x720)" status="run" time="1.177" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="21762750"/>
+<property name="median" value="23478937"/>
+<property name="gmean" value="23381617"/>
+<property name="gstddev" value="0.029492"/>
+<property name="mean" value="23391487"/>
+<property name="stddev" value="681709"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="decode/6" value_param="(&quot;random&quot;, 1920x1080)" status="run" time="2.42" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="45684042"/>
+<property name="median" value="48070375"/>
+<property name="gmean" value="48105424"/>
+<property name="gstddev" value="0.025593"/>
+<property name="mean" value="48120855"/>
+<property name="stddev" value="1233555"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/7" value_param="(&quot;random&quot;, 3840x2160)" status="run" time="9.153" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="173762084"/>
+<property name="median" value="182629521"/>
+<property name="gmean" value="182387530"/>
+<property name="gstddev" value="0.016563"/>
+<property name="mean" value="182411886"/>
+<property name="stddev" value="2999624"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/8" value_param="(&quot;chessboard&quot;, 640x480)" status="run" time="0.555" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10879750"/>
+<property name="median" value="11050333"/>
+<property name="gmean" value="11079751"/>
+<property name="gstddev" value="0.008372"/>
+<property name="mean" value="11080131"/>
+<property name="stddev" value="92811"/>
+</properties>
+    </testcase>
+    <testcase name="decode/9" value_param="(&quot;chessboard&quot;, 1280x720)" status="run" time="1.197" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="21746541"/>
+<property name="median" value="23914812"/>
+<property name="gmean" value="23741700"/>
+<property name="gstddev" value="0.029024"/>
+<property name="mean" value="23751357"/>
+<property name="stddev" value="676049"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="decode/10" value_param="(&quot;chessboard&quot;, 1920x1080)" status="run" time="2.404" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44663125"/>
+<property name="median" value="47711104"/>
+<property name="gmean" value="47701707"/>
+<property name="gstddev" value="0.032890"/>
+<property name="mean" value="47726908"/>
+<property name="stddev" value="1565554"/>
+<property name="tags" value="size_fullhd"/>
+<property name="tags_implied" value="size_hd"/>
+</properties>
+    </testcase>
+    <testcase name="decode/11" value_param="(&quot;chessboard&quot;, 3840x2160)" status="run" time="8.992" classname="Perf_Objdetect_Not_QRCode">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="168794125"/>
+<property name="median" value="179416938"/>
+<property name="gmean" value="179153848"/>
+<property name="gstddev" value="0.017282"/>
+<property name="mean" value="179179841"/>
+<property name="stddev" value="3064693"/>
+<property name="tags" value="size_4k"/>
+<property name="tags_implied" value="size_fullhd,size_hd"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>

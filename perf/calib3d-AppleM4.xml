@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="119" failures="0" disabled="4" errors="0" timestamp="2025-10-22T15:49:20" time="91.281" cv_module_name="calib3d" cv_implementation="plain" cv_num_threads="-1" test_tags="" test_tags_skip="mem_6gb,verylong" test_tags_force="" cv_version="4.12.0" cv_version_build="4.12.0" cv_vcs_version="4.12.0" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/usr/bin/c++  (ver 17.0.0.17000013)" implementation_hint="ALGO_HINT_ACCURATE" hal="YES (carotene (ver 0.0.1))" cv_parallel_framework="gcd" cv_parallel_threads="10" cv_cpu_features="NEON FP16 NEON_DOTPROD NEON_FP16 *NEON_BF16" name="AllTests">
+  <testsuite name="Undistort" tests="3" failures="0" disabled="1" errors="0" time="0.729">
+    <testcase name="InitUndistortMap" status="run" time="0.014" classname="Undistort">
+<properties>
+<property name="bytesIn" value="148"/>
+<property name="bytesOut" value="2109440"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="194917"/>
+<property name="median" value="219520"/>
+<property name="gmean" value="234491"/>
+<property name="gstddev" value="0.241711"/>
+<property name="mean" value="243781"/>
+<property name="stddev" value="93963"/>
+</properties>
+    </testcase>
+    <testcase name="DISABLED_InitInverseRectificationMap" status="notrun" time="0" classname="Undistort" />
+    <testcase name="fisheye_undistortPoints_100k_10iter" status="run" time="0.715" classname="Undistort">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13989833"/>
+<property name="median" value="14106562"/>
+<property name="gmean" value="14101531"/>
+<property name="gstddev" value="0.004827"/>
+<property name="mean" value="14101692"/>
+<property name="stddev" value="68034"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="EstimateAffine_EstimateAffine2D" tests="36" failures="0" disabled="0" errors="0" time="11.302">
+    <testcase name="EstimateAffine2D/0" value_param="(100000, 0.99, RANSAC, 10)" status="run" time="0.625" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="12344209"/>
+<property name="median" value="12441292"/>
+<property name="gmean" value="12446898"/>
+<property name="gstddev" value="0.004155"/>
+<property name="mean" value="12447003"/>
+<property name="stddev" value="51835"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/1" value_param="(100000, 0.99, RANSAC, 0)" status="run" time="0.187" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3705917"/>
+<property name="median" value="3713271"/>
+<property name="gmean" value="3713786"/>
+<property name="gstddev" value="0.001446"/>
+<property name="mean" value="3713790"/>
+<property name="stddev" value="5373"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/2" value_param="(100000, 0.99, LMEDS, 10)" status="run" time="1.693" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="33707958"/>
+<property name="median" value="33775688"/>
+<property name="gmean" value="33802089"/>
+<property name="gstddev" value="0.002447"/>
+<property name="mean" value="33802188"/>
+<property name="stddev" value="82910"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/3" value_param="(100000, 0.99, LMEDS, 0)" status="run" time="1.246" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24843292"/>
+<property name="median" value="24886708"/>
+<property name="gmean" value="24885594"/>
+<property name="gstddev" value="0.000894"/>
+<property name="mean" value="24885604"/>
+<property name="stddev" value="22250"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/4" value_param="(100000, 0.95, RANSAC, 10)" status="run" time="0.566" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="11194958"/>
+<property name="median" value="11260667"/>
+<property name="gmean" value="11269852"/>
+<property name="gstddev" value="0.003904"/>
+<property name="mean" value="11269936"/>
+<property name="stddev" value="44042"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/5" value_param="(100000, 0.95, RANSAC, 0)" status="run" time="0.124" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2446709"/>
+<property name="median" value="2453166"/>
+<property name="gmean" value="2454180"/>
+<property name="gstddev" value="0.002191"/>
+<property name="mean" value="2454186"/>
+<property name="stddev" value="5385"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/6" value_param="(100000, 0.95, LMEDS, 10)" status="run" time="2.25" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="44393875"/>
+<property name="median" value="44801916"/>
+<property name="gmean" value="44797671"/>
+<property name="gstddev" value="0.003335"/>
+<property name="mean" value="44797915"/>
+<property name="stddev" value="149460"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/7" value_param="(100000, 0.95, LMEDS, 0)" status="run" time="0.827" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16470875"/>
+<property name="median" value="16501125"/>
+<property name="gmean" value="16504262"/>
+<property name="gstddev" value="0.001068"/>
+<property name="mean" value="16504271"/>
+<property name="stddev" value="17636"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/8" value_param="(100000, 0.9, RANSAC, 10)" status="run" time="0.536" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10621666"/>
+<property name="median" value="10663334"/>
+<property name="gmean" value="10675770"/>
+<property name="gstddev" value="0.003851"/>
+<property name="mean" value="10675848"/>
+<property name="stddev" value="41193"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/9" value_param="(100000, 0.9, RANSAC, 0)" status="run" time="0.097" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1916459"/>
+<property name="median" value="1923854"/>
+<property name="gmean" value="1923290"/>
+<property name="gstddev" value="0.002005"/>
+<property name="mean" value="1923293"/>
+<property name="stddev" value="3856"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/10" value_param="(100000, 0.9, LMEDS, 10)" status="run" time="2.056" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="40905500"/>
+<property name="median" value="41078729"/>
+<property name="gmean" value="41082381"/>
+<property name="gstddev" value="0.002002"/>
+<property name="mean" value="41082462"/>
+<property name="stddev" value="82264"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/11" value_param="(100000, 0.9, LMEDS, 0)" status="run" time="0.658" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13099500"/>
+<property name="median" value="13121208"/>
+<property name="gmean" value="13124685"/>
+<property name="gstddev" value="0.001240"/>
+<property name="mean" value="13124695"/>
+<property name="stddev" value="16283"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/12" value_param="(5000, 0.99, RANSAC, 10)" status="run" time="0.036" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="696917"/>
+<property name="median" value="705313"/>
+<property name="gmean" value="706607"/>
+<property name="gstddev" value="0.008397"/>
+<property name="mean" value="706631"/>
+<property name="stddev" value="5945"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/13" value_param="(5000, 0.99, RANSAC, 0)" status="run" time="0.011" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="201834"/>
+<property name="median" value="204500"/>
+<property name="gmean" value="225962"/>
+<property name="gstddev" value="0.119631"/>
+<property name="mean" value="227556"/>
+<property name="stddev" value="27374"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/14" value_param="(5000, 0.99, LMEDS, 10)" status="run" time="0.076" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1483333"/>
+<property name="median" value="1495770"/>
+<property name="gmean" value="1498804"/>
+<property name="gstddev" value="0.007628"/>
+<property name="mean" value="1498847"/>
+<property name="stddev" value="11482"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/15" value_param="(5000, 0.99, LMEDS, 0)" status="run" time="0.051" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="992959"/>
+<property name="median" value="1004354"/>
+<property name="gmean" value="1023334"/>
+<property name="gstddev" value="0.028110"/>
+<property name="mean" value="1023730"/>
+<property name="stddev" value="28843"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/16" value_param="(5000, 0.95, RANSAC, 10)" status="run" time="0.032" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="627417"/>
+<property name="median" value="638479"/>
+<property name="gmean" value="637585"/>
+<property name="gstddev" value="0.007504"/>
+<property name="mean" value="637602"/>
+<property name="stddev" value="4779"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/17" value_param="(5000, 0.95, RANSAC, 0)" status="run" time="0.008" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="133125"/>
+<property name="median" value="136250"/>
+<property name="gmean" value="157135"/>
+<property name="gstddev" value="0.173417"/>
+<property name="mean" value="159475"/>
+<property name="stddev" value="27794"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/18" value_param="(5000, 0.95, LMEDS, 10)" status="run" time="0.065" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1262333"/>
+<property name="median" value="1282312"/>
+<property name="gmean" value="1284352"/>
+<property name="gstddev" value="0.010101"/>
+<property name="mean" value="1284417"/>
+<property name="stddev" value="13022"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/19" value_param="(5000, 0.95, LMEDS, 0)" status="run" time="0.029" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="557125"/>
+<property name="median" value="568458"/>
+<property name="gmean" value="586859"/>
+<property name="gstddev" value="0.047397"/>
+<property name="mean" value="587505"/>
+<property name="stddev" value="27927"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/20" value_param="(5000, 0.9, RANSAC, 10)" status="run" time="0.031" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="596750"/>
+<property name="median" value="609958"/>
+<property name="gmean" value="609648"/>
+<property name="gstddev" value="0.008015"/>
+<property name="mean" value="609668"/>
+<property name="stddev" value="4882"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/21" value_param="(5000, 0.9, RANSAC, 0)" status="run" time="0.007" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="105500"/>
+<property name="median" value="109938"/>
+<property name="gmean" value="128932"/>
+<property name="gstddev" value="0.209086"/>
+<property name="mean" value="131732"/>
+<property name="stddev" value="27633"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/22" value_param="(5000, 0.9, LMEDS, 10)" status="run" time="0.057" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1115333"/>
+<property name="median" value="1129729"/>
+<property name="gmean" value="1130942"/>
+<property name="gstddev" value="0.008375"/>
+<property name="mean" value="1130981"/>
+<property name="stddev" value="9493"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/23" value_param="(5000, 0.9, LMEDS, 0)" status="run" time="0.022" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="413333"/>
+<property name="median" value="422980"/>
+<property name="gmean" value="440623"/>
+<property name="gstddev" value="0.062847"/>
+<property name="mean" value="441477"/>
+<property name="stddev" value="27846"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/24" value_param="(100, 0.99, RANSAC, 10)" status="run" time="0.002" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="33458"/>
+<property name="median" value="33980"/>
+<property name="gmean" value="33986"/>
+<property name="gstddev" value="0.008520"/>
+<property name="mean" value="33987"/>
+<property name="stddev" value="290"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/25" value_param="(100, 0.99, RANSAC, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16958"/>
+<property name="median" value="17209"/>
+<property name="gmean" value="17222"/>
+<property name="gstddev" value="0.007288"/>
+<property name="mean" value="17222"/>
+<property name="stddev" value="125"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/26" value_param="(100, 0.99, LMEDS, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="25750"/>
+<property name="median" value="26104"/>
+<property name="gmean" value="26194"/>
+<property name="gstddev" value="0.009525"/>
+<property name="mean" value="26195"/>
+<property name="stddev" value="250"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/27" value_param="(100, 0.99, LMEDS, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14875"/>
+<property name="median" value="15084"/>
+<property name="gmean" value="15136"/>
+<property name="gstddev" value="0.013095"/>
+<property name="mean" value="15138"/>
+<property name="stddev" value="199"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/28" value_param="(100, 0.95, RANSAC, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28500"/>
+<property name="median" value="28875"/>
+<property name="gmean" value="28879"/>
+<property name="gstddev" value="0.007309"/>
+<property name="mean" value="28880"/>
+<property name="stddev" value="211"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/29" value_param="(100, 0.95, RANSAC, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="12000"/>
+<property name="median" value="12208"/>
+<property name="gmean" value="12213"/>
+<property name="gstddev" value="0.010519"/>
+<property name="mean" value="12214"/>
+<property name="stddev" value="129"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/30" value_param="(100, 0.95, LMEDS, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="20625"/>
+<property name="median" value="20875"/>
+<property name="gmean" value="20920"/>
+<property name="gstddev" value="0.009847"/>
+<property name="mean" value="20921"/>
+<property name="stddev" value="207"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/31" value_param="(100, 0.95, LMEDS, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9667"/>
+<property name="median" value="9917"/>
+<property name="gmean" value="9938"/>
+<property name="gstddev" value="0.014183"/>
+<property name="mean" value="9938"/>
+<property name="stddev" value="141"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/32" value_param="(100, 0.9, RANSAC, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="26250"/>
+<property name="median" value="26750"/>
+<property name="gmean" value="26739"/>
+<property name="gstddev" value="0.006980"/>
+<property name="mean" value="26739"/>
+<property name="stddev" value="186"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/33" value_param="(100, 0.9, RANSAC, 0)" status="run" time="0" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="9958"/>
+<property name="median" value="10230"/>
+<property name="gmean" value="10219"/>
+<property name="gstddev" value="0.013226"/>
+<property name="mean" value="10220"/>
+<property name="stddev" value="135"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/34" value_param="(100, 0.9, LMEDS, 10)" status="run" time="0.002" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="31208"/>
+<property name="median" value="31541"/>
+<property name="gmean" value="31558"/>
+<property name="gstddev" value="0.007923"/>
+<property name="mean" value="31559"/>
+<property name="stddev" value="250"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffine2D/35" value_param="(100, 0.9, LMEDS, 0)" status="run" time="0" classname="EstimateAffine_EstimateAffine2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8291"/>
+<property name="median" value="8542"/>
+<property name="gmean" value="8530"/>
+<property name="gstddev" value="0.016129"/>
+<property name="mean" value="8531"/>
+<property name="stddev" value="138"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="EstimateAffine_EstimateAffinePartial2D" tests="36" failures="0" disabled="0" errors="0" time="5.539">
+    <testcase name="EstimateAffinePartial2D/0" value_param="(100000, 0.99, RANSAC, 10)" status="run" time="0.354" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6978958"/>
+<property name="median" value="7024812"/>
+<property name="gmean" value="7029953"/>
+<property name="gstddev" value="0.004276"/>
+<property name="mean" value="7030016"/>
+<property name="stddev" value="30097"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/1" value_param="(100000, 0.99, RANSAC, 0)" status="run" time="0.074" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1452209"/>
+<property name="median" value="1459625"/>
+<property name="gmean" value="1459826"/>
+<property name="gstddev" value="0.003008"/>
+<property name="mean" value="1459832"/>
+<property name="stddev" value="4395"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/2" value_param="(100000, 0.99, LMEDS, 10)" status="run" time="1.152" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="22904166"/>
+<property name="median" value="22993583"/>
+<property name="gmean" value="23007191"/>
+<property name="gstddev" value="0.002490"/>
+<property name="mean" value="23007261"/>
+<property name="stddev" value="57339"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/3" value_param="(100000, 0.99, LMEDS, 0)" status="run" time="0.617" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="12291334"/>
+<property name="median" value="12307500"/>
+<property name="gmean" value="12308986"/>
+<property name="gstddev" value="0.001033"/>
+<property name="mean" value="12308992"/>
+<property name="stddev" value="12725"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/4" value_param="(100000, 0.95, RANSAC, 10)" status="run" time="0.328" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6427458"/>
+<property name="median" value="6513667"/>
+<property name="gmean" value="6512256"/>
+<property name="gstddev" value="0.007461"/>
+<property name="mean" value="6512433"/>
+<property name="stddev" value="48678"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/5" value_param="(100000, 0.95, RANSAC, 0)" status="run" time="0.05" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="963834"/>
+<property name="median" value="967438"/>
+<property name="gmean" value="968818"/>
+<property name="gstddev" value="0.004755"/>
+<property name="mean" value="968829"/>
+<property name="stddev" value="4619"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/6" value_param="(100000, 0.95, LMEDS, 10)" status="run" time="0.908" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="18042333"/>
+<property name="median" value="18117480"/>
+<property name="gmean" value="18128187"/>
+<property name="gstddev" value="0.002663"/>
+<property name="mean" value="18128250"/>
+<property name="stddev" value="48318"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/7" value_param="(100000, 0.95, LMEDS, 0)" status="run" time="0.375" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7454875"/>
+<property name="median" value="7474729"/>
+<property name="gmean" value="7477358"/>
+<property name="gstddev" value="0.001608"/>
+<property name="mean" value="7477368"/>
+<property name="stddev" value="12029"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/8" value_param="(100000, 0.9, RANSAC, 10)" status="run" time="0.319" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6281042"/>
+<property name="median" value="6325146"/>
+<property name="gmean" value="6332364"/>
+<property name="gstddev" value="0.006175"/>
+<property name="mean" value="6332482"/>
+<property name="stddev" value="39196"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/9" value_param="(100000, 0.9, RANSAC, 0)" status="run" time="0.04" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="778834"/>
+<property name="median" value="782854"/>
+<property name="gmean" value="783258"/>
+<property name="gstddev" value="0.004333"/>
+<property name="mean" value="783265"/>
+<property name="stddev" value="3402"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/10" value_param="(100000, 0.9, LMEDS, 10)" status="run" time="0.813" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16128667"/>
+<property name="median" value="16225166"/>
+<property name="gmean" value="16224042"/>
+<property name="gstddev" value="0.002856"/>
+<property name="mean" value="16224107"/>
+<property name="stddev" value="46330"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/11" value_param="(100000, 0.9, LMEDS, 0)" status="run" time="0.281" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5575708"/>
+<property name="median" value="5591604"/>
+<property name="gmean" value="5593110"/>
+<property name="gstddev" value="0.001786"/>
+<property name="mean" value="5593119"/>
+<property name="stddev" value="9997"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/12" value_param="(5000, 0.99, RANSAC, 10)" status="run" time="0.017" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="335833"/>
+<property name="median" value="340916"/>
+<property name="gmean" value="341027"/>
+<property name="gstddev" value="0.009130"/>
+<property name="mean" value="341041"/>
+<property name="stddev" value="3121"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/13" value_param="(5000, 0.99, RANSAC, 0)" status="run" time="0.004" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="77125"/>
+<property name="median" value="77959"/>
+<property name="gmean" value="77973"/>
+<property name="gstddev" value="0.002773"/>
+<property name="mean" value="77973"/>
+<property name="stddev" value="216"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/14" value_param="(5000, 0.99, LMEDS, 10)" status="run" time="0.042" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="827666"/>
+<property name="median" value="834416"/>
+<property name="gmean" value="835931"/>
+<property name="gstddev" value="0.007704"/>
+<property name="mean" value="835956"/>
+<property name="stddev" value="6467"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/15" value_param="(5000, 0.99, LMEDS, 0)" status="run" time="0.028" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="568625"/>
+<property name="median" value="570375"/>
+<property name="gmean" value="571070"/>
+<property name="gstddev" value="0.002838"/>
+<property name="mean" value="571072"/>
+<property name="stddev" value="1622"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/16" value_param="(5000, 0.95, RANSAC, 10)" status="run" time="0.016" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="311750"/>
+<property name="median" value="316333"/>
+<property name="gmean" value="316773"/>
+<property name="gstddev" value="0.007684"/>
+<property name="mean" value="316783"/>
+<property name="stddev" value="2439"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/17" value_param="(5000, 0.95, RANSAC, 0)" status="run" time="0.003" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="52542"/>
+<property name="median" value="53625"/>
+<property name="gmean" value="53631"/>
+<property name="gstddev" value="0.004345"/>
+<property name="mean" value="53631"/>
+<property name="stddev" value="232"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/18" value_param="(5000, 0.95, LMEDS, 10)" status="run" time="0.038" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="724833"/>
+<property name="median" value="736896"/>
+<property name="gmean" value="738575"/>
+<property name="gstddev" value="0.013278"/>
+<property name="mean" value="738639"/>
+<property name="stddev" value="9900"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/19" value_param="(5000, 0.95, LMEDS, 0)" status="run" time="0.01" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="210208"/>
+<property name="median" value="211000"/>
+<property name="gmean" value="211405"/>
+<property name="gstddev" value="0.005039"/>
+<property name="mean" value="211408"/>
+<property name="stddev" value="1069"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/20" value_param="(5000, 0.9, RANSAC, 10)" status="run" time="0.016" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="300709"/>
+<property name="median" value="304896"/>
+<property name="gmean" value="305349"/>
+<property name="gstddev" value="0.007598"/>
+<property name="mean" value="305358"/>
+<property name="stddev" value="2319"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/21" value_param="(5000, 0.9, RANSAC, 0)" status="run" time="0.002" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="41792"/>
+<property name="median" value="42916"/>
+<property name="gmean" value="42907"/>
+<property name="gstddev" value="0.005327"/>
+<property name="mean" value="42907"/>
+<property name="stddev" value="227"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/22" value_param="(5000, 0.9, LMEDS, 10)" status="run" time="0.035" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="674042"/>
+<property name="median" value="692146"/>
+<property name="gmean" value="692741"/>
+<property name="gstddev" value="0.016019"/>
+<property name="mean" value="692828"/>
+<property name="stddev" value="11160"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/23" value_param="(5000, 0.9, LMEDS, 0)" status="run" time="0.008" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="159583"/>
+<property name="median" value="162396"/>
+<property name="gmean" value="163909"/>
+<property name="gstddev" value="0.022695"/>
+<property name="mean" value="163950"/>
+<property name="stddev" value="3729"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/24" value_param="(100, 0.99, RANSAC, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="20125"/>
+<property name="median" value="20542"/>
+<property name="gmean" value="20611"/>
+<property name="gstddev" value="0.013231"/>
+<property name="mean" value="20612"/>
+<property name="stddev" value="274"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/25" value_param="(100, 0.99, RANSAC, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7666"/>
+<property name="median" value="7917"/>
+<property name="gmean" value="7906"/>
+<property name="gstddev" value="0.017912"/>
+<property name="mean" value="7908"/>
+<property name="stddev" value="142"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/26" value_param="(100, 0.99, LMEDS, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16917"/>
+<property name="median" value="17146"/>
+<property name="gmean" value="17202"/>
+<property name="gstddev" value="0.012268"/>
+<property name="mean" value="17203"/>
+<property name="stddev" value="212"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/27" value_param="(100, 0.99, LMEDS, 0)" status="run" time="0" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8583"/>
+<property name="median" value="8750"/>
+<property name="gmean" value="8759"/>
+<property name="gstddev" value="0.011156"/>
+<property name="mean" value="8760"/>
+<property name="stddev" value="98"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/28" value_param="(100, 0.95, RANSAC, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="18459"/>
+<property name="median" value="18896"/>
+<property name="gmean" value="18921"/>
+<property name="gstddev" value="0.012267"/>
+<property name="mean" value="18922"/>
+<property name="stddev" value="233"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/29" value_param="(100, 0.95, RANSAC, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5916"/>
+<property name="median" value="6083"/>
+<property name="gmean" value="6081"/>
+<property name="gstddev" value="0.018257"/>
+<property name="mean" value="6082"/>
+<property name="stddev" value="112"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/30" value_param="(100, 0.95, LMEDS, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="20291"/>
+<property name="median" value="20584"/>
+<property name="gmean" value="20592"/>
+<property name="gstddev" value="0.007035"/>
+<property name="mean" value="20593"/>
+<property name="stddev" value="145"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/31" value_param="(100, 0.95, LMEDS, 0)" status="run" time="0" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6291"/>
+<property name="median" value="6438"/>
+<property name="gmean" value="6448"/>
+<property name="gstddev" value="0.016788"/>
+<property name="mean" value="6449"/>
+<property name="stddev" value="109"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/32" value_param="(100, 0.9, RANSAC, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="17584"/>
+<property name="median" value="17875"/>
+<property name="gmean" value="17909"/>
+<property name="gstddev" value="0.009533"/>
+<property name="mean" value="17909"/>
+<property name="stddev" value="171"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/33" value_param="(100, 0.9, RANSAC, 0)" status="run" time="0" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5125"/>
+<property name="median" value="5292"/>
+<property name="gmean" value="5322"/>
+<property name="gstddev" value="0.021357"/>
+<property name="mean" value="5323"/>
+<property name="stddev" value="114"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/34" value_param="(100, 0.9, LMEDS, 10)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="19166"/>
+<property name="median" value="19541"/>
+<property name="gmean" value="19523"/>
+<property name="gstddev" value="0.008543"/>
+<property name="mean" value="19524"/>
+<property name="stddev" value="167"/>
+</properties>
+    </testcase>
+    <testcase name="EstimateAffinePartial2D/35" value_param="(100, 0.9, LMEDS, 0)" status="run" time="0.001" classname="EstimateAffine_EstimateAffinePartial2D">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5375"/>
+<property name="median" value="5583"/>
+<property name="gmean" value="5582"/>
+<property name="gstddev" value="0.018202"/>
+<property name="mean" value="5582"/>
+<property name="stddev" value="102"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="String_Size_asymm_circles_grid" tests="9" failures="0" disabled="0" errors="0" time="4.509">
+    <testcase name="asymm_circles_grid/0" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles1.png&quot;, 7x13)" status="run" time="0.566" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="728"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="10876958"/>
+<property name="median" value="11120666"/>
+<property name="gmean" value="11139520"/>
+<property name="gstddev" value="0.014978"/>
+<property name="mean" value="11140744"/>
+<property name="stddev" value="167230"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/1" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles2.png&quot;, 7x13)" status="run" time="0.77" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="728"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="14709000"/>
+<property name="median" value="15268208"/>
+<property name="gmean" value="15236366"/>
+<property name="gstddev" value="0.014559"/>
+<property name="mean" value="15237944"/>
+<property name="stddev" value="221418"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/2" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles3.png&quot;, 7x13)" status="run" time="0.791" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="728"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="15172041"/>
+<property name="median" value="15753874"/>
+<property name="gmean" value="15682094"/>
+<property name="gstddev" value="0.014072"/>
+<property name="mean" value="15683608"/>
+<property name="stddev" value="219596"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/3" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles4.png&quot;, 5x5)" status="run" time="0.371" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="200"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6959084"/>
+<property name="median" value="7291708"/>
+<property name="gmean" value="7286437"/>
+<property name="gstddev" value="0.020069"/>
+<property name="mean" value="7287870"/>
+<property name="stddev" value="145794"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/4" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles5.png&quot;, 5x5)" status="run" time="0.368" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="200"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6845375"/>
+<property name="median" value="7232979"/>
+<property name="gmean" value="7212139"/>
+<property name="gstddev" value="0.021276"/>
+<property name="mean" value="7213730"/>
+<property name="stddev" value="152597"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/5" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles6.png&quot;, 5x5)" status="run" time="0.399" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="200"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7441083"/>
+<property name="median" value="7849896"/>
+<property name="gmean" value="7852523"/>
+<property name="gstddev" value="0.024518"/>
+<property name="mean" value="7854826"/>
+<property name="stddev" value="191763"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/6" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles7.png&quot;, 3x9)" status="run" time="0.467" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="216"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="8830250"/>
+<property name="median" value="9232563"/>
+<property name="gmean" value="9215952"/>
+<property name="gstddev" value="0.020413"/>
+<property name="mean" value="9217830"/>
+<property name="stddev" value="188058"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/7" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles8.png&quot;, 3x9)" status="run" time="0.412" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="216"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7627917"/>
+<property name="median" value="8124813"/>
+<property name="gmean" value="8102040"/>
+<property name="gstddev" value="0.027369"/>
+<property name="mean" value="8104998"/>
+<property name="stddev" value="220610"/>
+</properties>
+    </testcase>
+    <testcase name="asymm_circles_grid/8" value_param="(&quot;cv/cameracalibration/asymmetric_circles/acircles9.png&quot;, 3x9)" status="run" time="0.365" classname="String_Size_asymm_circles_grid">
+<properties>
+<property name="bytesIn" value="307200"/>
+<property name="bytesOut" value="216"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="6776709"/>
+<property name="median" value="7173417"/>
+<property name="gmean" value="7147919"/>
+<property name="gstddev" value="0.020873"/>
+<property name="mean" value="7149438"/>
+<property name="stddev" value="148561"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="PointsNum_Algo_solvePnP" tests="12" failures="0" disabled="0" errors="0" time="0.036">
+    <testcase name="solvePnP/0" value_param="(6, SOLVEPNP_ITERATIVE)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="120"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="52958"/>
+<property name="median" value="53708"/>
+<property name="gmean" value="53794"/>
+<property name="gstddev" value="0.009461"/>
+<property name="mean" value="53796"/>
+<property name="stddev" value="512"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/1" value_param="(6, SOLVEPNP_EPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="120"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="40250"/>
+<property name="median" value="40750"/>
+<property name="gmean" value="40746"/>
+<property name="gstddev" value="0.006210"/>
+<property name="mean" value="40746"/>
+<property name="stddev" value="253"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/2" value_param="(6, SOLVEPNP_UPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="120"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="40334"/>
+<property name="median" value="40688"/>
+<property name="gmean" value="40699"/>
+<property name="gstddev" value="0.004273"/>
+<property name="mean" value="40699"/>
+<property name="stddev" value="174"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/3" value_param="(6, SOLVEPNP_DLS)" status="run" time="0.002" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="120"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="40041"/>
+<property name="median" value="40667"/>
+<property name="gmean" value="40681"/>
+<property name="gstddev" value="0.006355"/>
+<property name="mean" value="40682"/>
+<property name="stddev" value="259"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/4" value_param="(27, SOLVEPNP_ITERATIVE)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="540"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="59750"/>
+<property name="median" value="60271"/>
+<property name="gmean" value="60495"/>
+<property name="gstddev" value="0.012174"/>
+<property name="mean" value="60499"/>
+<property name="stddev" value="746"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/5" value_param="(27, SOLVEPNP_EPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="540"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="42209"/>
+<property name="median" value="42730"/>
+<property name="gmean" value="42763"/>
+<property name="gstddev" value="0.007639"/>
+<property name="mean" value="42765"/>
+<property name="stddev" value="329"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/6" value_param="(27, SOLVEPNP_UPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="540"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="42166"/>
+<property name="median" value="42584"/>
+<property name="gmean" value="42629"/>
+<property name="gstddev" value="0.006345"/>
+<property name="mean" value="42629"/>
+<property name="stddev" value="271"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/7" value_param="(27, SOLVEPNP_DLS)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="540"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="42375"/>
+<property name="median" value="42667"/>
+<property name="gmean" value="42669"/>
+<property name="gstddev" value="0.003593"/>
+<property name="mean" value="42669"/>
+<property name="stddev" value="153"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/8" value_param="(91, SOLVEPNP_ITERATIVE)" status="run" time="0.008" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="1820"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="173250"/>
+<property name="median" value="174230"/>
+<property name="gmean" value="174637"/>
+<property name="gstddev" value="0.006702"/>
+<property name="mean" value="174641"/>
+<property name="stddev" value="1175"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/9" value_param="(91, SOLVEPNP_EPNP)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="1820"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="53625"/>
+<property name="median" value="53938"/>
+<property name="gmean" value="54004"/>
+<property name="gstddev" value="0.004679"/>
+<property name="mean" value="54004"/>
+<property name="stddev" value="253"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/10" value_param="(91, SOLVEPNP_UPNP)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="1820"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="53500"/>
+<property name="median" value="53875"/>
+<property name="gmean" value="53868"/>
+<property name="gstddev" value="0.003006"/>
+<property name="mean" value="53869"/>
+<property name="stddev" value="162"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnP/11" value_param="(91, SOLVEPNP_DLS)" status="run" time="0.003" classname="PointsNum_Algo_solvePnP">
+<properties>
+<property name="bytesIn" value="1820"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="53625"/>
+<property name="median" value="53980"/>
+<property name="gmean" value="53998"/>
+<property name="gstddev" value="0.004022"/>
+<property name="mean" value="53998"/>
+<property name="stddev" value="217"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="PointsNum_Algo_solvePnPSmallPoints" tests="4" failures="0" disabled="0" errors="0" time="0.007">
+    <testcase name="solvePnPSmallPoints/0" value_param="(5, SOLVEPNP_P3P)" status="run" time="0.001" classname="PointsNum_Algo_solvePnPSmallPoints">
+<properties>
+<property name="bytesIn" value="80"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="13667"/>
+<property name="median" value="14000"/>
+<property name="gmean" value="14006"/>
+<property name="gstddev" value="0.015123"/>
+<property name="mean" value="14007"/>
+<property name="stddev" value="213"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnPSmallPoints/1" value_param="(5, SOLVEPNP_EPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnPSmallPoints">
+<properties>
+<property name="bytesIn" value="100"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="39750"/>
+<property name="median" value="40083"/>
+<property name="gmean" value="40116"/>
+<property name="gstddev" value="0.010409"/>
+<property name="mean" value="40119"/>
+<property name="stddev" value="426"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnPSmallPoints/2" value_param="(5, SOLVEPNP_DLS)" status="run" time="0.002" classname="PointsNum_Algo_solvePnPSmallPoints">
+<properties>
+<property name="bytesIn" value="100"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="39708"/>
+<property name="median" value="40041"/>
+<property name="gmean" value="40049"/>
+<property name="gstddev" value="0.005292"/>
+<property name="mean" value="40050"/>
+<property name="stddev" value="212"/>
+</properties>
+    </testcase>
+    <testcase name="solvePnPSmallPoints/3" value_param="(5, SOLVEPNP_UPNP)" status="run" time="0.002" classname="PointsNum_Algo_solvePnPSmallPoints">
+<properties>
+<property name="bytesIn" value="100"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="39708"/>
+<property name="median" value="40000"/>
+<property name="gmean" value="40024"/>
+<property name="gstddev" value="0.005113"/>
+<property name="mean" value="40024"/>
+<property name="stddev" value="205"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="PointsNum_DISABLED_SolvePnPRansac" tests="3" failures="0" disabled="3" errors="0" time="0">
+    <testcase name="DISABLED_SolvePnPRansac/0" value_param="5" status="notrun" time="0" classname="PointsNum_DISABLED_SolvePnPRansac" />
+    <testcase name="DISABLED_SolvePnPRansac/1" value_param="27" status="notrun" time="0" classname="PointsNum_DISABLED_SolvePnPRansac" />
+    <testcase name="DISABLED_SolvePnPRansac/2" value_param="91" status="notrun" time="0" classname="PointsNum_DISABLED_SolvePnPRansac" />
+  </testsuite>
+  <testsuite name="TestStereoCorrespSGBM_SGBM" tests="12" failures="0" disabled="0" errors="0" time="66.983">
+    <testcase name="SGBM/0" value_param="(1280x720, 256, StereoSGBM::MODE_SGBM)" status="run" time="19.522" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="388420875"/>
+<property name="median" value="389667208"/>
+<property name="gmean" value="389410384"/>
+<property name="gstddev" value="0.002072"/>
+<property name="mean" value="389411202"/>
+<property name="stddev" value="806669"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/1" value_param="(1280x720, 256, StereoSGBM::MODE_SGBM_3WAY)" status="run" time="5.46" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="103534000"/>
+<property name="median" value="105124083"/>
+<property name="gmean" value="107108632"/>
+<property name="gstddev" value="0.043402"/>
+<property name="mean" value="107208791"/>
+<property name="stddev" value="4753462"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/2" value_param="(1280x720, 256, StereoSGBM::MODE_HH4)" status="run" time="7.603" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="146228792"/>
+<property name="median" value="150432000"/>
+<property name="gmean" value="150364381"/>
+<property name="gstddev" value="0.014246"/>
+<property name="mean" value="150379390"/>
+<property name="stddev" value="2160130"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/3" value_param="(1280x720, 128, StereoSGBM::MODE_SGBM)" status="run" time="12.464" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="247288375"/>
+<property name="median" value="248215666"/>
+<property name="gmean" value="248164620"/>
+<property name="gstddev" value="0.001011"/>
+<property name="mean" value="248164745"/>
+<property name="stddev" value="250878"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/4" value_param="(1280x720, 128, StereoSGBM::MODE_SGBM_3WAY)" status="run" time="3.357" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="66037208"/>
+<property name="median" value="66245938"/>
+<property name="gmean" value="66215220"/>
+<property name="gstddev" value="0.001275"/>
+<property name="mean" value="66215273"/>
+<property name="stddev" value="84405"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/5" value_param="(1280x720, 128, StereoSGBM::MODE_HH4)" status="run" time="4.472" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="83457959"/>
+<property name="median" value="88271230"/>
+<property name="gmean" value="88176062"/>
+<property name="gstddev" value="0.014503"/>
+<property name="mean" value="88185093"/>
+<property name="stddev" value="1270481"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/6" value_param="(640x480, 256, StereoSGBM::MODE_SGBM)" status="run" time="4.999" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="99374208"/>
+<property name="median" value="99661376"/>
+<property name="gmean" value="99630541"/>
+<property name="gstddev" value="0.001437"/>
+<property name="mean" value="99630641"/>
+<property name="stddev" value="143111"/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/7" value_param="(640x480, 256, StereoSGBM::MODE_SGBM_3WAY)" status="run" time="1.346" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="26432041"/>
+<property name="median" value="26563646"/>
+<property name="gmean" value="26584696"/>
+<property name="gstddev" value="0.003438"/>
+<property name="mean" value="26584850"/>
+<property name="stddev" value="91450"/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/8" value_param="(640x480, 256, StereoSGBM::MODE_HH4)" status="run" time="1.836" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="35442750"/>
+<property name="median" value="36418208"/>
+<property name="gmean" value="36302906"/>
+<property name="gstddev" value="0.012893"/>
+<property name="mean" value="36305855"/>
+<property name="stddev" value="467474"/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/9" value_param="(640x480, 128, StereoSGBM::MODE_SGBM)" status="run" time="3.766" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="74700167"/>
+<property name="median" value="74999750"/>
+<property name="gmean" value="74986737"/>
+<property name="gstddev" value="0.001443"/>
+<property name="mean" value="74986813"/>
+<property name="stddev" value="108187"/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/10" value_param="(640x480, 128, StereoSGBM::MODE_SGBM_3WAY)" status="run" time="1.012" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="19673042"/>
+<property name="median" value="19900208"/>
+<property name="gmean" value="19896582"/>
+<property name="gstddev" value="0.005652"/>
+<property name="mean" value="19896893"/>
+<property name="stddev" value="112559"/>
+</properties>
+    </testcase>
+    <testcase name="SGBM/11" value_param="(640x480, 128, StereoSGBM::MODE_HH4)" status="run" time="1.146" classname="TestStereoCorrespSGBM_SGBM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="21359083"/>
+<property name="median" value="22363521"/>
+<property name="gmean" value="22319181"/>
+<property name="gstddev" value="0.026005"/>
+<property name="mean" value="22326592"/>
+<property name="stddev" value="583733"/>
+</properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="TestStereoCorrespBM_BM" tests="4" failures="0" disabled="0" errors="0" time="2.176">
+    <testcase name="BM/0" value_param="(1280x720, 256)" status="run" time="0.852" classname="TestStereoCorrespBM_BM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="16570333"/>
+<property name="median" value="16673354"/>
+<property name="gmean" value="16689074"/>
+<property name="gstddev" value="0.004102"/>
+<property name="mean" value="16689212"/>
+<property name="stddev" value="68697"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="BM/1" value_param="(1280x720, 128)" status="run" time="0.81" classname="TestStereoCorrespBM_BM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="15794708"/>
+<property name="median" value="15874396"/>
+<property name="gmean" value="15876534"/>
+<property name="gstddev" value="0.003743"/>
+<property name="mean" value="15876643"/>
+<property name="stddev" value="59472"/>
+<property name="tags" value="size_hd"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="BM/2" value_param="(640x480, 256)" status="run" time="0.308" classname="TestStereoCorrespBM_BM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="5956916"/>
+<property name="median" value="6036916"/>
+<property name="gmean" value="6037859"/>
+<property name="gstddev" value="0.005680"/>
+<property name="mean" value="6037955"/>
+<property name="stddev" value="34399"/>
+</properties>
+    </testcase>
+    <testcase name="BM/3" value_param="(640x480, 128)" status="run" time="0.206" classname="TestStereoCorrespBM_BM">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="50"/>
+<property name="outliers" value="4"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3978667"/>
+<property name="median" value="4006062"/>
+<property name="gmean" value="4015096"/>
+<property name="gstddev" value="0.007566"/>
+<property name="mean" value="4015209"/>
+<property name="stddev" value="30515"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>
