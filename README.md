@@ -19,14 +19,14 @@ The geometric mean of all test case scores within a test suite represents the sc
 
 After the benchmark completes, detailed scores are reported as:
 
-| module     |   Amlogic A311D |   Amlogic A311D2 |   Apple M1 |   Huawei Kunpeng |   Intel Core i7-12700K |   Rockchip RK3568 |   Rockchip RK3568B2 |   Rockchip RK3588S2 |   SpacemiT M1 |   StarFive JH7110 |   Sunrise 3 |
-|:-----------|----------------:|-----------------:|-----------:|-----------------:|-----------------------:|------------------:|--------------------:|--------------------:|--------------:|------------------:|------------:|
-| calib3d    |          168.5  |           167.83 |     805.11 |           180.74 |                1047.36 |             92.17 |               89.21 |              379.78 |         86.56 |             35.38 |       57.12 |
-| core       |          157.2  |           157.9  |     964.48 |           178.97 |                1129.9  |             81.14 |               77.41 |              368.45 |        107.72 |             26.96 |       57.54 |
-| features2d |          148.54 |           187.02 |     823.6  |           141.08 |                1659.51 |             72.93 |               71.62 |              328.12 |        103.65 |             30.52 |       49.69 |
-| imgproc    |          151.89 |           160.65 |     865.98 |           178.01 |                1318.76 |             82.88 |               79.7  |              337.92 |        119.81 |             33.73 |       52.4  |
-| objdetect  |          140.49 |           143.46 |     646.15 |           181.85 |                1188.76 |             67.34 |               65.16 |              339.64 |         65.25 |             33.72 |       45.13 |
-| **Score**  |      **153.04** |       **162.76** | **814.22** |       **171.35** |            **1252.2**  |         **78.83** |            **76.2** |          **350.23** |     **94.55** |      **31.92** |           **52.16**|
+| module     |   Amlogic A311D |   Amlogic A311D2 |   Apple M1 |   Apple M4 |   Huawei Kunpeng |   Intel Core i7-12700K |   Rockchip RK3568 |   Rockchip RK3568B2 |   Rockchip RK3588S2 |   SpacemiT M1 |   StarFive JH7110 |   Horizon Robotics Sunrise 3 |
+|:-----------|----------------:|-----------------:|-----------:|-----------:|-----------------:|-----------------------:|------------------:|--------------------:|--------------------:|--------------:|------------------:|-----------------------------:|
+| calib3d    |          168.5  |           167.83 |     805.11 |    1276.45 |           180.74 |                1047.36 |             92.17 |               89.21 |              379.78 |         86.56 |             35.38 |                        57.12 |
+| core       |          157.2  |           157.9  |     964.48 |    1573.05 |           178.97 |                1129.9  |             81.14 |               77.41 |              368.45 |        107.72 |             26.96 |                        57.54 |
+| features2d |          148.54 |           187.02 |     823.6  |    1753.81 |           141.08 |                1659.51 |             72.93 |               71.62 |              328.12 |        103.65 |             30.52 |                        49.69 |
+| imgproc    |          151.89 |           160.65 |     865.98 |    1514.13 |           178.01 |                1318.76 |             82.88 |               79.7  |              337.92 |        119.81 |             33.73 |                        52.4  |
+| objdetect  |          140.49 |           143.46 |     646.15 |    1191.21 |           181.85 |                1188.76 |             67.34 |               65.16 |              339.64 |         65.25 |             33.72 |                        45.13 |
+| **Score**  |      **153.04** |       **162.76** | **814.22** |**1447.36** |       **171.35** |             **1252.2** |         **78.83** |            **76.2** |          **350.23** |     **94.55** |         **31.92** |                    **52.16** |
 
 *The baseline CPU is Broadcom BCM2711.*
 
@@ -34,7 +34,8 @@ CPU specs:
 - **Broadcom BCM2711**: quad-core ARM Cortex-A72 (ARMv8, 1.5 GHz). Corresponding SBC used is Raspberry Pi 4 Model B.
 - **Amlogic A311D**: quad-core ARM Cortex-A73 (2.2 GHz) and dual-core ARM Cortex-A53 (1.8 GHz). Corresponding SBC used is Khadas VIM3.
 - **Amlogic A311D2**: quad-core ARM Cortex-A73 (2.2 GHz) and quad-core ARM Cortex-A53 (2.0 GHz). Corresponding SBC used is Khadas VIM4.
-- **Apple M1**: 4 performance cores (up to 3.2 GHz) and 4 efficiency cores.
+- **Apple M1**: 4 performance cores (3.2 GHz) and 4 efficiency cores.
+- **Apple M4**: 4 performance cores (4.4 GHz) and 6 efficiency cores.
 - **Huawei KunPeng**: quad-core 64-bit Kunpeng CPU. Corresponding SBC used is OrangePi Kunpeng Pro V1.
 - **Intel Core i7-12700K**: 8 Performance cores (3.60 GHz, turbo up to 4.90 GHz), 4 Efficient cores (2.70 GHz, turbo up to 3.80 GHz).
 - **Rockchip RK3568**: quad-core ARM Cortex-A55 (up to 2.0 GHz). Corresponding SBC used is Firefly ROC-RK3568-PC.
@@ -42,7 +43,7 @@ CPU specs:
 - **Rockchip RK3588S2**: quad-core ARM Cortex-A76 (2.25 GHz) and quad-core ARM Cortex-A55 (1.8 GHz). Corresponding SBC used is Khadas Edge2 ARM PC.
 - **SpacemiT M1**: octa-core 64-bit RISC-V AI CPU (clocked at 1.6 GHz). Corresponding SBC used is MUSE Pi V30.
 - **StarFive JH7110**: quad-core 64-bit RISC-V CPU (1.5 GHz). Corresponding SBC used is StarFive VisionFive 2.
-- **Horizon Sunrise 3**: quad-core ARM Cortex-A53 (1.2 GHz). Corresponding SBC used is Horizon Robotics X3_PI_V1.2.
+- **Horizon Robotics Sunrise 3**: quad-core ARM Cortex-A53 (1.2 GHz). Corresponding SBC used is Horizon Robotics X3_PI_V1.2.
 
 ## How to run the benchmark
 
