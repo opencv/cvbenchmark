@@ -1,0 +1,74 @@
+{
+    "baseline": {
+      "Processor": "Broadcom BCM2711",
+      "Cores": "1.5 GHz (4 cores)",
+      "Arch": "ARM"
+    },
+    "processors": [
+    {
+      "Processor": "Amlogic A311D",
+      "Cores": "2.2 GHz (6 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Amlogic A311D2",
+      "Cores": "2.2 GHz (8 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Rockchip RK3568",
+      "Cores": "2.0 GHz (4 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Rockchip RK3568B2",
+      "Cores": "2.0 GHz (4 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Rockchip RK3588S2",
+      "Cores": "2.25 GHz (8 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Horizon Robotics Sunrise 3",
+      "Cores": "1.2 GHz (4 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Huawei Kunpeng",
+      "Cores": "(4 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "SpacemiT M1",
+      "Cores": "1.6 GHz (8 cores)",
+      "Arch": "RISC-V"
+    },
+    {
+      "Processor": "StarFive JH7110",
+      "Cores": "1.5 GHz (4 cores)",
+      "Arch": "RISC-V"
+    },
+    {
+      "Processor": "Apple M1",
+      "Cores": "3.2 GHz (8 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Apple M4",
+      "Cores": "4.4 GHz (10 cores)",
+      "Arch": "ARM"
+    },
+    {
+      "Processor": "Intel Core i7-12700K",
+      "Cores": "3.6 GHz (12 cores)",
+      "Arch": "x86_64"
+    },
+    {
+      "Processor": "Intel Core i9-9880H",
+      "Cores": "2.3 GHz (8 cores)",
+      "Arch": "x86_64"
+    }
+  ]
+}
