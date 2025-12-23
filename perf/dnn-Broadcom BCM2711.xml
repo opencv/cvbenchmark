@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="37" failures="0" disabled="0" errors="0" timestamp="2025-12-10T03:46:35" time="430.68" cv_module_name="dnn" cv_implementation="plain" cv_num_threads="-1" test_tags="" test_tags_skip="mem_6gb,verylong" test_tags_force="" cv_version="4.13.0-dev" cv_version_build="4.13.0-dev" cv_vcs_version="4.12.0-134-g54b03cc2f8" cv_build_type="Release" cv_build_type_build="Release" cv_compiler="/usr/bin/c++  (ver 9.4.0)" implementation_hint="ALGO_HINT_ACCURATE" hal="YES (carotene (ver 0.0.1))" cv_parallel_framework="pthreads" cv_parallel_threads="4" cv_cpu_features="NEON FP16 *NEON_DOTPROD? *NEON_FP16?" name="AllTests">
+  <testsuite name="DNNTestNetwork" tests="37" failures="0" disabled="0" errors="0" time="430.68">
+    <testcase name="AlexNet/0" value_param="OCV/CPU" status="run" time="3.786" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="177254806"/>
+<property name="median" value="179246391"/>
+<property name="gmean" value="178867067"/>
+<property name="gstddev" value="0.004769"/>
+<property name="mean" value="178868895"/>
+<property name="stddev" value="851124"/>
+</properties>
+    </testcase>
+    <testcase name="GoogLeNet/0" value_param="OCV/CPU" status="run" time="2.598" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="144309897"/>
+<property name="median" value="145209219"/>
+<property name="gmean" value="145473236"/>
+<property name="gstddev" value="0.006186"/>
+<property name="mean" value="145475747"/>
+<property name="stddev" value="903148"/>
+</properties>
+    </testcase>
+    <testcase name="ResNet_50/0" value_param="OCV/CPU" status="run" time="8.007" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="402009124"/>
+<property name="median" value="403402458"/>
+<property name="gmean" value="403425240"/>
+<property name="gstddev" value="0.002391"/>
+<property name="mean" value="403426278"/>
+<property name="stddev" value="964839"/>
+</properties>
+    </testcase>
+    <testcase name="SqueezeNet_v1_1/0" value_param="OCV/CPU" status="run" time="0.451" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="36628527"/>
+<property name="median" value="36998658"/>
+<property name="gmean" value="37084772"/>
+<property name="gstddev" value="0.008395"/>
+<property name="mean" value="37085949"/>
+<property name="stddev" value="311747"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_5h/0" value_param="OCV/CPU" status="run" time="2.178" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="152230749"/>
+<property name="median" value="153559923"/>
+<property name="gmean" value="153604267"/>
+<property name="gstddev" value="0.006611"/>
+<property name="mean" value="153607294"/>
+<property name="stddev" value="1018694"/>
+</properties>
+    </testcase>
+    <testcase name="ENet/0" value_param="OCV/CPU" status="run" time="3.559" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="307842615"/>
+<property name="median" value="309669724"/>
+<property name="gmean" value="309784715"/>
+<property name="gstddev" value="0.003413"/>
+<property name="mean" value="309786339"/>
+<property name="stddev" value="1057132"/>
+</properties>
+    </testcase>
+    <testcase name="SSD/0" value_param="OCV/CPU" status="run" time="48.863" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3528130372"/>
+<property name="median" value="3551277628"/>
+<property name="gmean" value="3565458091"/>
+<property name="gstddev" value="0.014043"/>
+<property name="mean" value="3565777441"/>
+<property name="stddev" value="50771939"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="OpenFace/0" value_param="OCV/CPU" status="run" time="1.07" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="24125370"/>
+<property name="median" value="24325912"/>
+<property name="gmean" value="24300079"/>
+<property name="gstddev" value="0.003763"/>
+<property name="mean" value="24300234"/>
+<property name="stddev" value="91339"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_Caffe/0" value_param="OCV/CPU" status="run" time="2.076" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="118501615"/>
+<property name="median" value="118916005"/>
+<property name="gmean" value="118879039"/>
+<property name="gstddev" value="0.002176"/>
+<property name="mean" value="118879292"/>
+<property name="stddev" value="258638"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_v1_TensorFlow/0" value_param="OCV/CPU" status="run" time="1.928" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="130023472"/>
+<property name="median" value="130323465"/>
+<property name="gmean" value="130486588"/>
+<property name="gstddev" value="0.003277"/>
+<property name="mean" value="130487219"/>
+<property name="stddev" value="428156"/>
+</properties>
+    </testcase>
+    <testcase name="MobileNet_SSD_v2_TensorFlow/0" value_param="OCV/CPU" status="run" time="4.13" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="231696205"/>
+<property name="median" value="234677436"/>
+<property name="gmean" value="234654400"/>
+<property name="gstddev" value="0.013530"/>
+<property name="mean" value="234673859"/>
+<property name="stddev" value="3206797"/>
+</properties>
+    </testcase>
+    <testcase name="DenseNet_121/0" value_param="OCV/CPU" status="run" time="4.811" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="341850002"/>
+<property name="median" value="343193841"/>
+<property name="gmean" value="343243785"/>
+<property name="gstddev" value="0.003301"/>
+<property name="mean" value="343245469"/>
+<property name="stddev" value="1133899"/>
+</properties>
+    </testcase>
+    <testcase name="OpenPose_pose_mpi_faster_4_stages/0" value_param="OCV/CPU" status="run" time="87.936" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="7361218159"/>
+<property name="median" value="7403080927"/>
+<property name="gmean" value="7441202038"/>
+<property name="gstddev" value="0.016463"/>
+<property name="mean" value="7442120693"/>
+<property name="stddev" value="124770008"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="opencv_face_detector/0" value_param="OCV/CPU" status="run" time="1.85" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="134913501"/>
+<property name="median" value="135451260"/>
+<property name="gmean" value="135424974"/>
+<property name="gstddev" value="0.002094"/>
+<property name="mean" value="135425241"/>
+<property name="stddev" value="283604"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_v2_SSD_TensorFlow/0" value_param="OCV/CPU" status="run" time="8.397" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="457121117"/>
+<property name="median" value="460097784"/>
+<property name="gmean" value="459912867"/>
+<property name="gstddev" value="0.002966"/>
+<property name="mean" value="459914687"/>
+<property name="stddev" value="1362888"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv3/0" value_param="OCV/CPU" status="run" time="40.747" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3045392732"/>
+<property name="median" value="3052013586"/>
+<property name="gmean" value="3052609492"/>
+<property name="gstddev" value="0.001976"/>
+<property name="mean" value="3052614859"/>
+<property name="stddev" value="6035420"/>
+<property name="tags" value="mem_2gb,debug_verylong"/>
+<property name="tags_implied" value="mem_1gb,mem_512mb,debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv4/0" value_param="OCV/CPU" status="run" time="49.442" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3296610981"/>
+<property name="median" value="3303356701"/>
+<property name="gmean" value="3311160343"/>
+<property name="gstddev" value="0.008330"/>
+<property name="mean" value="3311264443"/>
+<property name="stddev" value="27868408"/>
+<property name="tags" value="mem_2gb,debug_verylong"/>
+<property name="tags_implied" value="mem_1gb,mem_512mb,debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv4_tiny/0" value_param="OCV/CPU" status="run" time="4.865" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="333668900"/>
+<property name="median" value="334969514"/>
+<property name="gmean" value="334949637"/>
+<property name="gstddev" value="0.002550"/>
+<property name="mean" value="334950617"/>
+<property name="stddev" value="854561"/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv5/0" value_param="OCV/CPU" status="run" time="5.034" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="433052862"/>
+<property name="median" value="433444934"/>
+<property name="gmean" value="433435706"/>
+<property name="gstddev" value="0.000535"/>
+<property name="mean" value="433435762"/>
+<property name="stddev" value="231959"/>
+<property name="tags" value="mem_512mb"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="YOLOv8/0" value_param="OCV/CPU" status="run" time="5.978" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="495365111"/>
+<property name="median" value="498321390"/>
+<property name="gmean" value="498177574"/>
+<property name="gstddev" value="0.002705"/>
+<property name="mean" value="498179214"/>
+<property name="stddev" value="1346513"/>
+<property name="tags" value="mem_512mb,debug_long"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="YOLOX/0" value_param="OCV/CPU" status="run" time="16.483" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1366691745"/>
+<property name="median" value="1381542664"/>
+<property name="gmean" value="1381867046"/>
+<property name="gstddev" value="0.010688"/>
+<property name="mean" value="1381938504"/>
+<property name="stddev" value="14900546"/>
+<property name="tags" value="mem_512mb,debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="EAST_text_detection/0" value_param="OCV/CPU" status="run" time="12.499" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="740086835"/>
+<property name="median" value="741428576"/>
+<property name="gmean" value="741469904"/>
+<property name="gstddev" value="0.001408"/>
+<property name="mean" value="741470566"/>
+<property name="stddev" value="1044262"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="FastNeuralStyle_eccv16/0" value_param="OCV/CPU" status="run" time="24.678" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="2172395565"/>
+<property name="median" value="2177369546"/>
+<property name="gmean" value="2178228108"/>
+<property name="gstddev" value="0.002949"/>
+<property name="mean" value="2178236647"/>
+<property name="stddev" value="6440524"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="Inception_v2_Faster_RCNN/0" value_param="OCV/CPU" status="run" time="40.382" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="3359135204"/>
+<property name="median" value="3363254927"/>
+<property name="gmean" value="3373714063"/>
+<property name="gstddev" value="0.005229"/>
+<property name="mean" value="3373755643"/>
+<property name="stddev" value="17684954"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+    <testcase name="EfficientDet/0" value_param="OCV/CPU" status="run" time="17.726" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="1386976299"/>
+<property name="median" value="1388567657"/>
+<property name="gmean" value="1389427067"/>
+<property name="gstddev" value="0.001644"/>
+<property name="mean" value="1389428756"/>
+<property name="stddev" value="2284809"/>
+</properties>
+    </testcase>
+    <testcase name="EfficientNet/0" value_param="OCV/CPU" status="run" time="3.524" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="191371885"/>
+<property name="median" value="191531706"/>
+<property name="gmean" value="191578760"/>
+<property name="gstddev" value="0.000872"/>
+<property name="mean" value="191578826"/>
+<property name="stddev" value="167144"/>
+</properties>
+    </testcase>
+    <testcase name="YuNet/0" value_param="OCV/CPU" status="run" time="1.213" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="106021678"/>
+<property name="median" value="107151592"/>
+<property name="gmean" value="107181060"/>
+<property name="gstddev" value="0.005401"/>
+<property name="mean" value="107182466"/>
+<property name="stddev" value="578435"/>
+</properties>
+    </testcase>
+    <testcase name="SFace/0" value_param="OCV/CPU" status="run" time="1.899" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="67986185"/>
+<property name="median" value="68182450"/>
+<property name="gmean" value="68290949"/>
+<property name="gstddev" value="0.003984"/>
+<property name="mean" value="68291437"/>
+<property name="stddev" value="272349"/>
+</properties>
+    </testcase>
+    <testcase name="MPPalm/0" value_param="OCV/CPU" status="run" time="0.895" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="76738253"/>
+<property name="median" value="76844094"/>
+<property name="gmean" value="76863292"/>
+<property name="gstddev" value="0.001260"/>
+<property name="mean" value="76863347"/>
+<property name="stddev" value="96948"/>
+</properties>
+    </testcase>
+    <testcase name="MPHand/0" value_param="OCV/CPU" status="run" time="0.427" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="35046046"/>
+<property name="median" value="35183942"/>
+<property name="gmean" value="35194372"/>
+<property name="gstddev" value="0.002935"/>
+<property name="mean" value="35194509"/>
+<property name="stddev" value="103365"/>
+</properties>
+    </testcase>
+    <testcase name="MPPose/0" value_param="OCV/CPU" status="run" time="1.109" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="93831784"/>
+<property name="median" value="94234732"/>
+<property name="gmean" value="94228447"/>
+<property name="gstddev" value="0.002704"/>
+<property name="mean" value="94228757"/>
+<property name="stddev" value="254990"/>
+</properties>
+    </testcase>
+    <testcase name="PPOCRv3/0" value_param="OCV/CPU" status="run" time="5.921" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="521280643"/>
+<property name="median" value="526524944"/>
+<property name="gmean" value="525486677"/>
+<property name="gstddev" value="0.006977"/>
+<property name="mean" value="525498184"/>
+<property name="stddev" value="3664328"/>
+<property name="tags" value="mem_512mb"/>
+<property name="tags_implied" value=""/>
+</properties>
+    </testcase>
+    <testcase name="PPHumanSeg/0" value_param="OCV/CPU" status="run" time="0.793" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="64976224"/>
+<property name="median" value="65145462"/>
+<property name="gmean" value="65172338"/>
+<property name="gstddev" value="0.002392"/>
+<property name="mean" value="65172506"/>
+<property name="stddev" value="155981"/>
+</properties>
+    </testcase>
+    <testcase name="CRNN/0" value_param="OCV/CPU" status="run" time="3.209" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="208237441"/>
+<property name="median" value="208520555"/>
+<property name="gmean" value="208992405"/>
+<property name="gstddev" value="0.005045"/>
+<property name="mean" value="208994804"/>
+<property name="stddev" value="1058002"/>
+</properties>
+    </testcase>
+    <testcase name="VitTrack/0" value_param="OCV/CPU" status="run" time="0.355" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="28209836"/>
+<property name="median" value="28303408"/>
+<property name="gmean" value="28337390"/>
+<property name="gstddev" value="0.004517"/>
+<property name="mean" value="28337650"/>
+<property name="stddev" value="128520"/>
+</properties>
+    </testcase>
+    <testcase name="EfficientDet_int8/0" value_param="OCV/CPU" status="run" time="4.733" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="415901270"/>
+<property name="median" value="416809134"/>
+<property name="gmean" value="416825906"/>
+<property name="gstddev" value="0.001247"/>
+<property name="mean" value="416826197"/>
+<property name="stddev" value="519605"/>
+</properties>
+    </testcase>
+    <testcase name="VIT_B_32/0" value_param="OCV/CPU" status="run" time="7.117" classname="DNNTestNetwork">
+<properties>
+<property name="bytesIn" value="0"/>
+<property name="bytesOut" value="0"/>
+<property name="term" value="0"/>
+<property name="samples" value="10"/>
+<property name="outliers" value="0"/>
+<property name="frequency" value="1000000000"/>
+<property name="min" value="422864894"/>
+<property name="median" value="423248694"/>
+<property name="gmean" value="427401576"/>
+<property name="gstddev" value="0.031145"/>
+<property name="mean" value="427593143"/>
+<property name="stddev" value="13851387"/>
+<property name="tags" value="debug_verylong"/>
+<property name="tags_implied" value="debug_long"/>
+</properties>
+    </testcase>
+  </testsuite>
+</testsuites>
