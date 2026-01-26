@@ -93,7 +93,7 @@ bash compare.sh
 python rate.py
 ```
 
-> By default, the scores are printed to the terminal and saved to *perf/scores.md*. I you want to visualise the scores with bar charts, run the script as follows; the figures will be save to *perf/modulename.png*. *Score.png* shows the overall performance of the hardware across all tested moduels.
+> By default, the scores are printed to the terminal and saved to *perf/scores.md*. If you want to visualise the scores with bar charts, write down your CPU info to *processor.json* then run the script as follows. The figures will be save to *perf/modulename.png*. *Score.png* shows the overall performance of the hardware across all tested moduels.
 >```bash
 > python rate.py --figure
 > ```
