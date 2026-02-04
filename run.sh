@@ -3,7 +3,7 @@
 if [ $# -lt 1 ]; then
   echo "Usage: $0 <cpu model> [opencv module]"
   printf "  %-16s %s\n" "-cpu model" "the model name of the target CPU"
-  printf "  %-16s %s\n" "-opencv module" "default modules will be tested if no module specified: calib3d, core, features2d, imgproc, objdetect"
+  printf "  %-16s %s\n" "-opencv module" "default modules will be tested if no module specified: calib3d, core, features2d, imgproc, objdetect, dnn"
   echo "Example:"
   printf "  %-7s %s\n" "$0" "'Rockchip RK3568'"
   printf "  %-7s %s %s\n" "$0" "'Rockchip RK3568'" "imgproc"

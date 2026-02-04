@@ -20,15 +20,15 @@ The geometric mean of all test case scores within a test suite represents the sc
 After the benchmark completes, the overall score (labeled 'Score' in the table) and scores on each tested module are shown in the following table:
 
 
-| module     |   Amlogic A311D |   Amlogic A311D2 |   Apple M1 |   Apple M4 |   Horizon Robotics Sunrise 3 |   Huawei Kunpeng |   Intel Core i7-12700K |   Intel Core i9-9880H |   Rockchip RK3568 |   Rockchip RK3568B2 |   Rockchip RK3588S2 |   SpacemiT M1 |   StarFive JH7110 |
-|:-----------|----------------:|-----------------:|-----------:|-----------:|-----------------------------:|-----------------:|-----------------------:|----------------------:|------------------:|--------------------:|--------------------:|--------------:|------------------:|
-| calib3d    |          168.5  |           167.83 |     805.11 |    1276.45 |                        57.12 |           180.74 |                1060.27 |                670.97 |             92.17 |               89.21 |              379.78 |         86.56 |             35.38 |
-| core       |          157.2  |           157.9  |     964.48 |    1573.05 |                        57.54 |           178.97 |                1227.25 |                709.42 |             81.14 |               77.41 |              368.45 |        107.72 |             26.96 |
-| features2d |          148.54 |           187.02 |     823.6  |    1753.81 |                        49.69 |           141.08 |                1686.13 |                852.97 |             72.93 |               71.62 |              328.12 |        103.65 |             30.52 |
-| imgproc    |          151.89 |           160.65 |     865.98 |    1514.13 |                        52.4  |           178.01 |                1451.1  |                799.71 |             82.88 |               79.7  |              337.92 |        119.81 |             33.73 |
-| objdetect  |          140.49 |           143.46 |     646.15 |    1191.21 |                        45.13 |           181.85 |                1189    |                658.11 |             67.34 |               65.16 |              339.64 |         65.25 |             33.72 |
-| dnn        |          138.93 |           178.59 |     936.74 |    1263.64 |                        65.91 |           174.47 |                2070.87 |                942.84 |             86.09 |               77.1  |              300.42 |         40.27 |              7.77 |
-|  **Score** |      **150.59** |        **165.3** | **833.47** |**1414.98** |                    **54.24** |       **171.87** |            **1409.43** |            **765.66** |            **80** |           **76.35** |          **341.39** |     **82.01** |         **25.22** |
+| module     |   Amlogic A311D |   Amlogic A311D2 |   Apple M1 |   Apple M4 |   Horizon Robotics Sunrise 3 |   Huawei Kunpeng |   Intel Core i7-12700K |   Intel Core i9-9880H |   Rockchip RK3568 |   Rockchip RK3568B2 |   Rockchip RK3588S2 |   SpacemiT K1 |   SpacemiT K3 |   StarFive JH7110 |
+|:-----------|----------------:|-----------------:|-----------:|-----------:|-----------------------------:|-----------------:|-----------------------:|----------------------:|------------------:|--------------------:|--------------------:|--------------:|--------------:|------------------:|
+| calib3d    |          168.5  |           167.83 |     805.11 |    1276.45 |                        57.12 |           180.74 |                1060.27 |                670.97 |             92.17 |               89.21 |              379.78 |         86.56 |        207    |             35.38 |
+| core       |          157.2  |           157.9  |     964.48 |    1573.05 |                        57.54 |           178.97 |                1227.25 |                709.42 |             81.14 |               77.41 |              368.45 |        107.72 |        273.7  |             26.96 |
+| features2d |          148.54 |           187.02 |     823.6  |    1753.81 |                        49.69 |           141.08 |                1686.13 |                852.97 |             72.93 |               71.62 |              328.12 |        103.65 |        271.56 |             30.52 |
+| imgproc    |          151.89 |           160.65 |     865.98 |    1514.13 |                        52.4  |           178.01 |                1451.1  |                799.71 |             82.88 |               79.7  |              337.92 |        119.81 |        359.66 |             33.73 |
+| objdetect  |          140.49 |           143.46 |     646.15 |    1191.21 |                        45.13 |           181.85 |                1189    |                658.11 |             67.34 |               65.16 |              339.64 |         65.25 |        252.03 |             33.72 |
+| dnn        |          138.93 |           178.59 |     936.74 |    1263.64 |                        65.91 |           174.47 |                2070.87 |                942.84 |             86.09 |               77.1  |              300.42 |         40.27 |        137.75 |              7.77 |
+|  **Score** |      **150.59** |        **165.3** | **833.47** |**1414.98** |                    **54.24** |       **171.87** |            **1409.43** |            **765.66** |            **80** |           **76.35** |          **341.39** |     **82.01** |     **240.21** |         **25.22** |
 
 *The baseline CPU is Broadcom BCM2711.*
 
@@ -55,7 +55,8 @@ CPU specs:
 - **Rockchip RK3568**: quad-core ARM Cortex-A55 (up to 2.0 GHz). Corresponding SBC used is Firefly ROC-RK3568-PC.
 - **Rockchip RK3568B2**: quad-core ARM Cortex-A55 (up to 2.0 GHz). Corresponding SBC used is ATK-DLRK3568.
 - **Rockchip RK3588S2**: quad-core ARM Cortex-A76 (2.25 GHz) and quad-core ARM Cortex-A55 (1.8 GHz). Corresponding SBC used is Khadas Edge2 ARM PC.
-- **SpacemiT M1**: octa-core 64-bit RISC-V AI CPU (clocked at 1.6 GHz). Corresponding SBC used is MUSE Pi V30.
+- **SpacemiT K1**: octa-core 64-bit RISC-V AI CPU (1.6 GHz). Corresponding SBC used is MUSE Pi V30.
+- **SpacemiT K3**: octa-core 64-bit RISC-V AI CPU (2.4 GHz).
 - **StarFive JH7110**: quad-core 64-bit RISC-V CPU (1.5 GHz). Corresponding SBC used is StarFive VisionFive 2.
 
 ## How to run the benchmark

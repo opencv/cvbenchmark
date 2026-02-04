@@ -6,8 +6,13 @@
     },
     "processors": [
     {
-      "Processor": "SpacemiT M1",
+      "Processor": "SpacemiT K1",
       "Cores": "1.6 GHz (8 cores)",
+      "Arch": "RISC-V"
+    },
+    {
+      "Processor": "SpacemiT K3",
+      "Cores": "2.4 GHz (8 cores)",
       "Arch": "RISC-V"
     },
     {
