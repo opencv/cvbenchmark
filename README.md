@@ -22,11 +22,11 @@ After the benchmark completes, the overall score (labeled 'Score' in the table) 
 
 | module     |   Amlogic A311D |   Amlogic A311D2 |   Apple M1 |   Apple M4 |   Horizon Robotics Sunrise 3 |   Huawei Kunpeng |   Intel Core i7-12700K |   Intel Core i9-9880H |   Rockchip RK3568 |   Rockchip RK3568B2 |   Rockchip RK3588S2 |   SpacemiT K1 |   SpacemiT K3 |   StarFive JH7110 |
 |:-----------|----------------:|-----------------:|-----------:|-----------:|-----------------------------:|-----------------:|-----------------------:|----------------------:|------------------:|--------------------:|--------------------:|--------------:|--------------:|------------------:|
-| calib3d    |          168.5  |           167.83 |     805.11 |    1276.45 |                        57.12 |           180.74 |                1060.27 |                670.97 |             92.17 |               89.21 |              379.78 |         86.56 |        207    |             35.38 |
 | core       |          157.2  |           157.9  |     964.48 |    1573.05 |                        57.54 |           178.97 |                1227.25 |                709.42 |             81.14 |               77.41 |              368.45 |        107.72 |        273.7  |             26.96 |
-| features2d |          148.54 |           187.02 |     823.6  |    1753.81 |                        49.69 |           141.08 |                1686.13 |                852.97 |             72.93 |               71.62 |              328.12 |        103.65 |        271.56 |             30.52 |
 | imgproc    |          151.89 |           160.65 |     865.98 |    1514.13 |                        52.4  |           178.01 |                1451.1  |                799.71 |             82.88 |               79.7  |              337.92 |        119.81 |        359.66 |             33.73 |
+| features2d |          148.54 |           187.02 |     823.6  |    1753.81 |                        49.69 |           141.08 |                1686.13 |                852.97 |             72.93 |               71.62 |              328.12 |        103.65 |        271.56 |             30.52 |
 | objdetect  |          140.49 |           143.46 |     646.15 |    1191.21 |                        45.13 |           181.85 |                1189    |                658.11 |             67.34 |               65.16 |              339.64 |         65.25 |        252.03 |             33.72 |
+| calib3d    |          168.5  |           167.83 |     805.11 |    1276.45 |                        57.12 |           180.74 |                1060.27 |                670.97 |             92.17 |               89.21 |              379.78 |         86.56 |        207    |             35.38 |
 | dnn        |          138.93 |           178.59 |     936.74 |    1263.64 |                        65.91 |           174.47 |                2070.87 |                942.84 |             86.09 |               77.1  |              300.42 |         40.27 |        137.75 |              7.77 |
 |  **Score** |      **150.59** |        **165.3** | **833.47** |**1414.98** |                    **54.24** |       **171.87** |            **1409.43** |            **765.66** |            **80** |           **76.35** |          **341.39** |     **82.01** |     **240.21** |         **25.22** |
 
@@ -36,11 +36,11 @@ Visualized score charts on each module are shown below, and the overall score of
 
 |       |        |
 |-------|--------|
-| ![](perf/calib3d.png) | ![](perf/core.png) |
+| ![](perf/core.png) | ![](perf/imgproc.png) |
 |       |        |
-| ![](perf/features2d.png) | ![](perf/imgproc.png) |
+| ![](perf/features2d.png) | ![](perf/objdetect.png) |
 |       |        |
-| ![](perf/objdetect.png) | ![](perf/dnn.png) |
+| ![](perf/calib3d.png) | ![](perf/dnn.png) |
 
 CPU specs:
 - **Broadcom BCM2711**: quad-core ARM Cortex-A72 (ARMv8, 1.5 GHz). Corresponding SBC used is Raspberry Pi 4 Model B.
@@ -94,7 +94,7 @@ bash compare.sh
 python rate.py
 ```
 
-> By default, the scores are printed to the terminal and saved to *perf/scores.md*. If you want to visualise the scores with bar charts, write down your CPU info to *processor.json* then run the script as follows:
+> By default, the scores are printed to the terminal and saved to *perf/scores.md*. If you want to visualise the scores with bar charts, write down your CPU info to *processor.json* (make sure that the value of the key 'Processor' is the same as the one you use when you run *run.sh*), then run the script as follows:
 >```bash
 > python rate.py --figure
 > ```

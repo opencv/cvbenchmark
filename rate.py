@@ -25,9 +25,9 @@ args = parser.parse_args()
 output_file = args.output
 
 # 4.x
-modules=["calib3d", "core", "features2d", "imgproc", "objdetect", "dnn"]
+modules=["core", "imgproc", "features2d", "objdetect", "calib3d", "dnn"]
 # 5.x
-#modules=["3d", "calib", "core", "features", "imgproc", "objdetect", "stereo", "dnn"]
+#modules=["core", "imgproc", "features", "objdetect", "3d", "calib", "stereo", "dnn"]
 if args.modules:
     modules = args.modules
 
