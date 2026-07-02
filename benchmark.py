@@ -1,5 +1,4 @@
 import argparse
-import ast
 import glob
 import json
 import os
@@ -22,18 +21,18 @@ OPENCV_5_MODULES = [
     "objdetect",
     "dnn",
 ]
+OPENCV_4_ONLY_MODULES = {"calib3d", "features2d"}
+OPENCV_5_ONLY_MODULES = {"calib", "stereo", "geometry", "features"}
 ALL_KNOWN_MODULES = list(dict.fromkeys(OPENCV_4_MODULES + OPENCV_5_MODULES))
 AVAILABLE_ARCH_PARAM = ["x86", "arm", "riscv", "riscvv"]
 
 
-def run_cmd(cmd, cwd=None, capture=False, env=None):
+def run_cmd(cmd, cwd=None, env=None):
     return subprocess.run(
         [str(x) for x in cmd],
         cwd=cwd,
         check=True,
         text=True,
-        stdout=subprocess.PIPE if capture else None,
-        stderr=subprocess.PIPE if capture else None,
         env=env,
     )
 
@@ -46,16 +45,33 @@ def has_opencv_module(module):
     return (Path("opencv/modules") / module / "perf").is_dir()
 
 
-def detect_modules_from_opencv_tree():
-    if has_opencv_module("calib") or has_opencv_module("geometry"):
-        modules = [module for module in OPENCV_5_MODULES if has_opencv_module(module)]
-        return modules or OPENCV_5_MODULES
+def modules_available(candidates):
+    return [module for module in candidates if has_opencv_module(module)]
 
-    if has_opencv_module("calib3d") or has_opencv_module("features2d"):
-        modules = [module for module in OPENCV_4_MODULES if has_opencv_module(module)]
-        return modules or OPENCV_4_MODULES
+
+def detect_modules_from_opencv_tree():
+    if any(has_opencv_module(module) for module in OPENCV_5_ONLY_MODULES):
+        return modules_available(OPENCV_5_MODULES) or OPENCV_5_MODULES
+
+    if any(has_opencv_module(module) for module in OPENCV_4_ONLY_MODULES):
+        return modules_available(OPENCV_4_MODULES) or OPENCV_4_MODULES
 
     return OPENCV_4_MODULES
+
+
+def detect_opencv_extra_ref(modules):
+    module_set = set(modules or [])
+
+    if module_set & OPENCV_5_ONLY_MODULES:
+        return "5.x"
+    if module_set & OPENCV_4_ONLY_MODULES:
+        return "4.x"
+    if any(has_opencv_module(module) for module in OPENCV_5_ONLY_MODULES):
+        return "5.x"
+    if any(has_opencv_module(module) for module in OPENCV_4_ONLY_MODULES):
+        return "4.x"
+
+    return "4.x"
 
 
 def detect_perf_modules(build_dir):
@@ -74,55 +90,59 @@ def module_has_perf_output(perf_dir, module):
     ).is_file()
 
 
+def modules_with_perf_output(perf_dir, candidates):
+    return [module for module in candidates if module_has_perf_output(perf_dir, module)]
+
+
 def detect_score_modules(opencv_version):
     perf_dir = Path("perf") / opencv_version
     if perf_dir.is_dir():
-        opencv_5_only_modules = ["calib", "stereo", "geometry", "features"]
-        opencv_4_only_modules = ["calib3d", "features2d"]
-
-        if any(module_has_perf_output(perf_dir, module) for module in opencv_5_only_modules):
-            modules = [
-                module for module in OPENCV_5_MODULES if module_has_perf_output(perf_dir, module)
-            ]
+        if modules_with_perf_output(perf_dir, OPENCV_5_ONLY_MODULES):
+            modules = modules_with_perf_output(perf_dir, OPENCV_5_MODULES)
             if modules:
                 return modules
 
-        if any(module_has_perf_output(perf_dir, module) for module in opencv_4_only_modules):
-            modules = [
-                module for module in OPENCV_4_MODULES if module_has_perf_output(perf_dir, module)
-            ]
+        if modules_with_perf_output(perf_dir, OPENCV_4_ONLY_MODULES):
+            modules = modules_with_perf_output(perf_dir, OPENCV_4_MODULES)
             if modules:
                 return modules
 
-        modules = [
-            module for module in ALL_KNOWN_MODULES if module_has_perf_output(perf_dir, module)
-        ]
+        modules = modules_with_perf_output(perf_dir, ALL_KNOWN_MODULES)
         if modules:
             return modules
 
     return detect_modules_from_opencv_tree()
 
 
-def ensure_submodule(path, args):
+def ensure_submodule(path, args=()):
     target = Path(path)
     if not target.is_dir() or not any(target.iterdir()):
         print(f"{path} is missing or empty. Updating submodules...")
         run_cmd(["git", "submodule", "update", "--init", *args, path])
 
 
-def checkout_opencv(opencv_version):
-    ensure_submodule("opencv", [])
+def checkout_repo_ref(path, ref, label):
+    ensure_submodule(path)
 
-    print(f"Checking out OpenCV branch/commit: {opencv_version}")
-    run_cmd(["git", "fetch", "origin", "--tags"], cwd="opencv")
+    print(f"Checking out {label}: {ref}")
+    run_cmd(["git", "fetch", "origin", "--tags"], cwd=path)
 
     try:
-        run_cmd(["git", "checkout", opencv_version], cwd="opencv")
+        run_cmd(["git", "checkout", ref], cwd=path)
     except subprocess.CalledProcessError:
-        run_cmd(
-            ["git", "checkout", "-B", opencv_version, f"origin/{opencv_version}"],
-            cwd="opencv",
-        )
+        run_cmd(["git", "checkout", "-B", ref, f"origin/{ref}"], cwd=path)
+
+
+def checkout_opencv(opencv_version):
+    checkout_repo_ref("opencv", opencv_version, "OpenCV branch/commit")
+
+
+def checkout_opencv_extra(modules):
+    checkout_repo_ref(
+        "opencv_extra",
+        detect_opencv_extra_ref(modules),
+        "opencv_extra branch/ref",
+    )
 
 
 def build_opencv(arch, opencv_version):
@@ -167,62 +187,68 @@ def build_opencv(arch, opencv_version):
     return build_dir
 
 
-def ensure_dnn_models():
-    root = Path.cwd()
-    dnn_dir = root / "opencv_extra/testdata/dnn"
-    perf_net = root / "opencv/modules/dnn/perf/perf_net.cpp"
-    download_model = root / "opencv_extra/testdata/dnn/download_models.py"
-
-    src = perf_net.read_text()
-    pattern = re.compile(r'processNet\s*\(\s*"([^"]+)"')
-    models = {Path(m.rsplit("/", 1)[-1]).name for m in pattern.findall(src)}
-
-    existing_models = {p.name for p in dnn_dir.rglob("*") if p.is_file()}
-    missing_models = {f for f in models if f not in existing_models}
-
-    tree = ast.parse(download_model.read_text())
-    filename_to_name = {}
-
-    def get_str(node):
-        if isinstance(node, ast.Constant) and isinstance(node.value, str):
-            return node.value
-        return None
-
-    def extract_model(call_node, parent_name=None):
-        name = None
-        filename = None
-        subs = []
-
-        for kw in call_node.keywords:
-            if kw.arg == "name":
-                name = get_str(kw.value)
-            elif kw.arg == "filename":
-                filename = get_str(kw.value)
-            elif kw.arg == "sub" and isinstance(kw.value, ast.List):
-                subs = kw.value.elts
-
-        effective_name = name or parent_name
-        if filename and effective_name:
-            filename_to_name[Path(filename).name] = effective_name
-
-        for sub in subs:
-            if isinstance(sub, ast.Call) and getattr(sub.func, "id", None) == "Model":
-                extract_model(sub, effective_name)
-
-    for node in ast.walk(tree):
-        if isinstance(node, ast.Call) and getattr(node.func, "id", None) == "Model":
-            extract_model(node)
-
-    model_names = {filename_to_name[m] for m in missing_models if m in filename_to_name}
-
-    if model_names:
-        print("DOWNLOADING DNN MODELS. THIS MAY TAKE A WHILE...")
-        env = {**os.environ, "PYTHONDONTWRITEBYTECODE": "1"}
-        for name in sorted(model_names):
-            print(f"Downloading {name}...")
-            run_cmd([sys.executable, "-B", download_model, name, "--dst", dnn_dir], env=env)
-
-
+# Future option: download DNN models required by perf_net.cpp before running dnn.
+# This is intentionally disabled because the current DNN perf command excludes
+# DNNTestNetwork* tests.
+#
+# def ensure_dnn_models():
+#     import ast
+#
+#     root = Path.cwd()
+#     dnn_dir = root / "opencv_extra/testdata/dnn"
+#     perf_net = root / "opencv/modules/dnn/perf/perf_net.cpp"
+#     download_model = root / "opencv_extra/testdata/dnn/download_models.py"
+#
+#     src = perf_net.read_text()
+#     pattern = re.compile(r'processNet\s*\(\s*"([^"]+)"')
+#     models = {Path(m.rsplit("/", 1)[-1]).name for m in pattern.findall(src)}
+#
+#     existing_models = {p.name for p in dnn_dir.rglob("*") if p.is_file()}
+#     missing_models = {f for f in models if f not in existing_models}
+#
+#     tree = ast.parse(download_model.read_text())
+#     filename_to_name = {}
+#
+#     def get_str(node):
+#         if isinstance(node, ast.Constant) and isinstance(node.value, str):
+#             return node.value
+#         return None
+#
+#     def extract_model(call_node, parent_name=None):
+#         name = None
+#         filename = None
+#         subs = []
+#
+#         for kw in call_node.keywords:
+#             if kw.arg == "name":
+#                 name = get_str(kw.value)
+#             elif kw.arg == "filename":
+#                 filename = get_str(kw.value)
+#             elif kw.arg == "sub" and isinstance(kw.value, ast.List):
+#                 subs = kw.value.elts
+#
+#         effective_name = name or parent_name
+#         if filename and effective_name:
+#             filename_to_name[Path(filename).name] = effective_name
+#
+#         for sub in subs:
+#             if isinstance(sub, ast.Call) and getattr(sub.func, "id", None) == "Model":
+#                 extract_model(sub, effective_name)
+#
+#     for node in ast.walk(tree):
+#         if isinstance(node, ast.Call) and getattr(node.func, "id", None) == "Model":
+#             extract_model(node)
+#
+#     model_names = {filename_to_name[m] for m in missing_models if m in filename_to_name}
+#
+#     if model_names:
+#         print("DOWNLOADING DNN MODELS. THIS MAY TAKE A WHILE...")
+#         env = {**os.environ, "PYTHONDONTWRITEBYTECODE": "1"}
+#         for name in sorted(model_names):
+#             print(f"Downloading {name}...")
+#             run_cmd([sys.executable, "-B", download_model, name, "--dst", dnn_dir], env=env)
+#
+#
 def run_perf(arch, cpu_model, opencv_version, modules=None):
     print("Evaluating ...")
     build_dir = build_opencv(arch, opencv_version)
@@ -231,10 +257,10 @@ def run_perf(arch, cpu_model, opencv_version, modules=None):
         modules = detect_perf_modules(build_dir)
         print(f"Detected OpenCV performance modules: {', '.join(modules)}")
 
-    ensure_submodule("opencv_extra", ["--remote"])
+    checkout_opencv_extra(modules)
 
-    if "dnn" in modules:
-        ensure_dnn_models()
+    # if "dnn" in modules:
+    #     ensure_dnn_models()
 
     if not build_dir.is_dir() or not any(build_dir.iterdir()):
         raise SystemExit(f"OpenCV build {build_dir} is missing or empty. Exit.")
@@ -254,29 +280,23 @@ def run_perf(arch, cpu_model, opencv_version, modules=None):
             print(f"Performance result {result_file} already exists. Skipping run perf.")
             continue
 
+        cmd = [
+            build_dir / f"bin/opencv_perf_{module}",
+            f"--gtest_output=xml:{result_file}",
+            "--perf_force_samples=20",
+            "--perf_min_samples=20",
+        ]
         if module == "dnn":
-            cmd = [
-                build_dir / "bin/opencv_perf_dnn",
-                f"--gtest_output=xml:{result_file}",
-                "--perf_force_samples=1",
-                "--perf_min_samples=1",
-            ]
-        else:
-            cmd = [
-                build_dir / f"bin/opencv_perf_{module}",
-                f"--gtest_output=xml:{result_file}",
-                "--perf_force_samples=50",
-                "--perf_min_samples=50",
-            ]
+            cmd.append("--gtest_filter=-DNNTestNetwork*")
 
-        subprocess.run([str(x) for x in cmd], check=True, env=env)
+        run_cmd(cmd, env=env)
 
     print("PERFORMANCE TESTING FINISHED.")
 
 
 def compare_module(perf_dir, module, baseline):
     base_file = perf_dir / f"{module}-{baseline}.xml"
-    pattern = str(perf_dir / f"{module}*.xml")
+    pattern = str(perf_dir / f"{module}-*.xml")
     output_file = perf_dir / f"{module}.html"
 
     print(f"Comparing results of module: {module} ...")
@@ -510,7 +530,7 @@ def add_run_args(parser):
     parser.add_argument("--arch", required=True, choices=AVAILABLE_ARCH_PARAM)
     parser.add_argument("--cpu-model", required=True)
     parser.add_argument("--version", default="4.x")
-    parser.add_argument("--modules", nargs="+")
+    parser.add_argument("--modules", "--module", nargs="+")
 
 
 def main():
@@ -527,7 +547,7 @@ def main():
     )
     score_parser.add_argument("--version", default="4.x")
     score_parser.add_argument("--baseline", default="Broadcom BCM2711")
-    score_parser.add_argument("--modules", nargs="+")
+    score_parser.add_argument("--modules", "--module", nargs="+")
     score_parser.add_argument("--output", default="scores.md")
     score_parser.add_argument("--figure", action="store_true")
 
