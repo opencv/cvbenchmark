@@ -32,6 +32,7 @@ After the benchmark completes, the overall score (labeled 'Score' in the table) 
 | objdetect |           147.59 |     661.5  |     961.7  |                1039.55 |                583.95 |             66.55 |              303.25 |         66.41 |        231.3  |             31.84 |
 | dnn       |           251.86 |    1180.87 |    1999.33 |                1431.48 |                650.27 |            108.73 |              436.54 |        121.97 |        357.87 |             49.51 |
 | **Score** |       **161.55** | **940.66** |**1390.94** |            **1147.62** |            **673.75** |         **79.67** |          **329.52** |     **87.4**  |    **237.42** |         **31.46** |
+
 *The baseline CPU is Broadcom BCM2711.*
 
 Visualized score charts on each module are shown below, and the overall score of each device across all tested modules is shown in the figure above.
@@ -45,6 +46,7 @@ Visualized score charts on each module are shown below, and the overall score of
 | ![](perf/5.0.0/score/calib.png) | ![](perf/5.0.0/score/geometry.png) |
 |       |        |
 | ![](perf/5.0.0/score/stereo.png) | ![](perf/5.0.0/score/dnn.png) |
+
 *Scores are computed on OpenCV 5.0.0. For scores on OpenCV 4.13.0, refer to perf/4.13.0/score*
 
 CPU specs:
