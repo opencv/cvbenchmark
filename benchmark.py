@@ -5,6 +5,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
@@ -27,6 +28,17 @@ ALL_KNOWN_MODULES = list(dict.fromkeys(OPENCV_4_MODULES + OPENCV_5_MODULES))
 AVAILABLE_ARCH_PARAM = ["x86", "arm", "riscv", "riscvv"]
 
 
+def format_elapsed(seconds):
+    seconds = int(round(seconds))
+    hours, remainder = divmod(seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    if hours:
+        return f"{hours}h {minutes}m {seconds}s"
+    if minutes:
+        return f"{minutes}m {seconds}s"
+    return f"{seconds}s"
+
+
 def run_cmd(cmd, cwd=None, env=None):
     return subprocess.run(
         [str(x) for x in cmd],
@@ -35,6 +47,16 @@ def run_cmd(cmd, cwd=None, env=None):
         text=True,
         env=env,
     )
+
+
+def positive_int(value):
+    try:
+        parsed = int(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"invalid integer value: {value!r}")
+    if parsed < 1:
+        raise argparse.ArgumentTypeError("--jobs must be greater than 0")
+    return parsed
 
 
 def safe_build_dir(opencv_version):
@@ -145,17 +167,23 @@ def checkout_opencv_extra(modules):
     )
 
 
-def build_opencv(arch, opencv_version):
+def build_opencv(arch, opencv_version, jobs=None):
     if arch not in AVAILABLE_ARCH_PARAM:
         raise SystemExit(
             f"Unknown input arch: {arch}. Available architectures: {', '.join(AVAILABLE_ARCH_PARAM)}"
         )
 
+    jobs = jobs or os.cpu_count() or 1
+    build_start = time.perf_counter()
     build_dir = safe_build_dir(opencv_version)
     checkout_opencv(opencv_version)
 
     if build_dir.is_dir() and any(build_dir.iterdir()):
         print(f"OpenCV build {build_dir} already exists. Skipping build opencv.")
+        print(
+            "OPENCV BUILD ELAPSED TIME: "
+            f"{format_elapsed(time.perf_counter() - build_start)}"
+        )
         return build_dir
 
     print(f"Building OpenCV in {build_dir} ...")
@@ -167,23 +195,23 @@ def build_opencv(arch, opencv_version):
         "-DWITH_LAPACK=OFF",
         "-DWITH_EIGEN=OFF",
         "-DBUILD_TESTS=OFF",
+        "-DBUILD_opencv_python3=OFF",
     ]
-    jobs = 4
-
     if arch == "riscvv":
         cmake_args += [
             "-DCPU_BASELINE=RVV",
             "-DCPU_BASELINE_REQUIRE=RVV",
             "-DRISCV_RVV_SCALABLE=ON",
         ]
-        jobs = os.cpu_count() or 4
-    elif arch == "arm":
-        cmake_args += ["-DWITH_FFMPEG=OFF"]
 
     run_cmd(["cmake", "-B", build_dir, *cmake_args, "opencv"])
+    print(f"Building OpenCV with {jobs} job(s).")
     run_cmd(["cmake", "--build", build_dir, "--target", "install", f"-j{jobs}"])
 
-    print("OPENCV BUILD FINISHED.")
+    print(
+        "OPENCV BUILD FINISHED. ELAPSED TIME: "
+        f"{format_elapsed(time.perf_counter() - build_start)}"
+    )
     return build_dir
 
 
@@ -249,9 +277,9 @@ def build_opencv(arch, opencv_version):
 #             run_cmd([sys.executable, "-B", download_model, name, "--dst", dnn_dir], env=env)
 #
 #
-def run_perf(arch, cpu_model, opencv_version, modules=None):
+def run_perf(arch, cpu_model, opencv_version, modules=None, jobs=None):
     print("Evaluating ...")
-    build_dir = build_opencv(arch, opencv_version)
+    build_dir = build_opencv(arch, opencv_version, jobs)
 
     if modules is None:
         modules = detect_perf_modules(build_dir)
@@ -272,6 +300,8 @@ def run_perf(arch, cpu_model, opencv_version, modules=None):
     env["PYTHONDONTWRITEBYTECODE"] = "1"
     env["OPENCV_TEST_DATA_PATH"] = str(Path.cwd() / "opencv_extra/testdata")
 
+    perf_start = time.perf_counter()
+    failed_modules = []
     for module in modules:
         print(f"PERFORMANCE TEST MODULE: {module}")
         result_file = result_dir / f"{module}-{cpu_model}.xml"
@@ -289,15 +319,40 @@ def run_perf(arch, cpu_model, opencv_version, modules=None):
         if module == "dnn":
             cmd.append("--gtest_filter=-DNNTestNetwork*")
 
-        run_cmd(cmd, env=env)
+        try:
+            result = subprocess.run([str(x) for x in cmd], check=False, text=True, env=env)
+        except OSError as exc:
+            failed_modules.append((module, str(exc)))
+            print(f"ERROR: Performance test module {module} failed: {exc}. Continuing.")
+            continue
 
-    print("PERFORMANCE TESTING FINISHED.")
+        if result.returncode != 0:
+            failed_modules.append((module, f"exit code {result.returncode}"))
+            print(
+                f"ERROR: Performance test module {module} failed "
+                f"with exit code {result.returncode}. Continuing."
+            )
+
+    if failed_modules:
+        failed_text = ", ".join(
+            f"{module} ({reason})"
+            for module, reason in failed_modules
+        )
+        print(f"PERFORMANCE TESTING FINISHED WITH FAILURES: {failed_text}")
+    else:
+        print("PERFORMANCE TESTING FINISHED.")
+    print(
+        "PERFORMANCE TESTING ELAPSED TIME: "
+        f"{format_elapsed(time.perf_counter() - perf_start)}"
+    )
 
 
 def compare_module(perf_dir, module, baseline):
     base_file = perf_dir / f"{module}-{baseline}.xml"
     pattern = str(perf_dir / f"{module}-*.xml")
-    output_file = perf_dir / f"{module}.html"
+    score_dir = perf_dir / "score"
+    score_dir.mkdir(parents=True, exist_ok=True)
+    output_file = score_dir / f"{module}.html"
 
     print(f"Comparing results of module: {module} ...")
 
@@ -361,8 +416,9 @@ def get_device_types(df):
 def read_first_valid_html(opencv_version, modules):
     import pandas as pd
 
+    score_dir = Path("perf") / opencv_version / "score"
     for module in modules:
-        file_name = Path("perf") / opencv_version / f"{module}.html"
+        file_name = score_dir / f"{module}.html"
         if not file_name.exists():
             continue
 
@@ -378,6 +434,9 @@ def summarize_scores(opencv_version, modules, output_file):
     import pandas as pd
     from scipy.stats import gmean
 
+    score_dir = Path("perf") / opencv_version / "score"
+    score_dir.mkdir(parents=True, exist_ok=True)
+
     df = read_first_valid_html(opencv_version, modules)
     if df is None:
         raise SystemExit("No valid performance HTML files found.")
@@ -389,7 +448,7 @@ def summarize_scores(opencv_version, modules, output_file):
         result[dev_type] = []
 
     for module in modules:
-        file_name = Path("perf") / opencv_version / f"{module}.html"
+        file_name = score_dir / f"{module}.html"
         if not file_name.exists():
             continue
 
@@ -427,7 +486,8 @@ def summarize_scores(opencv_version, modules, output_file):
     numeric_cols = score_df.select_dtypes(include="number").columns
     score_df[numeric_cols] = score_df[numeric_cols].round(2)
 
-    output_path = Path("perf") / opencv_version / output_file
+    output_path = score_dir / output_file
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(score_df.to_markdown(index=False))
 
     print(score_df.to_string(index=False))
@@ -440,6 +500,9 @@ def create_figures(opencv_version, score_df):
     import matplotlib.patches as mpatches
     import matplotlib.pyplot as plt
     import numpy as np
+
+    score_dir = Path("perf") / opencv_version / "score"
+    score_dir.mkdir(parents=True, exist_ok=True)
 
     with open("processor.json", "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -508,7 +571,7 @@ def create_figures(opencv_version, score_df):
             )
 
         plt.tight_layout()
-        output_path = Path("perf") / opencv_version / f"{module_name}.png"
+        output_path = score_dir / f"{module_name}.png"
         print(f"Saving figure for {module_name}...")
         plt.savefig(output_path)
         plt.close()
@@ -527,10 +590,17 @@ def score_perf(opencv_version, baseline, modules, output, figure):
 
 
 def add_run_args(parser):
-    parser.add_argument("--arch", required=True, choices=AVAILABLE_ARCH_PARAM)
-    parser.add_argument("--cpu-model", required=True)
-    parser.add_argument("--version", default="4.x")
-    parser.add_argument("--modules", "--module", nargs="+")
+    parser.add_argument("--arch", required=True,
+        help="Target architecture for building OpenCV. Available: x86, arm, riscv, riscvv")
+    parser.add_argument("--cpu-model", required=True,
+        help="CPU model name for the target device. Used in result file names.")
+    parser.add_argument("--version", default="4.13.0",
+        help="OpenCV version (branch, tag, or commit) to build and run performance tests. Default: 4.13.0")
+    parser.add_argument("--modules", nargs="+",
+        help="List of modules to run performance tests.")
+    parser.add_argument("--jobs", "-j", type=positive_int,
+        help="Number of build jobs passed to cmake --build. Default: CPU count.",
+    )
 
 
 def main():
@@ -545,28 +615,36 @@ def main():
     score_parser = subparsers.add_parser(
         "score", help="Compare XML results and compute CPU scores."
     )
-    score_parser.add_argument("--version", default="4.x")
-    score_parser.add_argument("--baseline", default="Broadcom BCM2711")
-    score_parser.add_argument("--modules", "--module", nargs="+")
-    score_parser.add_argument("--output", default="scores.md")
-    score_parser.add_argument("--figure", action="store_true")
+    score_parser.add_argument("--version", default="4.13.0",
+        help="OpenCV version (branch, tag, or commit) to compute scores. Default: 4.13.0")
+    score_parser.add_argument("--baseline", default="Broadcom BCM2711",
+        help="Baseline CPU model name for comparison. Default: Broadcom BCM2711")
+    score_parser.add_argument("--modules", nargs="+",
+        help="List of modules to compute scores.")
+    score_parser.add_argument("--output", default="scores.md",
+        help="Output markdown file for scores. Default: scores.md")
+    score_parser.add_argument("--figure", action="store_true",
+        help="Generate figures for each module and the overall score.")
 
     bench_parser = subparsers.add_parser(
         "bench", help="Run OpenCV performance tests and compute CPU scores."
     )
     add_run_args(bench_parser)
-    bench_parser.add_argument("--baseline", default="Broadcom BCM2711")
-    bench_parser.add_argument("--output", default="scores.md")
-    bench_parser.add_argument("--figure", action="store_true")
+    bench_parser.add_argument("--baseline", default="Broadcom BCM2711",
+        help="Baseline CPU model name for comparison. Default: Broadcom BCM2711")
+    bench_parser.add_argument("--output", default="scores.md",
+        help="Output markdown file for scores. Default: scores.md")
+    bench_parser.add_argument("--figure", action="store_true",
+        help="Generate figures for each module and the overall score.")
 
     args = parser.parse_args()
 
     if args.command == "perf":
-        run_perf(args.arch, args.cpu_model, args.version, args.modules)
+        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs)
     elif args.command == "score":
         score_perf(args.version, args.baseline, args.modules, args.output, args.figure)
     elif args.command == "bench":
-        run_perf(args.arch, args.cpu_model, args.version, args.modules)
+        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs)
         score_perf(args.version, args.baseline, args.modules, args.output, args.figure)
 
 
