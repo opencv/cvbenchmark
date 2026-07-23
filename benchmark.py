@@ -55,7 +55,7 @@ def positive_int(value):
     except ValueError:
         raise argparse.ArgumentTypeError(f"invalid integer value: {value!r}")
     if parsed < 1:
-        raise argparse.ArgumentTypeError("--jobs must be greater than 0")
+        raise argparse.ArgumentTypeError("value must be greater than 0")
     return parsed
 
 
@@ -277,7 +277,7 @@ def build_opencv(arch, opencv_version, jobs=None):
 #             run_cmd([sys.executable, "-B", download_model, name, "--dst", dnn_dir], env=env)
 #
 #
-def run_perf(arch, cpu_model, opencv_version, modules=None, jobs=None):
+def run_perf(arch, cpu_model, opencv_version, modules=None, jobs=None, threads=None):
     print("Evaluating ...")
     build_dir = build_opencv(arch, opencv_version, jobs)
 
@@ -300,6 +300,11 @@ def run_perf(arch, cpu_model, opencv_version, modules=None, jobs=None):
     env["PYTHONDONTWRITEBYTECODE"] = "1"
     env["OPENCV_TEST_DATA_PATH"] = str(Path.cwd() / "opencv_extra/testdata")
 
+    if threads is not None:
+        cpu_threads = os.cpu_count() or 1
+        if threads > cpu_threads:
+            threads = cpu_threads
+
     perf_start = time.perf_counter()
     failed_modules = []
     for module in modules:
@@ -316,6 +321,8 @@ def run_perf(arch, cpu_model, opencv_version, modules=None, jobs=None):
             "--perf_force_samples=20",
             "--perf_min_samples=20",
         ]
+        if threads is not None:
+            cmd.append(f"--perf_threads={threads}")
         if module == "dnn":
             cmd.append("--gtest_filter=-DNNTestNetwork*")
 
@@ -599,8 +606,9 @@ def add_run_args(parser):
     parser.add_argument("--modules", nargs="+",
         help="List of modules to run performance tests.")
     parser.add_argument("--jobs", "-j", type=positive_int,
-        help="Number of build jobs passed to cmake --build. Default: CPU count.",
-    )
+        help="Number of build jobs used to build OpenCV. Default: CPU count.")
+    parser.add_argument("--threads", type=positive_int,
+        help="Number of worker threads used to run performance tests. Default: all threads.")
 
 
 def main():
@@ -640,11 +648,11 @@ def main():
     args = parser.parse_args()
 
     if args.command == "perf":
-        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs)
+        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs, args.threads)
     elif args.command == "score":
         score_perf(args.version, args.baseline, args.modules, args.output, args.figure)
     elif args.command == "bench":
-        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs)
+        run_perf(args.arch, args.cpu_model, args.version, args.modules, args.jobs, args.threads)
         score_perf(args.version, args.baseline, args.modules, args.output, args.figure)
 
 
